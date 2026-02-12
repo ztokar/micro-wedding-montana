@@ -104,8 +104,8 @@ export default function Vision() {
             className="relative h-[500px] md:h-[600px] overflow-hidden md:order-2"
           >
             <img
-              src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=2940&auto=format&fit=crop"
-              alt="Montana ranch sunset"
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop"
+              alt="Montana mountain landscape"
               className="w-full h-full object-cover shadow-2xl"
             />
             <div className="absolute inset-0 bg-gradient-to-tl from-earth-900/20 to-transparent" />
