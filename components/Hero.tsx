@@ -40,7 +40,7 @@ export default function Hero() {
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-light mb-8 leading-tight">
             Montana
-            <span className="block italic font-normal mt-2">Micro Weddings</span>
+            <span className="block italic font-normal mt-2">Micro Wedding</span>
           </h1>
 
           <motion.p

@@ -16,11 +16,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Montana Micro Weddings | Intimate Mountain Wedding Venue",
+  title: "Montana Micro Wedding | Intimate Mountain Wedding Venue",
   description: "Experience the magic of an intimate Montana micro wedding. Affordable, natural, and breathtakingly beautiful ceremonies in the heart of Montana's pristine wilderness.",
-  keywords: "montana micro weddings, intimate wedding montana, small wedding venue montana, mountain wedding montana, affordable wedding montana, natural wedding venue",
+  keywords: "montana micro wedding, intimate wedding montana, small wedding venue montana, mountain wedding montana, affordable wedding montana, natural wedding venue",
   openGraph: {
-    title: "Montana Micro Weddings | Intimate Mountain Wedding Venue",
+    title: "Montana Micro Wedding | Intimate Mountain Wedding Venue",
     description: "Experience the magic of an intimate Montana micro wedding.",
     type: "website",
     url: "https://microweddingmontana.com",

@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-display font-light mb-4 flex items-center gap-2">
-              Montana Micro Weddings
+              Montana Micro Wedding
               <Heart className="w-5 h-5 text-terracotta" />
             </h3>
             <p className="text-earth-300 leading-relaxed">
@@ -79,7 +79,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-earth-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-earth-400">
-          <p>© {new Date().getFullYear()} Montana Micro Weddings. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Montana Micro Wedding. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-cream transition-colors">
               Privacy Policy
