@@ -16,14 +16,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Montana Micro Wedding | Intimate Mountain Wedding Venue",
+  title: "Montana Micro Wedding Venue | Whitefish, MT",
   description: "Experience the magic of an intimate Montana micro wedding. Affordable, natural, and breathtakingly beautiful ceremonies in the heart of Montana's pristine wilderness.",
   keywords: "montana micro wedding, intimate wedding montana, small wedding venue montana, mountain wedding montana, affordable wedding montana, natural wedding venue",
   verification: {
     google: "z2pEGNK_5W9MghXfleYgslkSEWsWppx4VdN56OdD5jc",
   },
   openGraph: {
-    title: "Montana Micro Wedding | Intimate Mountain Wedding Venue",
+    title: "Montana Micro Wedding Venue | Whitefish, MT",
     description: "Experience the magic of an intimate Montana micro wedding.",
     type: "website",
     url: "https://microweddingmontana.com",
