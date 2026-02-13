@@ -6,32 +6,32 @@ import { useEffect, useState } from 'react';
 const images = [
   {
     src: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=2940&auto=format&fit=crop',
-    alt: 'Montana mountain ceremony',
+    alt: 'Intimate Montana micro wedding ceremony in mountain setting',
     span: 'col-span-2 row-span-2',
   },
   {
     src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2940&auto=format&fit=crop',
-    alt: 'Outdoor wedding venue',
+    alt: 'Private outdoor wedding venue in Whitefish Montana',
     span: 'col-span-1 row-span-1',
   },
   {
     src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2940&auto=format&fit=crop',
-    alt: 'Montana ranch wedding',
+    alt: 'Montana micro wedding at North Star Ranch',
     span: 'col-span-1 row-span-1',
   },
   {
     src: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2669&auto=format&fit=crop',
-    alt: 'Outdoor ceremony setup',
+    alt: 'Small outdoor wedding ceremony setup with mountain views',
     span: 'col-span-1 row-span-2',
   },
   {
     src: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=2940&auto=format&fit=crop',
-    alt: 'Montana landscape',
+    alt: 'Glacier National Park Montana wedding destination landscape',
     span: 'col-span-2 row-span-1',
   },
   {
     src: 'https://images.unsplash.com/photo-1478146896981-b80fe463b330?q=80&w=2940&auto=format&fit=crop',
-    alt: 'Mountain wedding celebration',
+    alt: 'Intimate mountain wedding celebration near Whitefish',
     span: 'col-span-1 row-span-1',
   },
 ];

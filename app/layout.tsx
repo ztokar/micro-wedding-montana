@@ -35,8 +35,52 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WeddingVenue",
+    "name": "Montana Micro Wedding",
+    "description": "Intimate Montana micro wedding venue near Whitefish and Glacier National Park",
+    "url": "https://microweddingmontana.com",
+    "telephone": "+1-406-225-7268",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "355 Beaver Lake Rd",
+      "addressLocality": "Whitefish",
+      "addressRegion": "MT",
+      "postalCode": "59937",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "48.4108",
+      "longitude": "-114.3356"
+    },
+    "priceRange": "$$",
+    "image": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=2940&auto=format&fit=crop",
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "40-acre private ranch"
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Mountain views"
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Intimate ceremony space"
+      }
+    ]
+  };
+
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </head>
       <body className="font-body">
         {children}
       </body>
