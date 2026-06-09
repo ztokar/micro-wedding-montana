@@ -7,7 +7,26 @@ import { guides } from "@/lib/guides";
 export const metadata: Metadata = {
   title: "Montana Micro Wedding Planning Guides | North Star Ranch",
   description: "Plan a Montana micro wedding near Whitefish and Glacier National Park with clear guides to venues, packages, seasons, lodging, and timelines.",
-  alternates: { canonical: "https://microweddingmontana.com/guides" }
+  alternates: { canonical: "https://microweddingmontana.com/guides" },
+  openGraph: {
+    title: "Montana Micro Wedding Planning Guides",
+    description: "Clear answers for planning the venue, lodging, season, travel, and Glacier National Park portion of the trip.",
+    url: "https://microweddingmontana.com/guides",
+    siteName: "Montana Micro Wedding",
+    type: "website",
+    images: [{
+      url: "/social/guides.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Montana Micro Wedding planning guides from North Star Ranch"
+    }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Montana Micro Wedding Planning Guides",
+    description: "Clear answers for planning the whole Montana wedding trip.",
+    images: ["/social/guides.jpg"]
+  }
 };
 
 export default function GuidesPage() {
