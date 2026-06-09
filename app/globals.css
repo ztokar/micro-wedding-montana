@@ -59,6 +59,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--color-cream);
   color: var(--color-earth-900);
   font-family: var(--font-body);
