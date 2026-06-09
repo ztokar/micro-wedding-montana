@@ -20,7 +20,10 @@ export const metadata: Metadata = {
   title: "Plan a Montana Micro Wedding at a Private Whitefish Ranch | North Star Ranch",
   description: "Plan a private Montana micro wedding at North Star Ranch, a 40-acre Whitefish retreat with onsite lodging near Glacier National Park.",
   keywords: "montana micro wedding, micro wedding montana, small wedding venue montana, whitefish wedding venue, glacier national park micro wedding",
-  alternates: { canonical: "https://microweddingmontana.com/" },
+  alternates: {
+    canonical: "https://microweddingmontana.com/",
+    types: { "application/rss+xml": "https://microweddingmontana.com/feed.xml" }
+  },
   applicationName: "Montana Micro Wedding",
   authors: [{ name: "North Star Ranch" }],
   creator: "North Star Ranch",

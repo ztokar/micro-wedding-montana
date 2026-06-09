@@ -41,10 +41,9 @@ export default function LocationSection() {
 
           <p className="text-lg md:text-xl text-earth-800 leading-relaxed max-w-4xl mx-auto mb-12">
             Located just 8 miles from downtown Whitefish and 25 minutes from Glacier Park International Airport,
-            our <strong>Montana micro wedding venue</strong> is perfectly positioned for destination couples.
-            We are approximately 45 minutes from Glacier National Park, making it easy for you and your guests
-            to explore one of the most beautiful landscapes in the country while celebrating your
-            <strong> intimate mountain wedding</strong> in Montana's mountains.
+            our <strong>Montana micro wedding venue</strong> gives destination couples a private gathering base.
+            Glacier National Park is less than 45 minutes away, so couples can include a park visit or approved
+            experience without asking guests to stay far from the wedding venue.
           </p>
         </motion.div>
 

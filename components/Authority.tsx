@@ -39,11 +39,9 @@ export default function Authority() {
           </h2>
 
           <p className="text-lg md:text-xl text-earth-800 leading-relaxed">
-            Our Montana micro wedding venue is nestled on a 40-acre private ranch just outside Whitefish.
-            With breathtaking views of the Swan Range and pristine wilderness, North Star Ranch provides
-            an intimate, peaceful setting for couples who want to celebrate their love surrounded by nature.
-            Whether you're planning an elopement or a small gathering with family and friends, our property
-            offers the perfect backdrop for a meaningful, unforgettable wedding day in the heart of Montana.
+            North Star Ranch is a private 40-acre retreat eight miles from downtown Whitefish.
+            Its five-bedroom chalet, four cabins, and eight-room lodge give destination groups
+            a place to stay together near Glacier National Park and Glacier Park International Airport.
           </p>
         </motion.div>
       </div>

@@ -47,16 +47,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-earth-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-earth-400">
+        <div className="border-t border-earth-800 pt-8 text-sm text-earth-400">
           <p>© {new Date().getFullYear()} Montana Micro Wedding. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-cream transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-cream transition-colors">
-              Terms of Service
-            </a>
-          </div>
         </div>
       </div>
     </footer>

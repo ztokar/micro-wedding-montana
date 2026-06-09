@@ -7,7 +7,7 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     question: 'What is considered a micro wedding?',
-    answer: 'A micro wedding typically includes 10–40 guests and focuses on an intimate, meaningful celebration rather than a large-scale event.',
+    answer: 'A micro wedding is a smaller celebration built around meaningful time with a close group of guests. Each venue sets its own guest limit.',
   },
   {
     question: 'How many guests can attend a micro wedding at your venue?',
@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: 'Is lodging available nearby?',
-    answer: 'Whitefish offers a variety of lodging options, and on-site accommodations may also be available depending on your event needs.',
+    answer: 'North Star Ranch has onsite lodging across a five-bedroom chalet, four cabins, and an eight-room lodge. Ask which accommodations are available for your dates.',
   },
 ];
 

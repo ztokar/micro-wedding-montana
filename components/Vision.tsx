@@ -85,9 +85,8 @@ export default function Vision() {
                 circle of loved ones, every moment becomes magnified, every conversation meaningful.
               </p>
               <p>
-                Our Montana venue offers the perfect canvas: rustic elegance meets untamed wilderness.
-                Say your vows as golden hour bathes the mountains. Toast under star-filled skies.
-                Dance on weathered wood while aspens whisper their blessings.
+                A private Montana venue gives a small group room to slow down.
+                Plan the ceremony, meal, and guest time around one gathering place instead of a long series of transfers.
               </p>
               <p className="italic text-sage-700">Keep the guest list close and give the weekend room to breathe.</p>
             </div>

@@ -81,8 +81,7 @@ export default function Contact() {
                 <li>• 40 acres of pristine wilderness</li>
                 <li>• 25 minutes from Glacier Park Airport</li>
                 <li>• 45 minutes to Glacier National Park</li>
-                <li>• Chalet, Cabins & Bunkhouse available</li>
-                <li>• Borders National Forest</li>
+                <li>• Chalet, cabins, and eight-room lodge onsite</li>
               </ul>
             </div>
           </motion.div>
