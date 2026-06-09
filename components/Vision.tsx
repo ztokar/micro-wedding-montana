@@ -23,7 +23,7 @@ export default function Vision() {
   }, []);
 
   return (
-    <section id="vision" className="py-24 md:py-32 bg-cream grain">
+    <section id="vision" className="overflow-hidden py-24 md:py-32 bg-cream grain">
       <div className="max-w-7xl mx-auto px-6">
         {/* First Block - Image Left */}
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-32">
