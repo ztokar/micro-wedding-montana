@@ -34,8 +34,8 @@ export default function Vision() {
             className="relative h-[500px] md:h-[600px] overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2940&auto=format&fit=crop"
-              alt="Couple in Montana landscape"
+              src="/images/montana-scenic-wedding.jpg"
+              alt="Montana wedding setup at North Star Ranch"
               className="w-full h-full object-cover shadow-2xl"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-sage-900/20 to-transparent" />
@@ -54,16 +54,14 @@ export default function Vision() {
             </h2>
             <div className="space-y-4 text-earth-800 leading-relaxed text-lg">
               <p>
-                Imagine your wedding day beneath Montana's endless sky—where towering peaks frame your vows
+                Imagine your wedding day beneath Montana's endless sky, where towering peaks frame your vows
                 and wildflowers carpet the earth. No elaborate productions, no unnecessary excess.
               </p>
               <p>
                 Just you, your beloved, and nature's cathedral. We believe the most profound moments
                 emerge when we strip away the noise and let love speak for itself.
               </p>
-              <p className="font-medium text-sage-700">
-                This is where your story becomes legend.
-              </p>
+              <p className="font-medium text-sage-700">A private place for the people you most want beside you.</p>
             </div>
           </motion.div>
         </div>
@@ -83,7 +81,7 @@ export default function Vision() {
             </h2>
             <div className="space-y-4 text-earth-800 leading-relaxed text-lg">
               <p>
-                Micro weddings aren't about limitation—they're about liberation. With your closest
+                Micro weddings are not about limitation. With your closest
                 circle of loved ones, every moment becomes magnified, every conversation meaningful.
               </p>
               <p>
@@ -91,9 +89,7 @@ export default function Vision() {
                 Say your vows as golden hour bathes the mountains. Toast under star-filled skies.
                 Dance on weathered wood while aspens whisper their blessings.
               </p>
-              <p className="italic text-sage-700">
-                "We didn't just have a wedding—we had a once-in-a-lifetime experience."
-              </p>
+              <p className="italic text-sage-700">Keep the guest list close and give the weekend room to breathe.</p>
             </div>
           </motion.div>
 
@@ -104,8 +100,8 @@ export default function Vision() {
             className="relative h-[500px] md:h-[600px] overflow-hidden md:order-2"
           >
             <img
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop"
-              alt="Montana mountain landscape"
+              src="/images/ranch-wedding.jpg"
+              alt="Outdoor wedding gathering at North Star Ranch"
               className="w-full h-full object-cover shadow-2xl"
             />
             <div className="absolute inset-0 bg-gradient-to-tl from-earth-900/20 to-transparent" />
@@ -120,8 +116,8 @@ export default function Vision() {
           className="text-center max-w-4xl mx-auto py-16"
         >
           <blockquote className="text-3xl md:text-4xl lg:text-5xl font-light italic leading-relaxed text-sage-800">
-            "In Montana, we don't chase perfection.
-            <span className="block mt-4 font-normal text-earth-700">We discover it."</span>
+            The best part of a smaller wedding is not doing less.
+            <span className="block mt-4 font-normal text-earth-700">It is having more time with your people.</span>
           </blockquote>
         </motion.div>
       </div>

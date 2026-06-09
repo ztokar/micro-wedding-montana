@@ -42,7 +42,7 @@ export default function Contact() {
             </h2>
             <p className="text-lg text-sage-100 leading-relaxed mb-12">
               We're honored you're considering North Star Ranch for your special day.
-              Let's talk about bringing your vision to life—whether it's an intimate elopement
+              Let's talk about bringing your vision to life, whether it's an intimate elopement
               or a celebration with your closest friends and family.
             </p>
 
@@ -73,14 +73,6 @@ export default function Contact() {
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="border-t border-sage-700 pt-8">
-              <p className="text-sage-300 italic text-lg leading-relaxed">
-                "From our first conversation, we knew this was the place. The team made
-                planning effortless, and the day itself was pure magic."
-              </p>
-              <p className="text-sage-400 mt-4">— Sarah & James</p>
             </div>
 
             <div className="mt-12 pt-8 border-t border-sage-700">

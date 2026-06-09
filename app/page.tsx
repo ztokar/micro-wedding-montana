@@ -8,10 +8,13 @@ import FAQ from '@/components/FAQ';
 import Authority from '@/components/Authority';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import SiteHeader from '@/components/SiteHeader';
+import GuidesSection from '@/components/GuidesSection';
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <SiteHeader />
       <Hero />
       <IntroSection />
       <Vision />
@@ -20,6 +23,7 @@ export default function Home() {
       <Gallery />
       <FAQ />
       <Authority />
+      <GuidesSection />
       <Contact />
       <Footer />
     </main>

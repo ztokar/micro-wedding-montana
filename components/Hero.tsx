@@ -10,13 +10,13 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen w-full overflow-hidden grain">
+    <section className="relative min-h-[100dvh] w-full overflow-hidden grain">
       {/* Background Image */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop"
-          alt="Montana Mountains"
+          src="/images/ranch-hero.jpg"
+          alt="North Star Ranch near Whitefish Montana"
           className="w-full h-full object-cover"
         />
       </div>
@@ -49,9 +49,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="text-lg md:text-2xl font-light mb-12 max-w-3xl mx-auto leading-relaxed text-cream/95"
           >
-            Intimate celebrations beneath endless skies. Natural beauty,
-            heartfelt moments, and the magic of Montana's wilderness—
-            all yours to cherish.
+            A private 40-acre Whitefish retreat with onsite lodging,
+            eight miles from town and less than forty-five minutes from Glacier National Park.
           </motion.p>
 
           <motion.div

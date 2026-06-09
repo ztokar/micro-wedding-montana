@@ -1,6 +1,7 @@
 'use client';
 
-import { Heart, Instagram, Facebook, Mail } from 'lucide-react';
+import { Heart } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -14,8 +15,7 @@ export default function Footer() {
               <Heart className="w-5 h-5 text-terracotta" />
             </h3>
             <p className="text-earth-300 leading-relaxed">
-              Where love stories unfold beneath Montana's endless skies.
-              Creating intimate, unforgettable wedding experiences in nature's grandest cathedral.
+              A private 40-acre retreat near Whitefish with onsite lodging and easy access to Glacier National Park.
             </p>
           </div>
 
@@ -24,56 +24,25 @@ export default function Footer() {
             <h4 className="text-lg font-medium mb-4 text-cream">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#vision" className="text-earth-300 hover:text-cream transition-colors">
+                <Link href="/#vision" className="text-earth-300 hover:text-cream transition-colors">
                   Our Vision
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#gallery" className="text-earth-300 hover:text-cream transition-colors">
-                  Gallery
-                </a>
+                <Link href="/guides" className="text-earth-300 hover:text-cream transition-colors">Planning Guides</Link>
               </li>
               <li>
-                <a href="#contact" className="text-earth-300 hover:text-cream transition-colors">
+                <Link href="/#contact" className="text-earth-300 hover:text-cream transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Connect */}
+          {/* Location */}
           <div>
-            <h4 className="text-lg font-medium mb-4 text-cream">Stay Connected</h4>
-            <p className="text-earth-300 mb-4">
-              Follow our journey and see real Montana micro weddings unfold.
-            </p>
-            <div className="flex gap-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-earth-800 hover:bg-sage-700 transition-colors flex items-center justify-center"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-earth-800 hover:bg-sage-700 transition-colors flex items-center justify-center"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="mailto:hello@microweddingmontana.com"
-                className="w-10 h-10 bg-earth-800 hover:bg-sage-700 transition-colors flex items-center justify-center"
-                aria-label="Email"
-              >
-                <Mail className="w-5 h-5" />
-              </a>
-            </div>
+            <h4 className="text-lg font-medium mb-4 text-cream">North Star Ranch</h4>
+            <p className="text-earth-300 leading-relaxed">355 Beaver Lake Rd<br />Whitefish, MT 59937<br />(406) 225-7268</p>
           </div>
         </div>
 

@@ -16,9 +16,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Montana Micro Wedding Venue | Whitefish, MT",
-  description: "Experience the magic of an intimate Montana micro wedding. Affordable, natural, and breathtakingly beautiful ceremonies in the heart of Montana's pristine wilderness.",
-  keywords: "montana micro wedding, intimate wedding montana, small wedding venue montana, mountain wedding montana, affordable wedding montana, natural wedding venue",
+  metadataBase: new URL("https://microweddingmontana.com"),
+  title: "Montana Micro Wedding Venue | Private Whitefish Ranch Near Glacier | North Star Ranch",
+  description: "Plan a private Montana micro wedding at North Star Ranch, a 40-acre Whitefish retreat with onsite lodging near Glacier National Park.",
+  keywords: "montana micro wedding, micro wedding montana, small wedding venue montana, whitefish wedding venue, glacier national park micro wedding",
+  alternates: { canonical: "https://microweddingmontana.com/" },
   verification: {
     google: "z2pEGNK_5W9MghXfleYgslkSEWsWppx4VdN56OdD5jc",
   },
@@ -38,7 +40,7 @@ export default function RootLayout({
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "WeddingVenue",
-    "name": "Montana Micro Wedding",
+    "name": "North Star Ranch",
     "description": "Intimate Montana micro wedding venue near Whitefish and Glacier National Park",
     "url": "https://microweddingmontana.com",
     "telephone": "+1-406-225-7268",
@@ -55,8 +57,7 @@ export default function RootLayout({
       "latitude": "48.4108",
       "longitude": "-114.3356"
     },
-    "priceRange": "$$",
-    "image": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=2940&auto=format&fit=crop",
+    "image": "https://microweddingmontana.com/images/ranch-hero.jpg",
     "amenityFeature": [
       {
         "@type": "LocationFeatureSpecification",
