@@ -46,7 +46,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     "@type": "Article",
     headline: guide.title,
     description: guide.description,
-    dateModified: "2026-06-09",
+    dateModified: "2026-06-14",
     author: { "@type": "Organization", name: "North Star Ranch" },
     publisher: { "@type": "Organization", name: "North Star Ranch" },
     image: `https://microweddingmontana.com/social/${guide.slug}.jpg`,

@@ -35,12 +35,12 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-body text-cream/90"
           >
-            Where Mountains Meet Forever
+            Private Whitefish Ranch Near Glacier National Park
           </motion.p>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-light mb-8 leading-tight">
             Montana
-            <span className="block italic font-normal mt-2">Micro Wedding</span>
+            <span className="block italic font-normal mt-2">Micro Wedding Venue</span>
           </h1>
 
           <motion.p
@@ -63,7 +63,7 @@ export default function Hero() {
               href="#contact"
               className="px-10 py-4 bg-white text-earth-900 font-medium tracking-wide hover:bg-cream transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
-              Book Your Wedding
+              Check Availability
             </a>
             <a
               href="#gallery"

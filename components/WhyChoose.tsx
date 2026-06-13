@@ -5,11 +5,11 @@ import { Check } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const reasons = [
-  'More meaningful time with your closest guests',
-  'Less stress and more intention',
-  'A stunning natural backdrop without overproduction',
-  'Flexible timelines and relaxed celebrations',
-  'A true Montana mountain experience',
+  'A private 40-acre ranch near Whitefish',
+  'Onsite lodging across a chalet, four cabins, and an eight-room lodge',
+  'Eight miles from downtown Whitefish',
+  'Twenty-five minutes from Glacier Park International Airport',
+  'Less than forty-five minutes from Glacier National Park',
 ];
 
 export default function WhyChoose() {
@@ -41,9 +41,9 @@ export default function WhyChoose() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 leading-tight">
-            Why Couples Choose
+            What North Star Ranch Gives
             <span className="block italic font-normal mt-2 text-sage-700">
-              a Montana Micro Wedding
+              a Destination Wedding Group
             </span>
           </h2>
         </motion.div>
@@ -78,7 +78,7 @@ export default function WhyChoose() {
             href="#contact"
             className="inline-block px-10 py-4 border-2 border-sage-700 text-sage-700 font-medium tracking-wide hover:bg-sage-700 hover:text-white transition-all duration-300 hover:scale-105"
           >
-            View Available Dates
+            Ask About Available Dates
           </a>
         </motion.div>
       </div>

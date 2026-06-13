@@ -32,14 +32,14 @@ export const guides: Guide[] = [
     hero: "/images/ranch-wedding.jpg",
     heroAlt: "Outdoor wedding gathering at North Star Ranch in Whitefish Montana",
     readTime: "6 minute read",
-    updated: "June 9, 2026",
+    updated: "June 14, 2026",
     quickAnswer: "An all-inclusive Montana micro wedding package should clearly state what happens at the venue, where guests sleep, who handles each vendor, and which costs still sit outside the package. The word all-inclusive is not a standard promise, so compare the written details instead of the label.",
     sections: [
       {
         id: "meaning",
-        heading: "Start With What All-Inclusive Means",
+        heading: "What an All-Inclusive Montana Wedding Venue May Include",
         paragraphs: [
-          "Some Montana packages cover the venue and a short list of wedding-day services. Others include lodging, meals, planning, flowers, photography, and several days of activities. Both may use the same all-inclusive label.",
+          "Some Montana wedding packages cover the venue, ceremony, reception, and a short list of wedding-day services. Others include lodging, meals, planning, flowers, photography, and several days of activities. Both may use the same all-inclusive label.",
           "Ask for one written list that separates included items, optional upgrades, and outside vendors. That list matters more than the package name."
         ],
         table: {
@@ -69,7 +69,7 @@ export const guides: Guide[] = [
       },
       {
         id: "questions",
-        heading: "Questions to Ask Before You Compare Prices",
+        heading: "Questions to Ask Every Montana Wedding Venue Before Comparing Prices",
         paragraphs: [
           "A lower starting price is not automatically the lower final cost. Ask every venue the same questions, then compare the full experience you are buying."
         ],
@@ -84,7 +84,7 @@ export const guides: Guide[] = [
       },
       {
         id: "fit",
-        heading: "When a Private Ranch Package Makes Sense",
+        heading: "When a Private Ranch and Lodge Make Sense",
         paragraphs: [
           "A private ranch is a strong fit when the couple wants a small guest list, onsite lodging, and easy access to Whitefish and Glacier National Park. It is less about adding every possible service and more about keeping the important parts in one place.",
           "Explore the private Montana micro wedding setting at North Star Ranch, then ask for the current package details before comparing it with other options."
@@ -107,12 +107,12 @@ export const guides: Guide[] = [
     hero: "/images/glacier-spring.jpg",
     heroAlt: "Glacier National Park mountain landscape near Whitefish Montana",
     readTime: "7 minute read",
-    updated: "June 9, 2026",
+    updated: "June 14, 2026",
     quickAnswer: "Choose a Glacier National Park ceremony when the park location itself is the priority and your group can work within permit, access, and setup limits. Choose a private venue near Glacier when you want more control over guests, lodging, dinner, and the pace of the day.",
     sections: [
       {
         id: "rules",
-        heading: "What Changes When You Marry Inside Glacier National Park",
+        heading: "Compare a Glacier National Park Wedding With a Private Venue",
         paragraphs: [
           "Glacier National Park requires a Special Use Permit for every vow exchange, elopement, ceremony, or wedding, regardless of group size. The park says applications and the non-refundable $125 fee must arrive at least 20 business days before the requested date.",
           "Approved wedding locations have their own guest limits and setup rules. Park wedding locations are limited to two hours, road closures can block access, and many sites do not allow tables, decorations, or more than four chairs."
@@ -130,7 +130,7 @@ export const guides: Guide[] = [
       },
       {
         id: "private-base",
-        heading: "Use a Private Venue as the Wedding Base",
+        heading: "Use a Private Wedding Venue Near Glacier as the Guest Base",
         paragraphs: [
           "A private venue near Glacier can hold the parts the park is not designed to handle: guest lodging, a meal, longer conversations, and a weather backup. Couples can still plan park photos or approved activities without asking every guest to move through the park on a strict schedule.",
           "North Star Ranch is less than forty-five minutes from Glacier National Park, twenty-five minutes from Glacier Park International Airport, and eight miles from downtown Whitefish. Its onsite chalet, cabins, and lodge make it practical for a destination group to stay together."
@@ -174,12 +174,12 @@ export const guides: Guide[] = [
     hero: "/images/montana-scenic-wedding.jpg",
     heroAlt: "Small outdoor wedding setup in Montana",
     readTime: "6 minute read",
-    updated: "June 9, 2026",
-    quickAnswer: "A strong small wedding venue in Montana makes the celebration feel full at your real guest count and keeps the guest experience simple. Look for clear lodging, weather, meal, privacy, and travel plans.",
+    updated: "June 14, 2026",
+    quickAnswer: "A strong small wedding venue in Montana makes the celebration feel full at your real guest count and keeps the guest experience simple. Look for clear lodging, weather, reception, privacy, and travel plans.",
     sections: [
       {
         id: "criteria",
-        heading: "Compare the Parts Guests Will Actually Feel",
+        heading: "Compare Small Wedding Venues in Montana by What Guests Will Feel",
         paragraphs: [
           "Mountain views may get a venue onto your shortlist. Guest comfort and clear logistics decide whether the weekend feels easy once everyone arrives.",
           "For a destination wedding, compare the full stay rather than only the ceremony space."
@@ -204,8 +204,24 @@ export const guides: Guide[] = [
         ]
       },
       {
+        id: "venue-types",
+        heading: "Compare the Main Types of Small Montana Wedding Venues",
+        paragraphs: [
+          "The right venue type depends on how much privacy, lodging, event service, and outdoor access the group needs. Compare the tradeoff before comparing photos."
+        ],
+        table: {
+          headers: ["Venue type", "Often works well for", "Confirm before booking"],
+          rows: [
+            ["Private ranch", "Privacy and a destination group stay", "Lodging, vendor access, and weather plan"],
+            ["Lodge or inn", "Guest rooms close to the reception", "Event spaces, meal rules, and other guests onsite"],
+            ["Hotel or resort", "Traditional services and easy guest booking", "Minimums, privacy, and small-group setup"],
+            ["Public park ceremony", "A specific outdoor ceremony location", "Permits, time limits, access, and reception plan"]
+          ]
+        }
+      },
+      {
         id: "destination",
-        heading: "For a Destination Wedding, Lodging Is a Venue Feature",
+        heading: "For a Montana Destination Wedding, Lodging Is a Venue Feature",
         paragraphs: [
           "If guests travel to Montana, the venue choice affects the whole trip. Onsite lodging can reduce driving, make group meals easier, and give the wedding more time without adding another formal event.",
           "North Star Ranch offers a private 40-acre setting near Whitefish with a chalet, four cabins, and an eight-room lodge. It is eight miles from downtown Whitefish and twenty-five minutes from Glacier Park International Airport."
@@ -237,21 +253,21 @@ export const guides: Guide[] = [
   {
     slug: "whitefish-montana-micro-wedding",
     eyebrow: "Whitefish Destination Guide",
-    title: "Whitefish Montana Micro Wedding Guide for Destination Couples",
+    title: "Whitefish Montana Micro Wedding Venue Guide",
     seoTitle: "Plan a Whitefish Montana Micro Wedding Guests Can Enjoy as a Getaway | North Star Ranch",
-    description: "Plan a Whitefish micro wedding around guest travel, lodging, Glacier National Park, seasonal access, and a private place to gather.",
+    description: "Plan a Whitefish Montana micro wedding venue around guest travel, onsite lodging, Glacier National Park, seasonal access, and a private place to gather.",
     hero: "/images/ranch-hero.jpg",
     heroAlt: "North Star Ranch landscape near Whitefish Montana",
     readTime: "6 minute read",
-    updated: "June 9, 2026",
+    updated: "June 14, 2026",
     quickAnswer: "Whitefish works well for a destination micro wedding because couples can pair a private Northwest Montana wedding venue with a mountain-town stay and Glacier National Park. The best plan keeps lodging, transportation, and group time simple.",
     sections: [
       {
         id: "why-whitefish",
-        heading: "Why Whitefish Works for a Small Destination Wedding",
+        heading: "Why Whitefish Works for a Montana Micro Wedding",
         paragraphs: [
-          "Whitefish gives guests more than one reason to make the trip. Downtown restaurants, outdoor activities, Whitefish Lake, and Glacier National Park can turn a wedding into a shared Montana stay.",
-          "The practical advantage is Glacier Park International Airport. North Star Ranch is twenty-five minutes from the airport and eight miles from downtown Whitefish, which keeps the destination feeling remote without making arrival difficult."
+          "Whitefish gives guests more than one reason to make the trip. Downtown restaurants, outdoor activities, Whitefish Lake, and Glacier National Park can turn a wedding into a shared Flathead Valley stay.",
+          "The practical advantage is Glacier Park International Airport near Kalispell. North Star Ranch is twenty-five minutes from the airport and eight miles from downtown Whitefish, which keeps the destination feeling remote without making arrival difficult."
         ]
       },
       {
@@ -304,7 +320,7 @@ export const guides: Guide[] = [
     hero: "/images/wedding-canopy.jpg",
     heroAlt: "Wedding canopy at North Star Ranch in Montana",
     readTime: "7 minute read",
-    updated: "June 9, 2026",
+    updated: "June 14, 2026",
     quickAnswer: "Start a Montana destination micro wedding about nine to twelve months ahead when guests need travel and lodging. A shorter timeline can work, but book the venue, lodging, and any Glacier National Park permit needs first.",
     sections: [
       {
@@ -314,7 +330,7 @@ export const guides: Guide[] = [
           headers: ["When", "Main decisions"],
           rows: [
             ["9 to 12 months", "Guest count, season, venue, lodging, rough budget"],
-            ["6 to 9 months", "Photographer, food, ceremony plan, guest travel"],
+            ["6 to 9 months", "Photographer, food, reception, ceremony plan, guest travel"],
             ["3 to 6 months", "Invitations, attire, timeline, rentals, activities"],
             ["1 to 3 months", "Final counts, license plan, vendor details, weather backup"],
             ["Final week", "Arrival plan, contacts, payments, printed documents"]
@@ -323,7 +339,7 @@ export const guides: Guide[] = [
       },
       {
         id: "first",
-        heading: "Book the Parts That Control Everything Else",
+        heading: "Book the Montana Wedding Venue and Lodging First",
         paragraphs: [
           "Choose the guest count, season, venue, and lodging before building the smaller details. Those decisions control travel, food, rentals, and how much time guests can spend together.",
           "If Glacier National Park is part of the ceremony, review the current Special Use Permit process early. The park requires exact locations and times, and applications must arrive at least twenty business days before the requested date."
@@ -337,10 +353,10 @@ export const guides: Guide[] = [
       },
       {
         id: "middle",
-        heading: "Use the Middle Months to Protect the Guest Experience",
+        heading: "Use the Middle Months to Book Vendors and Protect the Guest Experience",
         paragraphs: [
           "Destination guests need clear travel information sooner than local guests. Give them the airport, lodging plan, arrival window, transportation expectations, and any outdoor clothing needs.",
-          "Keep the day-of schedule loose enough for a small group. Micro weddings move quickly because there are fewer people to gather, but travel and mountain weather still create delays."
+          "Use this part of the wedding timeline to confirm the photographer, food, reception plan, ceremony details, and any outside vendors. Keep the day-of schedule loose enough for a small group because travel and mountain weather still create delays."
         ]
       },
       {
@@ -375,12 +391,12 @@ export const guides: Guide[] = [
     hero: "/images/ranch-portrait.jpg",
     heroAlt: "North Star Ranch grounds in Montana",
     readTime: "6 minute read",
-    updated: "June 9, 2026",
+    updated: "June 14, 2026",
     quickAnswer: "For the easiest outdoor access near Whitefish and Glacier National Park, choose July through early September. Choose another season when snow, fall color, fewer visitors, or a quieter wedding matters more than predictable road and trail access.",
     sections: [
       {
         id: "compare",
-        heading: "Choose the Season by Its Tradeoff",
+        heading: "Choose a Montana Wedding Season by Its Tradeoff",
         table: {
           headers: ["Season", "Best for", "Plan around"],
           rows: [
@@ -393,7 +409,7 @@ export const guides: Guide[] = [
       },
       {
         id: "summer",
-        heading: "Summer Gives You the Most Outdoor Options",
+        heading: "Summer Gives an Outdoor Montana Wedding the Most Options",
         paragraphs: [
           "July through early September is the simplest window for couples who want broad access to Glacier National Park and outdoor wedding plans. Longer daylight also gives more room for a ceremony, dinner, and portraits.",
           "The tradeoff is demand. Guests should book travel and lodging early, and any park plan needs time for traffic, crowds, changing conditions, and possible construction."
@@ -409,15 +425,15 @@ export const guides: Guide[] = [
       },
       {
         id: "winter",
-        heading: "Winter Turns the Wedding Into a Group Retreat",
+        heading: "A Winter Wedding Turns the Weekend Into a Group Retreat",
         paragraphs: [
-          "A winter micro wedding can work well when the group wants snow, warm indoor time, and a slower weekend. Keep the schedule simple and leave room for travel delays.",
+          "A winter wedding in Montana can work well when the group wants snow, warm indoor time, and a slower weekend. Keep the schedule simple and leave room for travel delays.",
           "Onsite lodging becomes especially useful in winter because guests do not need to drive after every gathering. North Star Ranch has a chalet, cabins, and a lodge on its private Whitefish property."
         ]
       },
       {
         id: "decision",
-        heading: "Make the Venue Work in Your Second-Choice Weather",
+        heading: "Make the Montana Wedding Venue Work in Your Second-Choice Weather",
         paragraphs: [
           "Do not choose a season only from its best photos. Ask what the venue and guest plan look like in rain, smoke, cold, snow, or an unexpected closure.",
           "Once you choose the season, use the Montana micro wedding planning timeline to book the decisions that depend on it."

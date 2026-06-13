@@ -31,18 +31,18 @@ export default function IntroSection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 leading-tight">
-            Intimate Montana
+            One Private Place for a
             <span className="block italic font-normal mt-2 text-sage-700">
-              Micro Weddings in the Mountains
+              Montana Micro Wedding Weekend
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-earth-800 leading-relaxed mb-12">
-            Montana Micro Wedding offers intimate mountain wedding experiences just outside Whitefish, Montana.
-            Surrounded by towering peaks, open skies, and 40 acres of private wilderness, our venue is designed
-            for couples seeking a meaningful, small celebration in a breathtaking setting. Whether you're planning
-            a destination elopement or a <strong>micro wedding</strong> with your closest family and friends, this is
-            where simplicity meets unforgettable beauty.
+            North Star Ranch gives destination couples a private Montana micro wedding venue where the
+            celebration and guest stay can share one home base. The 40-acre Whitefish retreat has onsite
+            lodging across a five-bedroom chalet, four cabins, and an eight-room lodge, with downtown
+            Whitefish, Glacier Park International Airport, and Glacier National Park all within practical reach.
+            Couples can ask about current wedding options and build the trip around more time together.
           </p>
 
           <motion.div

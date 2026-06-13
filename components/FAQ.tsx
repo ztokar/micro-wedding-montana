@@ -11,18 +11,18 @@ const faqs = [
   },
   {
     question: 'How many guests can attend a micro wedding at your venue?',
-    answer: 'Our venue is designed for intimate gatherings, making it ideal for smaller wedding celebrations with close family and friends.',
+    answer: 'Ask North Star Ranch about the current wedding setup and guest limit for your dates before sending invitations.',
   },
   {
-    question: 'Do you host destination weddings in Montana?',
-    answer: 'Yes. Many of our couples travel from out of state to celebrate their wedding in Whitefish, Montana.',
+    question: 'Can North Star Ranch work as a destination wedding base?',
+    answer: 'The ranch has onsite lodging and sits eight miles from downtown Whitefish, twenty-five minutes from Glacier Park International Airport, and less than forty-five minutes from Glacier National Park.',
   },
   {
     question: 'How far is the venue from Glacier National Park?',
     answer: 'We are approximately 45 minutes from Glacier National Park and 25 minutes from Glacier Park International Airport.',
   },
   {
-    question: 'Is lodging available nearby?',
+    question: 'Does the Montana micro wedding venue have onsite lodging?',
     answer: 'North Star Ranch has onsite lodging across a five-bedroom chalet, four cabins, and an eight-room lodge. Ask which accommodations are available for your dates.',
   },
 ];
