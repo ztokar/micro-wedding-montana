@@ -11,6 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = guideMap[slug];
   if (!guide) return {};
+  const social = guide.social ?? `/social/${guide.slug}.jpg`;
   return {
     title: guide.seoTitle,
     description: guide.description,
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `https://microweddingmontana.com/guides/${guide.slug}`,
       siteName: "Montana Micro Wedding",
       images: [{
-        url: `/social/${guide.slug}.jpg`,
+        url: social,
         width: 1200,
         height: 630,
         alt: guide.seoTitle
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: "summary_large_image",
       title: guide.seoTitle,
       description: guide.description,
-      images: [`/social/${guide.slug}.jpg`]
+      images: [social]
     }
   };
 }
@@ -46,10 +47,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     "@type": "Article",
     headline: guide.title,
     description: guide.description,
-    dateModified: "2026-06-14",
+    dateModified: guide.updated ? new Date(guide.updated).toISOString().slice(0, 10) : "2026-06-14",
     author: { "@type": "Organization", name: "North Star Ranch" },
     publisher: { "@type": "Organization", name: "North Star Ranch" },
-    image: `https://microweddingmontana.com/social/${guide.slug}.jpg`,
+    image: `https://microweddingmontana.com${guide.social ?? `/social/${guide.slug}.jpg`}`,
     mainEntityOfPage: `https://microweddingmontana.com/guides/${guide.slug}`
   };
   const faqSchema = {

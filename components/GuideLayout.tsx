@@ -1,17 +1,41 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import Footer from "@/components/Footer";
 import type { Guide } from "@/lib/guides";
 import { guideMap } from "@/lib/guides";
 
+const linkClass = "font-medium text-sage-800 underline decoration-sage-400 underline-offset-4";
+
+// Parses inline [label](href) markdown links. Internal hrefs (start with / or #)
+// render as Next Link; external http(s) hrefs render as nofollow noopener anchors.
+function renderRichText(text: string, keyPrefix: string) {
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const nodes: ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let i = 0;
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) nodes.push(text.slice(lastIndex, match.index));
+    const [, label, href] = match;
+    if (/^https?:\/\//i.test(href)) {
+      nodes.push(
+        <a key={`${keyPrefix}-l${i}`} href={href} rel="nofollow noopener" target="_blank" className={linkClass}>{label}</a>
+      );
+    } else {
+      nodes.push(
+        <Link key={`${keyPrefix}-l${i}`} href={href} className={linkClass}>{label}</Link>
+      );
+    }
+    lastIndex = regex.lastIndex;
+    i += 1;
+  }
+  if (lastIndex < text.length) nodes.push(text.slice(lastIndex));
+  return nodes;
+}
+
 function LinkedParagraph({ text }: { text: string }) {
-  const parts = text.split(/(North Star Ranch|Glacier National Park micro wedding guide|Montana micro wedding planning timeline)/g);
-  return <p>{parts.map((part, index) => {
-    if (part === "North Star Ranch") return <Link key={`${part}-${index}`} href="/#contact" className="font-medium text-sage-800 underline decoration-sage-400 underline-offset-4">{part}</Link>;
-    if (part === "Glacier National Park micro wedding guide") return <Link key={`${part}-${index}`} href="/guides/glacier-national-park-micro-wedding" className="font-medium text-sage-800 underline decoration-sage-400 underline-offset-4">{part}</Link>;
-    if (part === "Montana micro wedding planning timeline") return <Link key={`${part}-${index}`} href="/guides/montana-micro-wedding-planning-timeline" className="font-medium text-sage-800 underline decoration-sage-400 underline-offset-4">{part}</Link>;
-    return part;
-  })}</p>;
+  return <p>{renderRichText(text, text.slice(0, 24))}</p>;
 }
 
 export default function GuideLayout({ guide }: { guide: Guide }) {
@@ -71,6 +95,29 @@ export default function GuideLayout({ guide }: { guide: Guide }) {
                       <thead><tr>{section.table.headers.map((header) => <th key={header} className="bg-sage-800 px-4 py-4 font-semibold text-white">{header}</th>)}</tr></thead>
                       <tbody>{section.table.rows.map((row) => <tr key={row.join("-")} className="border-t border-earth-200">{row.map((cell) => <td key={cell} className="px-4 py-4 align-top leading-6 text-earth-800">{cell}</td>)}</tr>)}</tbody>
                     </table>
+                  </div>
+                )}
+                {section.resources && (
+                  <div className="mt-8 divide-y divide-earth-200 border-y border-earth-300">
+                    {section.resources.map((resource) => (
+                      <div key={resource.name} className="py-4">
+                        <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                          <p className="text-base font-semibold text-earth-900">{resource.name}</p>
+                          {(resource.phone || resource.price) && (
+                            <p className="text-sm text-earth-600">{[resource.phone, resource.price].filter(Boolean).join(" · ")}</p>
+                          )}
+                        </div>
+                        <p className="mt-1 text-sm leading-6 text-earth-700">
+                          {resource.note}
+                          {resource.url && (
+                            <>
+                              {" "}
+                              <a href={resource.url} rel="nofollow noopener" target="_blank" className="text-sage-800 underline decoration-sage-400 underline-offset-2">Visit site</a>
+                            </>
+                          )}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 )}
               </section>

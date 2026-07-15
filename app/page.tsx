@@ -10,6 +10,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import SiteHeader from '@/components/SiteHeader';
 import GuidesSection from '@/components/GuidesSection';
+import LodgingSection from '@/components/LodgingSection';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <IntroSection />
       <Vision />
       <LocationSection />
+      <LodgingSection />
       <WhyChoose />
       <Gallery />
       <FAQ />

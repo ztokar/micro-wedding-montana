@@ -31,6 +31,8 @@ export const metadata: Metadata = {
 };
 
 export default function GuidesPage() {
+  const planningGuides = guides.filter((guide) => guide.category !== "local");
+  const localGuides = guides.filter((guide) => guide.category === "local");
   return <main className="bg-cream">
     <div className="relative bg-earth-900 pb-20 pt-36 text-white">
       <SiteHeader />
@@ -47,15 +49,27 @@ export default function GuidesPage() {
           <h2 className="mt-5 text-4xl font-light leading-tight md:text-5xl">Build the wedding around the guest experience.</h2>
         </div>
         <div className="space-y-5 text-lg leading-8 text-earth-800">
-          <p>A destination micro wedding is easier to plan when the ceremony, reception, lodging, and travel plan work together. These guides help couples compare the choices that affect the full trip, not only the ceremony view.</p>
+          <p>This is a guide to intimate wedding venue planning in Montana, from choosing the venue itself to guest travel and the days around the ceremony. A destination micro wedding is easier to plan when the venue, reception, lodging, and travel work together, so these guides compare the choices that affect the full trip, not only the ceremony view.</p>
           <p>North Star Ranch is a private 40-acre Montana wedding venue near Whitefish with onsite lodging across a five-bedroom chalet, four cabins, and an eight-room lodge. It gives a small destination group one gathering base near downtown Whitefish, Glacier Park International Airport, and Glacier National Park.</p>
           <p><Link href="/#contact" className="font-medium text-sage-800 underline decoration-sage-400 underline-offset-4">Ask North Star Ranch about current wedding options and availability</Link>, then use the planning guides below to compare packages, seasons, venue types, and the guest-day timeline.</p>
         </div>
       </div>
     </section>
-    <section className="mx-auto grid max-w-7xl gap-16 px-6 py-20 md:px-8 lg:grid-cols-2 lg:py-28">
-      {guides.map((guide) => <GuideCard guide={guide} key={guide.slug} />)}
-    </section>
+    <div className="mx-auto max-w-7xl px-6 py-20 md:px-8 lg:py-28">
+      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sage-700">Planning the wedding</p>
+      <section className="mt-10 grid gap-16 lg:grid-cols-2">
+        {planningGuides.map((guide) => <GuideCard guide={guide} key={guide.slug} />)}
+      </section>
+      {localGuides.length > 0 && (
+        <>
+          <p className="mt-24 border-t border-earth-300 pt-12 text-xs font-semibold uppercase tracking-[0.25em] text-sage-700">Whitefish local guides</p>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-earth-700">Practical guides for guest travel, lodging, dining, activities, and vendors around Whitefish and Glacier National Park.</p>
+          <section className="mt-10 grid gap-16 lg:grid-cols-2">
+            {localGuides.map((guide) => <GuideCard guide={guide} key={guide.slug} />)}
+          </section>
+        </>
+      )}
+    </div>
     <Footer />
   </main>;
 }

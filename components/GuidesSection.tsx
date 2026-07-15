@@ -2,6 +2,8 @@ import GuideCard from "@/components/GuideCard";
 import { guides } from "@/lib/guides";
 
 export default function GuidesSection() {
+  const planningGuides = guides.filter((guide) => guide.category !== "local");
+  const localGuides = guides.filter((guide) => guide.category === "local");
   return (
     <section id="guides" className="bg-cream py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
@@ -13,8 +15,16 @@ export default function GuidesSection() {
           </div>
         </div>
         <div className="grid gap-14 lg:grid-cols-2">
-          {guides.map((guide) => <GuideCard guide={guide} key={guide.slug} />)}
+          {planningGuides.map((guide) => <GuideCard guide={guide} key={guide.slug} />)}
         </div>
+        {localGuides.length > 0 && (
+          <>
+            <p className="mb-10 mt-20 border-t border-earth-300 pt-12 text-xs font-semibold uppercase tracking-[0.25em] text-sage-700">Whitefish local guides for guests</p>
+            <div className="grid gap-14 lg:grid-cols-2">
+              {localGuides.map((guide) => <GuideCard guide={guide} key={guide.slug} />)}
+            </div>
+          </>
+        )}
       </div>
     </section>
   );
