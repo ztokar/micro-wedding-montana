@@ -664,34 +664,34 @@ export const guides: Guide[] = [
     eyebrow: "Whitefish Local Guide",
     title: "Whitefish, Montana Wedding Vendors",
     seoTitle: "Whitefish, Montana Wedding Vendors: Who to Call for a Micro Wedding | North Star Ranch",
-    description: "Local photographers, florists, hair and makeup artists, officiants, cake bakers, and the nearest dress shops for a Whitefish or Glacier National Park micro wedding.",
+    description: "A practical starting point for finding Whitefish wedding vendors, from catering and photography to bridal shops, florals, beauty, officiants, and cake.",
     hero: "/images/ranch-wedding.jpg",
     heroAlt: "Outdoor wedding gathering at North Star Ranch near Whitefish Montana",
-    readTime: "7 minute read",
-    updated: "July 15, 2026",
+    readTime: "6 minute read",
+    updated: "August 3, 2026",
     social: "/social/guides.jpg",
     category: "local",
-    quickAnswer: "North Star Ranch is a private venue, not a vendor service, so couples hire their own local vendors. Whitefish and nearby Kalispell have photographers, florists, hair and makeup artists, officiants, cake bakers, and bridal shops that serve weddings across the Flathead Valley and Glacier National Park.",
+    quickAnswer: "Couples at North Star Ranch choose and contract their own vendors. Start with catering, photography and film, and attire because those decisions affect the schedule and budget. Whitefish and nearby Kalispell also have florists, beauty artists, officiants, and cake bakers who work across the Flathead Valley.",
     sections: [
       {
-        id: "photographers",
-        heading: "Wedding Photographers Near Whitefish and Glacier",
+        id: "start",
+        heading: "Start With the Vendors That Shape the Weekend",
         paragraphs: [
-          "Several photographers shoot weddings and elopements across Whitefish, the Flathead Valley, and Glacier National Park. Ask each one about travel to a private venue and whether they know the light on the property.",
-          "Book a photographer early. The best local shooters fill summer Saturdays first."
+          "A destination micro wedding has fewer vendors than a large reception, but the first calls still matter. Use the [Whitefish catering guide](/guides/whitefish-mt-wedding-catering) to compare off-site service, staffing, rentals, and cleanup before comparing menus.",
+          "Then decide whether you want one photo-and-film team or separate specialists. The [Whitefish photographers and videographers guide](/guides/whitefish-montana-wedding-photographers-videographers) explains the tradeoff and the deliverables to put in writing.",
+          "If a planning trip includes attire, the [wedding dress shops near Whitefish guide](/guides/wedding-dress-shops-whitefish-mt) covers the two full-service Kalispell boutiques we could verify."
         ],
-        resources: [
-          { name: "Mountain Life Photography", note: "Adventure elopement and wedding photography around Whitefish, the resort, and Glacier National Park.", url: "https://www.mountainlifephotography.com/weddings-elopements" },
-          { name: "Jennifer Mooney Photography", note: "Fine-art wedding and elopement photography based in Whitefish.", phone: "(406) 465-5219", url: "https://jennifermooney.com/" },
-          { name: "Carrie Ann Photography", note: "Intimate wedding and elopement photography in the Glacier Park and Flathead Valley area.", url: "https://www.carrieann-photography.net/" },
-          { name: "Joseph Mayden Photography", note: "Wedding and engagement photography across Whitefish and northwest Montana.", url: "https://josephmaydenphotography.com/wedding" }
+        bullets: [
+          "Confirm that each vendor travels to the venue address.",
+          "Put arrival, setup, service, and departure times in the contract.",
+          "Name the person responsible for rentals, cleanup, and weather changes."
         ]
       },
       {
         id: "florals",
         heading: "Florists and Bridal Beauty",
         paragraphs: [
-          "Florists and beauty artists in Whitefish and Kalispell travel across the Flathead Valley for weddings. Confirm how far each one drives and whether they set up onsite."
+          "Whitefish and Kalispell florists and beauty artists serve weddings across the Flathead Valley. Ask whether the quote includes travel, onsite setup, touch-ups, bouquet delivery, and removal of floral installations."
         ],
         resources: [
           { name: "Flathead Farmworks", note: "Wedding floral design using seasonal, locally grown flowers. Based in Kalispell.", url: "https://www.flatheadfarmworks.com/weddings-and-events" },
@@ -704,8 +704,8 @@ export const guides: Guide[] = [
         id: "officiants",
         heading: "Officiants and the Marriage License",
         paragraphs: [
-          "You will need a Montana marriage license before the ceremony. Couples apply in person at the Flathead County Clerk of District Court in Kalispell, and both people must appear. Check the current fee and hours with the office before your trip.",
-          "For the ceremony itself, local officiants write custom vows for weddings around Whitefish, Flathead Lake, and Glacier National Park."
+          "Montana requires a marriage license. Confirm the current application steps, fee, identification rules, and office hours with the Flathead County Clerk of District Court before the trip.",
+          "An officiant is a separate booking. Ask how the ceremony is written, how many planning calls are included, and whether rehearsal attendance costs extra."
         ],
         resources: [
           { name: "Bespoke Ceremonies Montana", note: "Custom wedding ceremonies across Whitefish, Bigfork, Flathead Lake, and Glacier National Park.", url: "https://bespokeceremoniesmontana.com/details" },
@@ -713,34 +713,212 @@ export const guides: Guide[] = [
         ]
       },
       {
-        id: "cake-dress",
-        heading: "Cake Bakers and the Nearest Dress Shops",
+        id: "cake",
+        heading: "Wedding Cake in Whitefish and Kalispell",
         paragraphs: [
-          "Whitefish has custom cake bakers, and the nearest bridal shops sit in Kalispell, about a 25-minute drive. If you want to try on gowns during a planning trip, book the appointment ahead."
+          "Whitefish has custom cake bakers, with more options in Kalispell. Ask about tasting dates, delivery, setup, dietary needs, display-time limits, and whether the bakery supplies a stand or cutting instructions."
         ],
         resources: [
           { name: "Montana Wildflour", note: "Custom wedding cakes made to order in Whitefish.", url: "https://www.montanawildflour.com/about-us" },
           { name: "The Cake Girl", note: "Whitefish wedding cakes with gluten-free, dairy-free, and vegan options.", url: "https://www.thecakegirlwhitefish.com/about" },
-          { name: "Cakes By Debi", note: "Custom wedding cake design in Kalispell.", phone: "(406) 250-0129", url: "https://cakesbydebi.com/about-us/" },
-          { name: "Mimi's Bridal", note: "A bridal boutique with designer wedding dresses in Kalispell.", phone: "(406) 257-4684", url: "https://www.mimisbridalmontana.com/" },
-          { name: "Hannah Jane Couture", note: "A Kalispell bridal shop carrying curated gown collections.", phone: "(406) 250-2697", url: "https://www.hannahjanecouture.com/" }
+          { name: "Cakes By Debi", note: "Custom wedding cake design in Kalispell.", phone: "(406) 250-0129", url: "https://cakesbydebi.com/about-us/" }
         ]
       },
       {
         id: "fit",
         heading: "How Vendors Work With a Private Ranch",
         paragraphs: [
-          "North Star Ranch is the place, not the vendor team. Couples bring their own photographer, florist, caterer, and officiant, which gives you full say over style and budget.",
-          "Most Flathead Valley vendors already travel to private properties near Whitefish, so ask each one about the eight-mile drive from downtown. Ask [North Star Ranch](/#contact) about the property and dates, plan a [rehearsal dinner in town](/guides/rehearsal-dinner-whitefish-mt), and see what couples spend in the [Montana micro wedding cost guide](/guides/montana-micro-wedding-cost)."
+          "North Star Ranch is a private 40-acre venue eight miles from downtown Whitefish. Lodging across a chalet, four cabins, and an eight-room lodge lets the couple and close guests use one home base, while each vendor remains a separate contract.",
+          "Send vendors the ranch address before requesting a quote. Ask [North Star Ranch](/#contact) about the property and your dates, compare a [rehearsal dinner in Whitefish](/guides/rehearsal-dinner-whitefish-mt), and build a working budget with the [Montana micro wedding cost guide](/guides/montana-micro-wedding-cost)."
         ]
       }
     ],
     faqs: [
-      { question: "Does North Star Ranch provide wedding vendors?", answer: "No. North Star Ranch is a private venue, so couples hire their own photographer, florist, caterer, hair and makeup, officiant, and cake baker from local vendors in Whitefish and Kalispell." },
-      { question: "Where is the nearest wedding dress shop to Whitefish?", answer: "The nearest bridal shops are in Kalispell, about a 25-minute drive from Whitefish, including Mimi's Bridal and Hannah Jane Couture. Book a try-on appointment ahead of a planning trip." },
-      { question: "Do we need a marriage license to get married near Whitefish?", answer: "Yes. Montana requires a marriage license, and couples apply in person at the Flathead County Clerk of District Court in Kalispell, where both people must appear. Check the current fee and hours before your trip." }
+      { question: "Does North Star Ranch provide wedding vendors?", answer: "No. North Star Ranch is the private venue and lodging base. Couples choose and contract their own caterer, photographer, videographer, florist, beauty team, officiant, and baker." },
+      { question: "Should destination couples hire Whitefish or Kalispell vendors?", answer: "Either can work. The practical test is whether the vendor serves the ranch address, includes travel in the quote, and can meet the arrival and setup schedule." },
+      { question: "Which wedding vendors should we book first?", answer: "Start with the vendors that control the largest parts of the day: catering, photography or film, and any attire appointment tied to a planning trip. Florals, beauty, cake, and ceremony details can follow once the date and schedule are firm." }
     ],
-    related: ["montana-micro-wedding-cost", "rehearsal-dinner-whitefish-mt", "whitefish-montana-micro-wedding"]
+    related: ["wedding-dress-shops-whitefish-mt", "whitefish-mt-wedding-catering", "whitefish-montana-wedding-photographers-videographers"]
+  },
+  {
+    slug: "wedding-dress-shops-whitefish-mt",
+    eyebrow: "Whitefish Bridal Guide",
+    title: "Wedding Dress Shops Near Whitefish, MT",
+    seoTitle: "Wedding Dress Shops Near Whitefish, MT: Two Verified Bridal Boutiques | North Star Ranch",
+    description: "Two verified bridal boutiques near Whitefish, what each offers, and how to plan a Kalispell dress appointment during a Montana wedding trip.",
+    hero: "/images/whitefish-wedding-dress-shops.jpg",
+    heroAlt: "Wedding dress displayed in a quiet Montana bridal atelier",
+    readTime: "5 minute read",
+    updated: "August 3, 2026",
+    category: "local",
+    quickAnswer: "The nearest full-service dress shops we could confirm are in Kalispell, not Whitefish. Mimi's Bridal and Hannah Jane Couture both use appointments. Call before traveling and ask which gowns and sample sizes will be available for your visit.",
+    sections: [
+      {
+        id: "options",
+        heading: "Two Bridal Shops Near Whitefish",
+        paragraphs: [
+          "We checked current local listings on August 3, 2026 and couldn't confirm a full-service bridal shop in Whitefish itself. The two nearby shops below are in Kalispell, so allow for that drive when planning the day.",
+          "Mimi's Bridal is at 217 South Main Street. Its current designer list includes Morilee, Stella York, All Who Wander, La Perle, and several Mon Cheri lines. The store also carries mother-of-the-bride attire and men's suits.",
+          "Hannah Jane Couture offers private one-on-one appointments, designer gowns, and custom work. If you want changes to a gown, find out what the shop handles and whether another alteration specialist will be involved."
+        ],
+        resources: [
+          { name: "Mimi's Bridal", note: "Designer wedding dresses at 217 South Main Street in Kalispell, plus mother-of-the-bride attire and men's suits.", phone: "(406) 257-4684", url: "https://www.mimisbridalmontana.com/" },
+          { name: "Hannah Jane Couture", note: "A Kalispell boutique offering designer gowns, custom options, and private one-on-one bridal appointments.", phone: "(406) 250-2697", url: "https://www.hannahjanecouture.com/" }
+        ]
+      },
+      {
+        id: "appointment",
+        heading: "Check the Samples and the Calendar Before You Go",
+        paragraphs: [
+          "A shop can carry a designer without having every dress or size on the floor. Send two or three silhouettes you like and ask the stylist which samples can be tried during your appointment.",
+          "Give the shop your wedding month and Montana travel dates. Ask when the dress would arrive, how many fittings it may need, and when it must be picked up. If the timing doesn't work, ask what can be bought off the rack.",
+          "Get the deposit, cancellation, shipping, pickup, and alteration terms in writing. When another specialist will alter the gown, call that person before paying the dress deposit."
+        ]
+      },
+      {
+        id: "venue-fit",
+        heading: "Bring the Ranch Into the Fitting Room",
+        paragraphs: [
+          "Keep a few ranch photos on your phone. A skirt that feels easy on a salon platform can drag on grass or catch on gravel. A long train also has to move between lodging, the ceremony, and dinner.",
+          "Bring shoes close to the heel height you'll wear. Take a short video when the stylist shows how the bustle works, and share it with the person helping on the wedding day. Time an overskirt or second-look change before placing it between photos and dinner."
+        ]
+      },
+      {
+        id: "planning-trip",
+        heading: "Fit One Dress Appointment Into the Planning Trip",
+        paragraphs: [
+          "North Star Ranch is eight miles from downtown Whitefish and about 25 minutes from Glacier Park International Airport. A ranch visit and one Kalispell salon appointment can fit on the same day.",
+          "Confirm the ranch visit first, then place the salon around it. Leave time for the drive, a meal, and notes before another vendor call. The [Whitefish wedding vendor guide](/guides/whitefish-montana-wedding-vendors) covers those calls, while the [wedding weekend itinerary](/guides/montana-micro-wedding-itinerary) handles guest plans. [Ask North Star Ranch about available dates](/#contact) before booking flights."
+        ]
+      }
+    ],
+    faqs: [
+      { question: "Are there wedding dress shops in Whitefish, Montana?", answer: "We couldn't confirm a full-service bridal boutique in Whitefish during our August 2026 review. The nearby shops we could verify are Mimi's Bridal and Hannah Jane Couture in Kalispell." },
+      { question: "Do I need an appointment at a Kalispell bridal shop?", answer: "Yes. Booking ahead also gives the stylist time to check the sample sizes, silhouettes, and designers you want to see." },
+      { question: "How early should I shop for a wedding dress?", answer: "Ask the boutique to work backward from your wedding month and travel dates. Order and alteration times depend on the gown. If time is short, ask about off-the-rack choices before the appointment." },
+      { question: "Can I combine dress shopping with a North Star Ranch visit?", answer: "Yes. Confirm the ranch visit first and book one salon appointment. Leaving real driving time between Kalispell and Whitefish makes the day much easier to use." }
+    ],
+    related: ["whitefish-montana-wedding-vendors", "montana-micro-wedding-itinerary", "whitefish-montana-micro-wedding"]
+  },
+  {
+    slug: "whitefish-mt-wedding-catering",
+    eyebrow: "Whitefish Catering Guide",
+    title: "Whitefish, MT Wedding Catering for a Private Venue",
+    seoTitle: "Whitefish, MT Wedding Catering: Four Off-Site Options and What to Ask | North Star Ranch",
+    description: "Compare four Whitefish and Flathead Valley wedding caterers by service style, then use the quote checklist for a private ranch wedding.",
+    hero: "/images/whitefish-wedding-catering.jpg",
+    heroAlt: "Intimate catered wedding table in a Western Montana ranch setting",
+    readTime: "6 minute read",
+    updated: "August 3, 2026",
+    category: "local",
+    quickAnswer: "Before you compare menus, decide who is still working after dinner lands on the table. A caterer may cook the food without supplying servers, dishes, bar staff, cleanup, or trash removal. Get those jobs into the quote. Otherwise the cheaper menu can leave the couple or their guests running dinner.",
+    sections: [
+      {
+        id: "service",
+        heading: "The Meal Is More Than the Food",
+        paragraphs: [
+          "Drop-off can work well for a casual micro wedding, but it is exactly what it sounds like: food arrives and the staff may leave. Someone still has to keep it warm, set out serving pieces, clear dishes, pack leftovers, and deal with trash.",
+          "A staffed buffet keeps those jobs with the caterer. A plated dinner adds more labor and timing. A private chef may be a good fit for a very small group, though the chef will need to know what kitchen space and equipment are available.",
+          "Menu style doesn't settle the question. A plated quote can leave out rentals, and a BBQ team can provide full event service. Read the labor line before the entrée list."
+        ]
+      },
+      {
+        id: "options",
+        heading: "Four Caterers to Contact Near Whitefish",
+        paragraphs: [
+          "These four businesses publicly advertise weddings or off-site events in Whitefish and the Flathead Valley. The list isn't a ranking. It gives you four different service styles to call about for the ranch address."
+        ],
+        resources: [
+          { name: "Great Northwest Catering", note: "Whitefish caterer for weddings, private events, and custom menus, including private-chef service.", phone: "(406) 407-4263", url: "https://www.greatnorthwestcatering.com/" },
+          { name: "Piggyback BBQ", note: "Full-service wedding and event BBQ with tastings at its Whitefish storefront.", phone: "(406) 863-9895", url: "https://piggybackbbq.com/full-service-catering" },
+          { name: "Hellroaring Saloon & Eatery", note: "Off-site food and bar catering outside its December through March ski-season pause.", phone: "(406) 862-6364", url: "https://hellroaringwhitefish.com/catering/" },
+          { name: "Farmer Meets Foodie", note: "Flathead Valley full-service plated, family-style, and buffet meals, plus a separate drop-off service.", url: "https://www.farmermeetsfoodiemt.com/wedding-event-catering" }
+        ]
+      },
+      {
+        id: "quote",
+        heading: "Send the Same Short Email to Every Caterer",
+        paragraphs: [
+          "Start the email with the date, estimated guest count, meal time, and 355 Beaver Lake Road address. Say whether you picture plated food, family-style dishes, a buffet, BBQ, or simple delivery. Add dietary needs and whether alcohol will be served.",
+          "Then ask who arrives onsite and when. You need to know about cooks, servers, bartenders, dishes, linens, tables, water, power, cleanup, trash, and leftovers. Travel, gratuity, and service charges should appear as numbers, not surprises after the menu price.",
+          "Send that same note to each company. When the replies come back, mark the jobs that are missing instead of trying to compare four different sales proposals from memory."
+        ]
+      },
+      {
+        id: "ranch-fit",
+        heading: "How Catering Fits a North Star Ranch Weekend",
+        paragraphs: [
+          "North Star Ranch is the private venue and lodging base, not the catering company. It sits eight miles from downtown Whitefish, so close family and friends can stay together while the food team works under its own contract.",
+          "Share the setup plan with the ranch before paying the catering deposit. For the rest of the weekend, compare a [rehearsal dinner in Whitefish](/guides/rehearsal-dinner-whitefish-mt), review the wider [Whitefish vendor guide](/guides/whitefish-montana-wedding-vendors), and [check ranch availability](/#contact)."
+        ]
+      }
+    ],
+    faqs: [
+      { question: "Does North Star Ranch include wedding catering?", answer: "No. Couples hire the food team directly. North Star Ranch is the private venue and onsite lodging base." },
+      { question: "Which Whitefish caterers work at outside venues?", answer: "Great Northwest Catering, Piggyback BBQ, Hellroaring, and Farmer Meets Foodie all advertise weddings or off-site events. Availability and travel rules can change, so send the ranch address with the first message." },
+      { question: "Is drop-off catering enough for a micro wedding?", answer: "It can be, but give the remaining jobs to named people before the day begins. If no friend or family member should warm food, clear dishes, and handle trash, pay for staff to stay." }
+    ],
+    related: ["whitefish-montana-wedding-vendors", "rehearsal-dinner-whitefish-mt", "montana-micro-wedding-cost"]
+  },
+  {
+    slug: "whitefish-montana-wedding-photographers-videographers",
+    eyebrow: "Whitefish Photo and Film Guide",
+    title: "Whitefish, Montana Wedding Photographers and Videographers",
+    seoTitle: "Whitefish, Montana Wedding Photographers and Videographers: How to Choose | North Star Ranch",
+    description: "Decide between one combined photo-and-film team and separate specialists, then compare four verified Whitefish and Montana options.",
+    hero: "/images/whitefish-wedding-photo-video.jpg",
+    heroAlt: "Wedding photography and film cameras prepared for a Montana ranch ceremony",
+    readTime: "6 minute read",
+    updated: "August 3, 2026",
+    category: "local",
+    quickAnswer: "Start with what you want to keep. Photos preserve single frames. Film keeps voices and movement. A short highlight won't replace a full ceremony if hearing the vows matters to you. Write down the files you want, then decide whether one team or two specialists should make them.",
+    sections: [
+      {
+        id: "team",
+        heading: "Choose the Files Before the Camera Team",
+        paragraphs: [
+          "Make two plain lists. On the photo side, note the family groups, portraits, candid moments, film images, and print rights you care about. On the video side, decide whether you want clean vows, full speeches, the complete ceremony, a short wedding film, raw footage, or Super 8.",
+          "A combined team gives you one timeline and people who already know how to share the aisle. Separate companies give you more freedom to pair a still-photo style with a different kind of film. If you hire two companies, introduce them before the day so they can sort out ceremony positions."
+        ]
+      },
+      {
+        id: "options",
+        heading: "Whitefish Wedding Photography and Videography Options",
+        paragraphs: [
+          "The four businesses below serve Whitefish, Glacier, or the surrounding Montana market. They cover a combined team, two photo approaches, and a film specialist. This isn't a quality ranking. Open a full gallery or complete wedding film before judging anyone by a social clip."
+        ],
+        resources: [
+          { name: "Something Bleuu", note: "A Kalispell-based photography and cinematography duo offering digital, film, Polaroid, Super 8, and content creation.", url: "https://www.brookestonely.com/" },
+          { name: "Sarai Ester Photography", note: "A Whitefish-based wedding and elopement photographer working with digital and medium-format film.", url: "https://www.saraiesterphoto.com/" },
+          { name: "Mountain Life Photography", note: "Whitefish and Glacier wedding photography, with local destination and outdoor experience.", url: "https://www.mountainlifephotography.com/weddings" },
+          { name: "Hyline Media", note: "A Montana wedding videographer serving Whitefish and other destinations across the state.", url: "https://hylinemedia.com/" }
+        ]
+      },
+      {
+        id: "scope",
+        heading: "Read the Contract With the Final Files in Mind",
+        paragraphs: [
+          "A photographer's full gallery tells you more than the home page. Look for family groups, midday sun, a dim dinner, and bad weather. The contract should state the hours, number of photographers, film costs, print rights, delivery window, and what happens if a camera fails.",
+          "For video, read the audio plan. Vows and speeches need microphones, not only music laid over pretty clips. Check whether the final package includes the full ceremony, how long the highlight runs, and whether raw footage costs extra.",
+          "Drone footage is a bonus. Weather, airspace, and property rules can stop a flight, so don't let the drone be the only plan for an important view."
+        ]
+      },
+      {
+        id: "ranch",
+        heading: "Keep Most of the Wedding Day on One Property",
+        paragraphs: [
+          "North Star Ranch has 40 private acres and lodging across a chalet, four cabins, and an eight-room lodge. When close guests stay there, the camera team can move from getting ready to the ceremony and dinner without sending everyone across town.",
+          "Photography and videography are still separate bookings. Send the team the ranch address and put travel in the contract. You can [ask North Star Ranch about the property and dates](/#contact), then use the [Whitefish vendor guide](/guides/whitefish-montana-wedding-vendors), [Glacier micro wedding guide](/guides/glacier-national-park-micro-wedding), and [Montana micro wedding cost guide](/guides/montana-micro-wedding-cost) for the connected decisions."
+        ]
+      }
+    ],
+    faqs: [
+      { question: "Should we hire one team for wedding photography and videography?", answer: "One team reduces coordination. Two companies give you more choice. Decide from the final files and working style, not the number of contracts." },
+      { question: "What should a wedding video contract include?", answer: "Look for hours, shooters, microphones, delivered films, editing rounds, music licensing, travel, delivery timing, backup equipment, cancellation terms, and any raw-footage fee." },
+      { question: "Do Whitefish photographers also work in Glacier National Park?", answer: "Some do, but don't assume it. Name the exact portrait or ceremony location, ask about current permission rules, and review work made in similar light and weather." },
+      { question: "Does North Star Ranch include a photographer or videographer?", answer: "No. Couples hire the camera team directly. The ranch is the private venue and lodging base." }
+    ],
+    related: ["whitefish-montana-wedding-vendors", "glacier-national-park-micro-wedding", "montana-micro-wedding-cost"]
   },
   {
     slug: "montana-micro-wedding-cost",
