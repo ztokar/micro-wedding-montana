@@ -45,13 +45,15 @@ export default function GuideLayout({ guide }: { guide: Guide }) {
       <article>
         <header className="relative min-h-[74dvh] overflow-hidden bg-earth-900 text-white">
           <img src={guide.hero} alt={guide.heroAlt} className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-earth-900/90 via-earth-900/55 to-earth-900/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-earth-900/90 via-earth-900/65 to-earth-900/30" />
+          <div className="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-earth-900/75 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-earth-900/80 via-earth-900/35 to-transparent" />
           <div className="relative mx-auto flex min-h-[74dvh] max-w-7xl items-end px-6 pb-14 pt-32 md:px-8 md:pb-20">
             <div className="max-w-4xl">
               <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-earth-200">{guide.eyebrow}</p>
               <h1 className="text-4xl font-light leading-[1.05] md:text-6xl lg:text-7xl">{guide.title}</h1>
               <p className="mt-6 max-w-2xl text-base leading-7 text-earth-100 md:text-lg">{guide.description}</p>
-              <div className="mt-8 flex gap-6 text-xs uppercase tracking-[0.16em] text-earth-200">
+              <div className="mt-8 flex gap-6 text-xs uppercase tracking-[0.16em] text-earth-100">
                 <span>{guide.readTime}</span><span>{guide.updated}</span>
               </div>
             </div>
@@ -79,7 +81,7 @@ export default function GuideLayout({ guide }: { guide: Guide }) {
 
             {guide.sections.map((section, index) => (
               <section id={section.id} key={section.id} className="scroll-mt-8 border-b border-earth-300 py-12 first:pt-0">
-                <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-earth-500">0{index + 1}</p>
+                <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-earth-700">0{index + 1}</p>
                 <h2 className="mb-7 text-3xl font-light leading-tight md:text-5xl">{section.heading}</h2>
                 <div className="space-y-5 text-base leading-8 text-earth-800 md:text-lg">
                   {section.paragraphs?.map((paragraph) => <LinkedParagraph key={paragraph} text={paragraph} />)}
@@ -104,7 +106,7 @@ export default function GuideLayout({ guide }: { guide: Guide }) {
                         <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                           <p className="text-base font-semibold text-earth-900">{resource.name}</p>
                           {(resource.phone || resource.price) && (
-                            <p className="text-sm text-earth-600">{[resource.phone, resource.price].filter(Boolean).join(" · ")}</p>
+                            <p className="text-sm text-earth-700">{[resource.phone, resource.price].filter(Boolean).join(" · ")}</p>
                           )}
                         </div>
                         <p className="mt-1 text-sm leading-6 text-earth-700">
@@ -119,6 +121,12 @@ export default function GuideLayout({ guide }: { guide: Guide }) {
                       </div>
                     ))}
                   </div>
+                )}
+                {section.image && (
+                  <figure className="mt-8">
+                    <img src={section.image.src} alt={section.image.alt} width={1200} height={800} loading="lazy" decoding="async" className="aspect-[3/2] h-auto w-full max-w-full object-cover" style={{ objectPosition: "center 30%" }} />
+                    {section.image.caption && <figcaption className="mt-3 text-sm leading-6 text-earth-700">{section.image.caption}</figcaption>}
+                  </figure>
                 )}
               </section>
             ))}
@@ -158,7 +166,7 @@ export default function GuideLayout({ guide }: { guide: Guide }) {
               {guide.related.map((slug) => {
                 const related = guideMap[slug];
                 return <Link href={`/guides/${slug}`} key={slug} className="group border-t border-earth-300 pt-5">
-                  <p className="mb-3 text-xs uppercase tracking-[0.18em] text-earth-500">{related.eyebrow}</p>
+                  <p className="mb-3 text-xs uppercase tracking-[0.18em] text-earth-700">{related.eyebrow}</p>
                   <h3 className="text-2xl font-light leading-tight transition-colors group-hover:text-sage-700">{related.title}</h3>
                 </Link>;
               })}

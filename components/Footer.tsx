@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-earth-800 pt-8 text-sm text-earth-400">
+        <div className="border-t border-earth-800 pt-8 text-sm text-earth-300">
           <p>© {new Date().getFullYear()} Montana Micro Wedding. All rights reserved.</p>
         </div>
       </div>

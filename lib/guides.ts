@@ -13,6 +13,7 @@ export type GuideSection = {
   bullets?: string[];
   table?: { headers: string[]; rows: string[][] };
   resources?: GuideResource[];
+  image?: { src: string; alt: string; caption?: string };
 };
 
 export type Guide = {
@@ -112,69 +113,121 @@ export const guides: Guide[] = [
   {
     slug: "glacier-national-park-micro-wedding",
     eyebrow: "Glacier Wedding Guide",
-    title: "Glacier National Park Micro Wedding: Park Ceremony or Private Venue?",
-    seoTitle: "Plan a Glacier National Park Micro Wedding Without Permit or Guest-Day Surprises | North Star Ranch",
-    description: "Compare a ceremony inside Glacier National Park with a private micro wedding venue near the park, including permits, time limits, guests, and lodging.",
+    title: "How to Get Married in Glacier National Park: A Wedding and Elopement Guide",
+    seoTitle: "Glacier National Park Wedding Guide: How to Get Married in Glacier, Montana, With Permits and Locations | North Star Ranch",
+    description: "Getting married in Glacier Park, Montana, as a park wedding or elopement: the $125 permit, the two-hour limit, guest caps at each wedding location like Lake McDonald and Many Glacier, and where to hold the reception.",
     hero: "/images/glacier-spring.jpg",
     heroAlt: "Glacier National Park mountain landscape near Whitefish Montana",
-    readTime: "7 minute read",
-    updated: "June 14, 2026",
-    quickAnswer: "Choose a Glacier National Park ceremony when the park location itself is the priority and your group can work within permit, access, and setup limits. Choose a private venue near Glacier when you want more control over guests, lodging, dinner, and the pace of the day.",
+    readTime: "8 minute read",
+    updated: "September 13, 2026",
+    quickAnswer: "Every ceremony in Glacier needs a Special Use Permit, even an elopement for two. The application costs $125, the ceremony gets two hours, and each of the park's 32 approved spots has its own guest limit. That runs from 10 people at Big Bend to 250 at Apgar Amphitheater.",
     sections: [
       {
-        id: "rules",
-        heading: "Compare a Glacier National Park Wedding With a Private Venue",
+        id: "permit",
+        heading: "How the Glacier National Park Wedding Permit Works",
         paragraphs: [
-          "Glacier National Park requires a Special Use Permit for every vow exchange, elopement, ceremony, or wedding, regardless of group size. The park says applications and the non-refundable $125 fee must arrive at least 20 business days before the requested date.",
-          "Approved wedding locations have their own guest limits and setup rules. Park wedding locations are limited to two hours, road closures can block access, and many sites do not allow tables, decorations, or more than four chairs."
+          "Getting married in the park starts with a permit from the Special Park Uses office. You fill out the application, pay the $125 fee, and email the form to glac_sup@nps.gov. The fee is not refundable, and it covers the review, not a promise of a permit.",
+          "Timing is where couples get caught. The park takes applications up to one year before the date and recommends applying at least four weeks ahead. It confirms receipt in three to five business days, but the review can take a few months in a busy season. Once the permit arrives, you have 14 days to sign and return it.",
+          "Put a second location and date on the form. Each spot allows two permits a day, or four at the amphitheaters, and popular summer dates go early."
+        ]
+      },
+      {
+        id: "locations",
+        heading: "Wedding Locations in the Park and Their Guest Limits",
+        paragraphs: [
+          "The limit counts everyone, including the couple, officiant, and photographer. A park staff monitor may be required for groups over 20. These are 14 of the 32 approved locations, from the park's list updated in August 2026."
         ],
         table: {
-          headers: ["Decision", "Inside Glacier National Park", "Private venue near Glacier"],
+          headers: ["Area", "Location", "Max people", "Vehicle access"],
           rows: [
-            ["Ceremony setting", "Named permitted park location", "Private property"],
-            ["Time", "Two-hour location limit", "Set by venue agreement"],
-            ["Setup", "Strict location rules", "Confirm with venue"],
-            ["Guests", "Varies by park location", "Confirm venue capacity"],
-            ["Lodging and dinner", "Planned separately", "May be available onsite"]
+            ["Going-to-the-Sun Road west", "Big Bend", "10", "Early July to mid October"],
+            ["Lake McDonald", "Apgar Picnic Area Shoreline", "20", "Year-round"],
+            ["Lake McDonald", "Lake McDonald Lodge Beach", "30", "Year-round"],
+            ["Lake McDonald", "Fish Creek Picnic Area Shoreline", "30", "Late April to late December"],
+            ["Lake McDonald", "Apgar Amphitheater", "250", "Year-round"],
+            ["Lake McDonald", "Avalanche Amphitheater", "100", "Early May to mid October"],
+            ["North Fork", "Bowman Lake Day Use Area", "20", "Mid May to mid October"],
+            ["Many Glacier Valley", "Many Glacier Hotel Beach", "20", "Late May to mid October"],
+            ["Many Glacier Valley", "Lake Josephine Shoreline", "15", "No vehicle access; 1-mile hike"],
+            ["Many Glacier Valley", "Many Glacier Amphitheater", "100", "Late May to mid October"],
+            ["St. Mary", "Sun Point", "20", "Early June to mid October"],
+            ["St. Mary", "Rising Sun Amphitheater", "100", "Early May to late October"],
+            ["St. Mary", "St. Mary Amphitheater", "75", "Year-round"],
+            ["Two Medicine", "Two Medicine Amphitheater", "75", "Closed for construction into May 2027"]
           ]
         }
       },
       {
-        id: "private-base",
-        heading: "Use a Private Wedding Venue Near Glacier as the Guest Base",
+        id: "size",
+        heading: "How to Elope in Glacier National Park vs. Planning a Bigger Wedding",
         paragraphs: [
-          "A private venue near Glacier can hold the parts the park is not designed to handle: guest lodging, a meal, longer conversations, and a weather backup. Couples can still plan park photos or approved activities without asking every guest to move through the park on a strict schedule.",
-          "North Star Ranch is less than forty-five minutes from Glacier National Park, twenty-five minutes from Glacier Park International Airport, and eight miles from downtown Whitefish. Its onsite chalet, cabins, and lodge make it practical for a destination group to stay together."
+          "Small groups get the most choice. Most shoreline and picnic sites cap at 10 to 30 people, which suits a Glacier National Park elopement with a photographer and an officiant.",
+          "A larger wedding has far fewer options. Only the amphitheaters take more than 30 people, and the largest are Apgar at 250 and Fish Creek at 200. Neither is available after 6 pm in June through August or after 5 pm in September, so a summer sunset ceremony there will not work.",
+          "Construction also closes sites. The Two Medicine locations are closed into May 2027, and Running Eagle Falls closes after September 7, 2026. Check the park's list before you settle on a date."
         ]
       },
       {
-        id: "choose",
-        heading: "Which Option Fits Your Micro Wedding?",
-        bullets: [
-          "Choose the park when the ceremony location matters more than setup, privacy, or a long guest experience.",
-          "Choose a private venue when you want the ceremony, dinner, and guest time to happen at one base.",
-          "Combine both when you want a private celebration plus park portraits or another approved Glacier experience.",
-          "Build extra travel time into any plan that depends on seasonal roads or busy park entrances."
+        id: "rules",
+        heading: "What You Can Bring to a Park Wedding or Elopement",
+        paragraphs: [
+          "Think of it as a ceremony you can carry in your hands. The park allows handheld flowers, one carpet up to 6 by 4 feet for the couple to stand on, and chairs only for older guests or accessibility needs. Music is limited to two acoustic instruments or a small approved Bluetooth speaker at 60 decibels or less.",
+          "Anything that decorates the site stays home. That means arches, tables, signs, and catered food, plus tossed rice, petals, or confetti. Drones are banned on all National Park Service land, so your elopement photographer will shoot from the ground.",
+          "The ceremony is also not private. Other visitors can stay nearby, parking cannot be reserved, and every guest pays the park entrance fee."
+        ]
+      },
+      {
+        id: "timeline",
+        heading: "A Two-Hour Wedding Day Timeline at a Park Ceremony Location",
+        paragraphs: [
+          "Your two hours start the moment you arrive, and they end when everyone has left the site. Plan the day backward from the end of the permit, in short blocks.",
+          "Give the photographer the location name and guest limit early. A location in the park is fixed by the permit, so portraits happen at that site, on trail, inside the same window."
         ],
+        table: {
+          headers: ["Part of the permit window", "What happens", "Easy to forget"],
+          rows: [
+            ["First 20 minutes", "Park, walk in, set out flowers and the small carpet", "Parking cannot be reserved"],
+            ["Next 30 minutes", "Ceremony and vows", "Two acoustic instruments at most"],
+            ["Next 45 minutes", "Family photos and portraits at the site", "Stay on trail; no drones"],
+            ["Last 25 minutes", "Pack up and leave together", "Leave nothing behind, including petals"]
+          ]
+        }
+      },
+      {
+        id: "cost",
+        heading: "What a Glacier National Park Micro Wedding Costs",
         paragraphs: [
-          "Recent couples discussing Glacier weddings repeatedly mention crowds, permits, driving, and finding a place for dinner after the ceremony. Solve those questions before choosing a scenic location."
+          "The park's own charge is small. The permit application is $125, and every guest pays the park entrance fee on top of that.",
+          "The rest depends on who you bring and where you stay. One couple on [Reddit](https://www.reddit.com/r/GlacierNationalPark/comments/1gjkd19/wedding_advice/) married at Bowman Lake with a dozen people for $722 total, by staying at a hostel and cooking their own wedding food. Photographers, officiants, lodging, and dinner move that number fast.",
+          "For local vendor prices, see the [Montana micro wedding cost guide](/guides/montana-micro-wedding-cost). For published elopement photographer and package prices, see the [Montana elopement guide](/guides/montana-elopement)."
         ]
       },
       {
-        id: "next-step",
-        heading: "Plan the Guest Experience Before the Photo Route",
+        id: "timing",
+        heading: "Going-to-the-Sun Road, Crowds, Wildlife and Weather",
         paragraphs: [
-          "Start with where guests sleep, eat, park, and wait. Then plan the park portion around that base. This order protects the day from feeling like a series of transfers.",
-          "If a private micro wedding venue near Glacier National Park fits your group, review [North Star Ranch](/#contact) and ask about current availability. Guests flying in can also read how to [get to Whitefish and where to stay](/guides/getting-to-whitefish-montana-wedding)."
+          "Glacier had 3,136,557 recreation visits in 2025, according to the National Park Service. The park calls June through September peak season and warns that most wedding locations are extremely busy, with little parking during the day.",
+          "The two hours include arriving, setting up, the ceremony, photos, and leaving. The permit does not open closed roads, and construction can affect a site without a refund. At Rising Sun, the park warns that the area is often restricted for wildlife activity, and a permit does not allow access during those closures.",
+          "Weather is the other wild card, and the park says plainly that no indoor alternatives are provided. One couple who married within the park also warned on [Reddit](https://www.reddit.com/r/GlacierNationalPark/comments/1gjkd19/wedding_advice/) that guests may need a vehicle reservation depending on the area and date, so check current entry rules for your week."
+        ]
+      },
+      {
+        id: "rest-of-day",
+        heading: "Where the Reception and Destination Wedding Guests Stay in Montana",
+        paragraphs: [
+          "Because catered food and tables are not allowed at park sites, the dinner, toasts, and guest rooms happen outside Glacier. Most couples pick that place before they pick a ceremony spot, so the drive and the timing work.",
+          "The guide to [wedding venues near Glacier National Park](/guides/wedding-venues-near-glacier-national-park) compares options in West Glacier, Coram, East Glacier, and Whitefish. Couples keeping it small should read the license steps in [how to elope in Montana](/guides/montana-elopement).",
+          "North Star Ranch is less than 45 minutes from the park entrance, 25 minutes from Glacier Park International Airport, and 8 miles from downtown Whitefish. It is private land with a lawn that looks toward the Glacier mountains, so couples planning a destination wedding can hold the full day there and plan a Glacier day trip for another day. [Ask about dates at North Star Ranch](/#contact)."
         ]
       }
     ],
     faqs: [
-      { question: "Do you need a permit to get married in Glacier National Park?", answer: "Yes. Glacier National Park says every vow exchange, ceremony, elopement, or wedding requires a Special Use Permit, regardless of group size." },
-      { question: "How long can a Glacier National Park wedding ceremony last?", answer: "The park lists a two-hour time limit for its wedding locations. Each location also has its own access, guest, chair, and setup rules." },
-      { question: "Can we hold the reception inside Glacier National Park?", answer: "Park wedding locations have strict setup and use limits. Most couples should plan the meal and longer celebration at a private venue, lodge, restaurant, or other approved space outside the ceremony location." }
+      { question: "Do you need a permit for a wedding in Glacier National Park?", answer: "Yes. The park requires a Special Use Permit for every wedding ceremony, elopement, and vow exchange, no matter how small the group." },
+      { question: "How much does it cost to get married in Glacier National Park?", answer: "The permit application fee is $125 and is not refundable. Park entrance fees are separate, and every guest pays them." },
+      { question: "How far ahead should we apply for a permit?", answer: "The park accepts applications up to one year ahead and recommends at least four weeks. Review can take a few months in busy periods, so apply early for summer dates." },
+      { question: "Can we have a reception inside Glacier National Park?", answer: "Not at a permitted ceremony site. Catered food service, tables, and arches are not allowed, so plan the meal at a lodge, restaurant, or private venue outside the park." },
+      { question: "Does Glacier National Park check our marriage license?", answer: "No. The park says its office does not verify marriage licenses. A Montana marriage license is valid in any county in the state of Montana." }
     ],
-    related: ["whitefish-montana-micro-wedding", "best-time-of-year-for-montana-micro-wedding", "montana-micro-wedding-planning-timeline"]
+    related: ["wedding-venues-near-glacier-national-park", "montana-elopement", "best-time-of-year-for-montana-micro-wedding"]
   },
   {
     slug: "small-wedding-venues-in-montana",
@@ -185,45 +238,36 @@ export const guides: Guide[] = [
     hero: "/images/montana-scenic-wedding.jpg",
     heroAlt: "Small outdoor wedding setup in Montana",
     readTime: "6 minute read",
-    updated: "June 14, 2026",
-    quickAnswer: "A strong small wedding venue in Montana makes the celebration feel full at your real guest count and keeps the guest experience simple. Look for clear lodging, weather, reception, privacy, and travel plans.",
+    updated: "September 13, 2026",
+    quickAnswer: "The right small wedding venue in Montana looks full with your real guest count and has a clear answer for where people sleep. Pick the region first. Then ask each venue how it sets up for 20 or 40 people, what happens in bad weather, and how many guests can stay on the property.",
     sections: [
       {
         id: "criteria",
         heading: "Compare Small Wedding Venues in Montana by What Guests Will Feel",
         paragraphs: [
-          "Mountain views may get a venue onto your shortlist. Guest comfort and clear logistics decide whether the weekend feels easy once everyone arrives.",
-          "For a destination wedding, compare the full stay rather than only the ceremony space."
-        ],
-        table: {
-          headers: ["Venue question", "What a useful answer sounds like"],
-          rows: [
-            ["Where will guests stay?", "A clear room plan onsite or nearby"],
-            ["What if weather changes?", "A specific backup, not a vague promise"],
-            ["How private is the event?", "Who else can use the property that day"],
-            ["What is included?", "Written inclusions and outside costs"],
-            ["How do guests arrive?", "Real airport, road, and parking details"]
-          ]
-        }
+          "Photos get a venue onto the list. What guests feel on the day decides whether it was the right call: the drive in, where they wait between the vows and dinner, and whether there is a warm room when the wind picks up.",
+          "Ask every venue the same five things. Where do guests sleep? What exactly is the rain plan? Who else is on the property that day? What does the price leave out? How do people get there from the airport?",
+          "Listen for specifics. \"We move dinner into the heated pavilion\" is a plan. A shrug and \"the weather is usually fine\" is not."
+        ]
       },
       {
         id: "small-fit",
         heading: "Choose a Montana Wedding Venue That Fits a Small Group",
         paragraphs: [
-          "A room built for two hundred people can make twenty guests feel lost. Ask to see how the Montana wedding venue sets up for your actual guest count, including the ceremony, dinner, toasts, and time between each part of the celebration.",
-          "Private ranches, lodges, inns, and smaller outdoor venues often make it easier to keep everyone together. The tradeoff is that couples must confirm weather plans, vendor access, and exactly what the property allows."
+          "A room set for two hundred can make twenty guests look like they wandered away from a bigger party. Ask for photos of the space set for your number, or have the venue walk you through the ceremony, dinner, and toasts at that size.",
+          "Private ranches, lodges, inns, and small outdoor sites usually keep a group closer. They also put more on you. Confirm which vendors can come on site, what the property allows after dark, and where everyone goes if a storm rolls in. Indoor and outdoor space on the same property is the safest setup for a Montana wedding day."
         ]
       },
       {
         id: "venue-types",
         heading: "Compare the Main Types of Small Montana Wedding Venues",
         paragraphs: [
-          "The right venue type depends on how much privacy, lodging, event service, and outdoor access the group needs. Compare the tradeoff before comparing photos."
+          "Each type trades something away. A ranch gives you privacy and room, a lodge puts beds next to the reception, and a resort handles service but shares its grounds. A public park ceremony gives you the view and very little else."
         ],
         table: {
           headers: ["Venue type", "Often works well for", "Confirm before booking"],
           rows: [
-            ["Private ranch", "Privacy and a destination group stay", "Lodging, vendor access, and weather plan"],
+            ["Private ranch", "Privacy, a rustic setting, and a group stay", "Lodging, vendor access, and weather plan"],
             ["Lodge or inn", "Guest rooms close to the reception", "Event spaces, meal rules, and other guests onsite"],
             ["Hotel or resort", "Traditional services and easy guest booking", "Minimums, privacy, and small-group setup"],
             ["Public park ceremony", "A specific outdoor ceremony location", "Permits, time limits, access, and reception plan"]
@@ -234,9 +278,8 @@ export const guides: Guide[] = [
         id: "best-places",
         heading: "The Best Places for a Small Wedding in Montana",
         paragraphs: [
-          "The best place for a small wedding in Montana depends on the setting you want and how far guests will travel. Most couples choose one of a few regions.",
-          "Northwest Montana around Whitefish, Kalispell, and Flathead Lake pairs a private venue with Glacier National Park and an airport close by. Southwest Montana around Bozeman and Paradise Valley suits couples drawn to Yellowstone. Ranch and mountain settings across the rest of the state work when the group wants privacy and room to spread out.",
-          "Pick the region first, then compare venue types inside it. A private ranch near Whitefish keeps a destination group together, which is why [North Star Ranch](/#contact) fits couples who want the wedding and the stay in one place."
+          "Settle the region before the venue, because it decides the airport and the drive. Northwest Montana around Whitefish, Kalispell, and Flathead Lake puts Glacier National Park and an airport close together. Southwest Montana around Bozeman and Paradise Valley draws couples who want Yellowstone. Ranch country elsewhere in the state trades convenience for space.",
+          "In the northwest, start with the [side-by-side list of Whitefish venues](/guides/whitefish-wedding-venues) or the options for [wedding venues near Glacier National Park](/guides/wedding-venues-near-glacier-national-park). If having everyone under one roof matters most, a private ranch with lodging like [North Star Ranch](/#contact) keeps the wedding and the stay in one place."
         ],
         table: {
           headers: ["Montana region", "Draws couples for", "Good to confirm"],
@@ -252,68 +295,63 @@ export const guides: Guide[] = [
         id: "budget",
         heading: "Small Montana Wedding Venues on a Budget",
         paragraphs: [
-          "A small guest count is one of the strongest ways to control a wedding budget. Fewer guests means less food, fewer rentals, and a smaller space to fill.",
-          "Compare the full cost, not the starting rental. A venue that includes lodging or lets you bring your own vendors can cost less overall than a cheaper room with strict rules. See the [Montana micro wedding cost guide](/guides/montana-micro-wedding-cost) for what couples usually spend."
+          "Cutting the guest list is the biggest budget lever you have. Every person you do not invite is one less meal, chair, and place setting.",
+          "Watch the starting price, though. A venue that includes lodging, or lets you pick your own caterer, can end up cheaper than a lower rental with a required menu. The [Montana micro wedding cost guide](/guides/montana-micro-wedding-cost) has real local numbers."
         ]
       },
       {
         id: "destination",
         heading: "For a Montana Destination Wedding, Lodging Is a Venue Feature",
         paragraphs: [
-          "If guests travel to Montana, the venue choice affects the whole trip. Onsite lodging can reduce driving, make group meals easier, and give the wedding more time without adding another formal event.",
-          "North Star Ranch offers a private 40-acre setting near Whitefish with a chalet, four cabins, and an eight-room lodge. It is eight miles from downtown Whitefish and twenty-five minutes from Glacier Park International Airport."
+          "When guests fly in, the venue shapes the whole trip. Lodging on the property cuts out the nightly drive back to a hotel, makes breakfast easy, and gives you more hours with people you rarely see.",
+          "North Star Ranch offers a private 40-acre setting where guests can stay on-site in a five-bedroom chalet, four cabins, and an eight-room lodge. It is eight miles from downtown Whitefish and twenty-five minutes from Glacier Park International Airport. See how other properties handle rooms and buyouts in the guide to [Montana wedding venues with lodging](/guides/montana-wedding-venues-with-lodging)."
         ]
       },
       {
         id: "shortlist",
         heading: "Build a Better Venue Shortlist",
-        bullets: [
-          "Choose your real guest count before touring.",
-          "Decide whether guests staying together is a priority.",
-          "Ask for current package inclusions and property rules.",
-          "Check the bad-weather plan before falling for the outdoor ceremony view.",
-          "Map the airport, lodging, ceremony, meal, and next-day plans.",
-          "Visit or video-tour the venue using the setup for your group size."
-        ],
         paragraphs: [
-          "Couples looking for a private Montana micro wedding venue can use [North Star Ranch](/#contact) as one option on that shortlist."
+          "Lock your real guest count before you tour anything, and decide early whether keeping guests together matters to you. Those two choices remove half the list.",
+          "Then get current inclusions in writing, check the bad-weather plan before you fall for the ceremony view, and map the weekend from the airport to the next morning's breakfast. A video tour set up for your group size tells you more than a gallery.",
+          "Put [North Star Ranch](/#contact) on that list if you want a private Montana micro wedding venue with room for your people to stay."
         ]
       }
     ],
     faqs: [
-      { question: "What is considered a small wedding?", answer: "There is no legal definition. Many venues use small wedding or micro wedding for celebrations with fewer than about fifty guests, but each venue sets its own limit." },
-      { question: "Are small wedding venues cheaper?", answer: "Sometimes, but not automatically. The final cost depends on lodging, food, rentals, minimums, vendor rules, and how long you use the property." },
-      { question: "Should a destination venue include lodging?", answer: "It does not have to, but onsite lodging can simplify transportation and give guests more time together. Confirm the number of rooms and booking terms." }
+      { question: "What is considered a small wedding?", answer: "There is no legal cutoff. Venues often call anything under about fifty guests a small or micro wedding, and each one draws its own line." },
+      { question: "Are small wedding venues cheaper?", answer: "Not always. Lodging, food, rentals, minimums, vendor rules, and rental hours move the final number more than the size of the room." },
+      { question: "Should a destination venue include lodging?", answer: "It does not have to. Lodging on the property does make transportation simpler and gives guests more time together, so ask for the room count and booking terms." },
+      { question: "Where can we have an intimate wedding or elopement in Montana?", answer: "For two to ten people, a permitted Glacier National Park site, national forest land, or a private venue can all work. For an intimate wedding with your closest friends and family, a ranch or lodge where guests can stay keeps the group together." }
     ],
-    related: ["all-inclusive-micro-wedding-packages-montana", "whitefish-montana-micro-wedding", "glacier-national-park-micro-wedding"]
+    related: ["montana-wedding-venues-with-lodging", "whitefish-wedding-venues", "wedding-venues-near-glacier-national-park"]
   },
   {
     slug: "whitefish-montana-micro-wedding",
     eyebrow: "Whitefish Destination Guide",
-    title: "Whitefish Montana Micro Wedding Venue Guide",
-    seoTitle: "Plan a Whitefish Montana Micro Wedding Guests Can Enjoy as a Getaway | North Star Ranch",
-    description: "Plan a Whitefish Montana micro wedding venue around guest travel, onsite lodging, Glacier National Park, seasonal access, and a private place to gather.",
+    title: "Planning a Whitefish, Montana Wedding Weekend: Venue, Lodging and Reception",
+    seoTitle: "Whitefish Montana Wedding Weekend: Plan a Micro Wedding Venue and Lodging Your Guests Stay For | North Star Ranch",
+    description: "Plan a Whitefish, Montana wedding weekend: choose a wedding venue with lodging, set up the reception and rehearsal dinner, add a day trip to the park, and keep guests in one place.",
     hero: "/images/ranch-hero.jpg",
     heroAlt: "North Star Ranch landscape near Whitefish Montana",
     readTime: "6 minute read",
-    updated: "June 14, 2026",
-    quickAnswer: "Whitefish works well for a destination micro wedding because couples can pair a private Northwest Montana wedding venue with a mountain-town stay and Glacier National Park. The best plan keeps lodging, transportation, and group time simple.",
+    updated: "September 13, 2026",
+    quickAnswer: "Whitefish turns a small wedding into a trip guests look forward to. The plan that works best is simple. Sleep and celebrate in one place, give the park its own day, and keep the drives short.",
     sections: [
       {
         id: "why-whitefish",
         heading: "Why Whitefish Works for a Montana Micro Wedding",
         paragraphs: [
-          "Whitefish gives guests more than one reason to make the trip. Downtown restaurants, [outdoor activities](/guides/things-to-do-in-whitefish-mt-wedding-guests), Whitefish Lake, and Glacier National Park can turn a wedding into a shared Flathead Valley stay.",
-          "The practical advantage is Glacier Park International Airport near Kalispell. North Star Ranch is twenty-five minutes from the airport and eight miles from downtown Whitefish, which keeps the destination feeling remote without making arrival difficult. See how guests [get to Whitefish and where they stay](/guides/getting-to-whitefish-montana-wedding)."
+          "Whitefish gives guests their own reasons to fly to northwest Montana. There are restaurants downtown, [things to do](/guides/things-to-do-in-whitefish-mt-wedding-guests) on the lake and the mountain, and Glacier close by, all with a mountain backdrop for the photos.",
+          "It feels remote once you arrive, but the trip in is short. Glacier Park International Airport near Kalispell is twenty-five minutes from North Star Ranch, which sits eight miles outside town. The [travel and lodging guide](/guides/getting-to-whitefish-montana-wedding) covers flights, cars, and hotels."
         ]
       },
       {
         id: "choose-venue",
-        heading: "How to Choose a Wedding Venue in Whitefish, MT",
+        heading: "Pick the Type of Whitefish Venue First",
         paragraphs: [
-          "Start with how you want the day to feel, then match it to a venue type. Whitefish gives couples a few clear options, and each one changes the guest experience.",
-          "Ask what a wedding package actually covers before comparing prices. In Whitefish, a package can mean a venue rental, a venue with some services, or a venue with lodging. Get the written list, not the label.",
-          "For couples who want the ceremony, dinner, and guest stay in one place, a private ranch keeps everyone together. [North Star Ranch](/#contact) sits eight miles from downtown Whitefish with onsite lodging, which is why it fits a destination micro wedding."
+          "Venues here come in a few types, and each one changes the weekend. The Lodge at Whitefish Lake caters the meal and offers rooms, suites, a ballroom, and a lakeside pavilion. Whitefish Mountain Resort adds ski-town views and a weather backup room. Rustic ranches give up that service in exchange for forest, privacy, and space.",
+          "Get the package in writing before you compare prices. Around here, a package can mean an empty rental, a rental with a few services, or a rental with beds included. The [Whitefish wedding venues comparison](/guides/whitefish-wedding-venues) lists guest limits, beds, and published prices for ten of them.",
+          "If the ceremony, dinner, and sleeping should all happen in one spot, a private ranch is the easiest fit. [North Star Ranch](/#contact) is eight miles from downtown, with on-site lodging for the core group."
         ],
         table: {
           headers: ["Whitefish venue type", "Works well for", "Confirm before booking"],
@@ -328,43 +366,34 @@ export const guides: Guide[] = [
       {
         id: "weekend",
         heading: "Plan the Weekend Around One Home Base",
-        table: {
-          headers: ["Part of the trip", "Simple Whitefish plan"],
-          rows: [
-            ["Arrival", "Give guests one clear check-in and meeting plan"],
-            ["Welcome time", "Keep the first evening informal"],
-            ["Wedding day", "Limit unnecessary driving between locations"],
-            ["Glacier visit", "Treat it as a planned outing, not a quick stop"],
-            ["Departure", "Leave time for breakfast and airport travel"]
-          ]
-        },
         paragraphs: [
-          "Destination groups lose time when every meal, activity, and photo stop requires another drive. A private base with onsite lodging lets couples spend more of the weekend with the people they invited."
+          "Think of it as three days. Friday is arrivals and something easy, like a cookout or a [rehearsal dinner in town](/guides/rehearsal-dinner-whitefish-mt). Saturday is the wedding, with the ceremony and reception in the same place so nobody gets shuttled around in their good clothes. Sunday is a slow breakfast and the airport.",
+          "Every extra drive takes time away from people who flew in to see you. When the group sleeps where it celebrates, the late conversations around the fire pit happen without anyone planning them. For hour-by-hour ideas, see these [three-day wedding weekend itineraries](/guides/montana-micro-wedding-itinerary)."
         ]
       },
       {
         id: "glacier",
-        heading: "Keep Glacier National Park in the Plan, Not in Every Plan",
+        heading: "Keep the Park Day Separate From the Wedding Day",
         paragraphs: [
-          "Glacier can be the ceremony location, a portrait destination, or a group outing. Each choice creates different permit, access, and transportation needs.",
-          "Couples who want a longer celebration can host the wedding at a private venue near Whitefish and plan a separate park experience. Read the [Glacier National Park micro wedding guide](/guides/glacier-national-park-micro-wedding) before deciding."
+          "Glacier can hold your vows, your portraits, or a group hike. Each one comes with its own permits and driving, and stacking all of them onto the wedding day is how schedules fall apart.",
+          "Couples who want a longer celebration can host the wedding at a private venue near Whitefish and plan a separate park outing. Read the [Glacier wedding permit guide](/guides/glacier-national-park-micro-wedding) before deciding, and if it is just the two of you, see [how to elope in Montana](/guides/montana-elopement)."
         ]
       },
       {
         id: "venue",
         heading: "Choose a Whitefish Montana Wedding Venue for the Way You Want to Gather",
         paragraphs: [
-          "A hotel or resort may suit couples who want traditional event services. A private ranch wedding venue may suit couples who want more privacy, a quieter group stay, and more time together.",
-          "[North Star Ranch](/#contact) sits on forty private acres with a five-bedroom chalet, four cabins, and an eight-room lodge. Ask about current availability, ceremony options, and wedding details, then plan a [rehearsal dinner in Whitefish](/guides/rehearsal-dinner-whitefish-mt) for the rest of the group."
+          "A hotel or resort suits couples who want a staff running the event. A private ranch suits couples who would rather have the place to themselves and more unscheduled time with guests.",
+          "[North Star Ranch](/#contact) sits on forty private acres bordering national forest, with a five-bedroom chalet, four cabins, and an eight-room lodge. Ask about current availability, ceremony options, and wedding details."
         ]
       }
     ],
     faqs: [
       { question: "Which airport serves Whitefish, Montana?", answer: "Glacier Park International Airport, also called FCA, serves the Whitefish and Kalispell area. North Star Ranch is about twenty-five minutes from the airport." },
-      { question: "How far is Whitefish from Glacier National Park?", answer: "Drive time depends on the destination inside the park and current conditions. North Star Ranch is less than forty-five minutes from the park entrance." },
-      { question: "Can wedding guests stay together near Whitefish?", answer: "Some venues and retreats offer onsite lodging. Confirm the exact number of rooms, beds, nights, and booking terms before inviting guests." }
+      { question: "How far is Whitefish from Glacier National Park?", answer: "It depends on where in the park you are headed and the traffic that day. North Star Ranch is less than forty-five minutes from the park entrance." },
+      { question: "Can wedding guests stay together near Whitefish?", answer: "Yes, at venues and retreats with lodging on the property. Before inviting anyone, confirm the number of rooms, beds, nights, and booking terms." }
     ],
-    related: ["glacier-national-park-micro-wedding", "best-time-of-year-for-montana-micro-wedding", "all-inclusive-micro-wedding-packages-montana"]
+    related: ["whitefish-wedding-venues", "montana-wedding-venues-with-lodging", "rehearsal-dinner-whitefish-mt"]
   },
   {
     slug: "montana-micro-wedding-planning-timeline",
@@ -1215,6 +1244,407 @@ export const guides: Guide[] = [
       { question: "What should guests do the day before the wedding?", answer: "Keep it easy. A morning trip like fly fishing or a lift ride, followed by a welcome dinner or a brewery night in Whitefish, gives guests time together without a full schedule." }
     ],
     related: ["things-to-do-in-whitefish-mt-wedding-guests", "rehearsal-dinner-whitefish-mt", "getting-to-whitefish-montana-wedding"]
+  },
+  {
+    slug: "whitefish-wedding-venues",
+    eyebrow: "Whitefish Venue Guide",
+    title: "Whitefish, Montana Wedding Venues for Small and Destination Weddings",
+    seoTitle: "Whitefish, Montana Wedding Venues Compared by Guest Count, Lodging and Price | North Star Ranch",
+    description: "Compare ten wedding venues in Whitefish and the Flathead Valley of northwest Montana by guest count, reception space, lodging and suites, and published prices.",
+    hero: "/images/north-star-ranch-deck-view.jpg",
+    heroAlt: "Deck overlooking forested hills at North Star Ranch near Whitefish, Montana",
+    readTime: "7 minute read",
+    updated: "September 13, 2026",
+    category: "local",
+    quickAnswer: "Most wedding venues around Whitefish are built for 150 to 300 guests. If you are inviting 40 people or fewer, start with the few that sell a small-wedding package, then ask each one a second question: how many of your guests can sleep on the property?",
+    sections: [
+      {
+        id: "compare",
+        heading: "Ten Montana Wedding Venues In and Around Whitefish",
+        paragraphs: [
+          "The table uses each venue's own website, checked in September 2026. Few wedding venues with prices post them online, so blank spots say \"ask.\"",
+          "Read the two middle columns together. A ranch that seats 250 people but sleeps 24 still sends most of your guests to hotels in town or in Kalispell at the end of the night."
+        ],
+        table: {
+          headers: ["Venue", "Guests the venue lists", "Sleeps on the property", "Weather backup"],
+          rows: [
+            ["The Hitchin' Post", "Seating for up to 30", "Two nights at The Stalls in two packages", "Ceremony-only package is outdoor only"],
+            ["Grouse Mountain Lodge", "Small-wedding option for 30 or less", "144 hotel rooms", "Indoor and outdoor ceremony sites"],
+            ["Whitefish Peaks", "Up to 150; small package up to 40", "None; nearby lodging", "Heated reception room"],
+            ["The Lodge at Whitefish Lake", "Ballroom up to 300; micro-wedding package", "Hotel rooms, suites, condos, cabins", "8,000+ sq ft of banquet space"],
+            ["Whitefish Mountain Resort", "Base Lodge up to 200", "Discounted on-mountain lodging", "Weather backup room in package"],
+            ["Mountainside Weddings", "Seating for about 250", "Sleeps up to 16", "Roofed open-air pavilion"],
+            ["Clydesdale Outpost", "Max capacity 250", "Lodging for 24 with a full rental", "Ask"],
+            ["Star Meadows Ranch", "Up to 300", "Up to 85 in cabins, A-frames, tents", "6,000 sq ft heated pavilion"],
+            ["Triple B Ranch", "Up to 300 in summer tiers", "One apartment, day before and day of", "Heated 12,000 sq ft arena"],
+            ["North Star Ranch", "Ask for your date", "5-bedroom chalet, 4 cabins, 8 lodge rooms", "Great Room"]
+          ]
+        }
+      },
+      {
+        id: "small",
+        heading: "Whitefish Venues With a Small-Wedding Package",
+        paragraphs: [
+          "These four sell a package made for a small group. That matters because a 30-person dinner can feel lost in a ballroom set up for 300."
+        ],
+        resources: [
+          { name: "The Hitchin' Post", note: "A Western elopement venue on Rusty Spur Trail. Every package seats up to 30. The two higher packages add two nights at The Stalls, a converted barn stay.", price: "$1,400 ceremony only; $3,500 venue and stay; $3,950 elopement", url: "https://www.hitchinpostmt.com/" },
+          { name: "Grouse Mountain Lodge", note: "A Whitefish hotel with a separate plan for wedding groups of 30 or less, using its wine room for the reception. A new event pavilion is listed as opening in October 2026.", url: "https://www.glacierparkcollection.com/lodging/grouse-mountain-lodge/weddings/" },
+          { name: "Whitefish Peaks", note: "A venue on Highway 93 South. Its Intimate Peak package covers a ceremony site and reception layout for up to 40 guests. It has no guest rooms onsite.", url: "https://whitefishpeaks.com/packages" },
+          { name: "The Lodge at Whitefish Lake", note: "A lakeside resort on Wisconsin Avenue with a Micro-Wedding Package, an Elopement Package, and the fireside Regatta Room, which looks out on Whitefish Lake. Its Lakeside Pavilion hosts ceremonies for up to 200.", url: "https://lodgeatwhitefishlake.com/weddings" }
+        ]
+      },
+      {
+        id: "ranches",
+        heading: "Flathead Valley Ranch Venues With Lodging on the Property",
+        paragraphs: [
+          "The ranch venues give you the most outdoor space, and several bundle lodging into the rental. The catch is scale. Most are sized for a big wedding, and the beds cover only part of the guest list.",
+          "Catering is also on you at most of them. Mountainside, Star Meadows, and Triple B all expect an outside caterer, so budget for food on top of the venue price. See the [catering guide](/guides/whitefish-mt-wedding-catering) before you compare quotes, and the [bridal shop guide](/guides/wedding-dress-shops-whitefish-mt) if the dress is still on the list."
+        ],
+        resources: [
+          { name: "Clydesdale Outpost", note: "A full rental covers the property along the Stillwater River, with lodging for 24 guests in 2-bedroom cabins with cedar hot tubs. A smaller elopement option allows up to 20 people with a two-night stay.", price: "$20,000 for two nights; $25,000 for three", url: "https://www.clydesdaleoutpost.com/weddings-and-events" },
+          { name: "Star Meadows Ranch", note: "Cabins, A-frames, and glamping tents sleep up to 85 people, the most beds of the ranches here. Packages run from one day to three nights. Pricing is by inquiry.", url: "https://www.starmeadowsranch.com/weddings/" },
+          { name: "Mountainside Weddings", note: "On Star Meadow Road. Packages include two nights for up to 16 people. The homepage lists packages from 20K, while the FAQ says pricing starts at $25,000 for 50 guests, so ask which applies to your date.", url: "https://mountainsideweddings.com/frequently-asked-questions/" },
+          { name: "Triple B Ranch", note: "About 10 minutes from downtown Whitefish, with a heated indoor arena and backup generator. One apartment is included for the day before and the day of.", price: "$6,495 winter up to 100; $8,895 summer up to 200", url: "https://triplebbbranchvenue.com/packages-pricing" }
+        ]
+      },
+      {
+        id: "resort",
+        heading: "A Resort Reception on Whitefish Mountain",
+        paragraphs: [
+          "Whitefish Mountain Resort runs a different kind of wedding day. Its package includes catering and bar staff, a weather backup room, and a Base Lodge reception for up to 200, plus a summer summit ceremony. Guests book discounted rooms at the resort.",
+          "It is the simplest choice if you want one company handling food and space, with views toward Glacier National Park. You will share the mountain with other resort guests, and its wedding page listed only one open summer 2026 date, so ask about next year early."
+        ]
+      },
+      {
+        id: "north-star",
+        heading: "Where North Star Ranch Fits for a Montana Wedding Weekend",
+        paragraphs: [
+          "North Star Ranch is a private 40-acre property 8 miles from town, bordering national forest on two sides. The wedding lawn looks toward the Glacier National Park mountains, and the Great Room gives the group a place to eat and dance when the weather turns.",
+          "The lodging is what sets it apart for a small group. There is a five-bedroom chalet, four cabins with kitchenettes and private decks, and eight lodge rooms with private baths, each sleeping up to four depending on setup. Your closest people can stay together, and you book the caterer and photographer yourself.",
+          "To see how that compares with other Montana properties, read the guide to [Montana wedding venues with lodging](/guides/montana-wedding-venues-with-lodging). When you are ready, [check dates at North Star Ranch](/#contact)."
+        ],
+        image: { src: "/images/north-star-ranch-great-room.jpg", alt: "Long dinner tables set in the Great Room at North Star Ranch", caption: "The Great Room at North Star Ranch, set for a group dinner." }
+      }
+    ],
+    faqs: [
+      { question: "Which Whitefish wedding venues work for 30 guests or fewer?", answer: "The Hitchin' Post seats up to 30, Grouse Mountain Lodge has a plan for groups of 30 or less, Whitefish Peaks has a package for up to 40, and the Lodge on Whitefish Lake sells a micro-wedding package." },
+      { question: "Can all of our wedding guests stay at the venue?", answer: "Rarely at a large ranch. Clydesdale Outpost sleeps 24 and Mountainside sleeps 16, and the biggest ranch count here is 85 beds. Hotel venues like Grouse Mountain Lodge have rooms guests book themselves." },
+      { question: "Do Whitefish venues include catering?", answer: "Some do. The mountain resort includes catering and bar staff, and Grouse Mountain Lodge cooks on site. Mountainside Weddings, Star Meadows, and Triple B Ranch expect you to hire an outside caterer." },
+      { question: "How far are these venues from downtown?", answer: "Triple B Ranch lists about 10 minutes, and North Star Ranch is 8 miles out. The two lodges are in town. Ask any ranch for the drive time from your guests' hotels in Whitefish or Kalispell." }
+    ],
+    related: ["montana-wedding-venues-with-lodging", "whitefish-montana-micro-wedding", "whitefish-mt-wedding-catering"],
+    social: "/social/whitefish-wedding-venues.jpg"
+  },
+  {
+    slug: "montana-wedding-venues-with-lodging",
+    eyebrow: "Venue and Lodging Guide",
+    title: "Montana Wedding Venues With Lodging: How Many Guests Can Stay On-Site",
+    seoTitle: "Montana Wedding Venues With Lodging: Guest Ranches, Lodges and Resorts by Beds and Price | North Star Ranch",
+    description: "Montana wedding planning: compare venues with on-site accommodation, from guest ranches to lodges, by how many guests can sleep there, event capacity, stay rules, and published prices.",
+    hero: "/images/north-star-ranch-lodge.jpg",
+    heroAlt: "The eight-room lodge at North Star Ranch near Whitefish, Montana",
+    readTime: "7 minute read",
+    updated: "September 13, 2026",
+    quickAnswer: "Almost every Montana venue with lodging seats far more guests than it can sleep. Clydesdale Outpost near Whitefish allows 250 guests and sleeps 24. Green Valley Ranch near West Glacier hosts up to 300 and sleeps 27. So ask for the bed count, the number of nights, and where the other guests go.",
+    sections: [
+      {
+        id: "gap",
+        heading: "Beds vs. Guests at Wedding Venues in Montana With Accommodation",
+        paragraphs: [
+          "The numbers below come from each venue's own site in September 2026. Look at how far apart the first two columns are. That gap is the part of your guest list that drives in from a hotel on the wedding day.",
+          "That is normal. A wedding celebration for 150 with the closest 25 people staying on the property can work well. You just need a plan before the invitations go out."
+        ],
+        table: {
+          headers: ["Venue and region", "Sleeps on the property", "Wedding guests", "Stay terms"],
+          rows: [
+            ["Clydesdale Outpost, Whitefish", "24", "Up to 250", "2 nights $20,000; 3 nights $25,000"],
+            ["Green Valley Ranch, Coram", "Up to 27", "Up to 300", "4 nights exclusive, $36,800 to $40,000 in 2026"],
+            ["Star Meadows Ranch, Whitefish", "Up to 85", "Up to 300", "One day to three nights; 6,000 sq ft pavilion"],
+            ["Glacier Homestead, Coram", "Up to 68", "200", "2-night package $12,500 plus 8% fee"],
+            ["Homestake Lodge, near Butte", "40", "50 to 250", "Two nights, $7,100 for summer"],
+            ["Lone Mountain Ranch, Big Sky", "25 cabin guest rooms", "Up to 120 on full buyout", "Full-ranch weddings offered"],
+            ["Triple Creek Ranch, Darby", "33 king bedrooms", "Up to 66 on buyout", "Nightly rate includes meals and drinks"],
+            ["Flathead Lake Lodge, Bigfork", "Lodges, cabins, suites", "Ask", "Three nights, all-inclusive"],
+            ["Sage Lodge, Paradise Valley", "Rooms plus four 4-room Ranch Houses", "Ask", "Full buyout optional"]
+          ]
+        }
+      },
+      {
+        id: "models",
+        heading: "Four Ways Montana Lodges and Ranches Sell the Rooms",
+        paragraphs: [
+          "The first is renting the whole property for a set number of nights, usually two to four. Clydesdale Outpost, Green Valley Ranch, and Flathead Lake Lodge work this way, and The Ranch at Rock Creek requires a three-night buyout for a large wedding.",
+          "The second is a package that includes the nights but not the menu. Green Valley Ranch says its price does not cover catering, rentals, or vendors. Homestake Lodge includes two nights, the venue, and tables and chairs, then lets you bring your own food.",
+          "The third is all-inclusive. Triple Creek Ranch and Flathead Lake Lodge fold rooms, meals, and drinks into one rate. The fourth is a resort with event spaces where guests reserve their own rooms at a group rate, like Grouse Mountain Lodge with 144 rooms."
+        ]
+      },
+      {
+        id: "northwest",
+        heading: "Northwest Montana Venues With Lodging Near Glacier and Kalispell",
+        paragraphs: [
+          "If your guests fly into Glacier Park International Airport near Kalispell, these are the properties to call first. Each one publishes a real lodging number."
+        ],
+        resources: [
+          { name: "Green Valley Ranch, Coram", note: "A 480-acre ranch 15 minutes from the west entrance of Glacier National Park. Its two guest buildings sleep 27 on a four-night exclusive stay. A full-service planner and event insurance are required.", price: "$36,800 June and October; $40,000 July to September", url: "https://www.greenvalleyranchmontana.com/faq" },
+          { name: "Glacier Homestead, Coram", note: "Space for 200 guests and lodging for up to 68, including a bunkhouse and hostel rooms. Available May through September.", price: "$12,500 two-night package plus 8%", url: "https://glacierhomestead.com/weddings-and-events/" },
+          { name: "Clydesdale Outpost, Whitefish", note: "Six 2-bedroom cabins with cedar hot tubs along the Stillwater River. Renting the property includes lodging for 24.", price: "$20,000 to $25,000 for two or three nights", url: "https://www.clydesdaleoutpost.com/weddings-and-events" },
+          { name: "Flathead Lake Lodge, Bigfork", note: "An all-inclusive guest ranch on Flathead Lake. Weddings book the whole ranch for three nights in May and June or September and October.", url: "https://www.flatheadlakelodge.com/weddings/" }
+        ]
+      },
+      {
+        id: "overflow",
+        heading: "Plan a Destination Wedding for the Guests Who Do Not Get a Room",
+        paragraphs: [
+          "Decide who stays on the property first. A common first list is the couple, the wedding party, parents, and anyone needed early or late. Everyone else gets a hotel list, a shared ride plan, and one clear arrival time.",
+          "The payoff is easy to see in how couples describe it afterward. One bride in a [Reddit thread on venues with onsite lodging](https://www.reddit.com/r/NewEnglandWedding/comments/1o9bf04/wedding_venue_with_onsite_lodging/) wrote that with the welcome party, wedding, and brunch in one place, \"no one had to drive anywhere.\"",
+          "For a wedding weekend in the Flathead Valley, the overflow usually stays in town, and the rehearsal dinner can happen there too. The guide to [getting here and where guests stay](/guides/getting-to-whitefish-montana-wedding) covers the airport, rental cars, and hotels. For the night before, see [rehearsal dinner options](/guides/rehearsal-dinner-whitefish-mt)."
+        ]
+      },
+      {
+        id: "north-star",
+        heading: "How Lodging Works at North Star Ranch",
+        paragraphs: [
+          "North Star Ranch has three kinds of lodging on one rustic 40-acre property, 8 miles from town. There is a five-bedroom chalet with five full baths, four new cabins with kitchenettes and 450-square-foot decks, and an eight-room lodge.",
+          "Each of those eight rooms is 450 square feet with its own tiled bathroom, and each can sleep up to four people depending on the bed setup. The ranch rents the whole property on request, so a small group can have the place to itself for the wedding ceremony and reception.",
+          "The ranch is 25 minutes from Glacier Park International Airport and less than 45 minutes from Glacier National Park. Catering and photography are hired separately. Compare it with other [venues in and around Whitefish](/guides/whitefish-wedding-venues), then [ask North Star Ranch about your dates](/#contact)."
+        ],
+        image: { src: "/images/north-star-ranch-cabin.jpg", alt: "One of the four cabins at North Star Ranch, with a wraparound deck among pine trees", caption: "One of four cabins at North Star Ranch. Each has a private deck and a kitchenette." }
+      }
+    ],
+    faqs: [
+      { question: "Do Montana wedding venues with lodging require a buyout?", answer: "Many ranches do. Clydesdale Outpost rents the property for two or three nights, and The Ranch at Rock Creek requires a three-night buyout for a large wedding. Some resorts make it optional." },
+      { question: "Is lodging included in the venue price?", answer: "Sometimes. Clydesdale Outpost, Green Valley Ranch, and Glacier Homestead include a set number of nights. All-inclusive ranches bundle accommodation with meals. Resort venues usually leave rooms for guests to book." },
+      { question: "How many wedding guests should stay onsite?", answer: "Enough to keep the key people close. The couple, wedding party, parents, and anyone helping with setup are the usual first group. Guests who only attend the ceremony and dinner can stay in town." },
+      { question: "Can we rent all of North Star Ranch for our wedding group?", answer: "The ranch invites couples to contact it about renting the entire property. Ask about your dates, the rooms available, and how lodging fits the wedding plan." }
+    ],
+    related: ["whitefish-wedding-venues", "getting-to-whitefish-montana-wedding", "all-inclusive-micro-wedding-packages-montana"],
+    social: "/social/montana-wedding-venues-with-lodging.jpg"
+  },
+  {
+    slug: "wedding-venues-near-glacier-national-park",
+    eyebrow: "Glacier Venue Guide",
+    title: "Montana Wedding Venues Near Glacier National Park, From West Glacier to Whitefish",
+    seoTitle: "Wedding Venues Near Glacier National Park, Montana: West Glacier, Coram and Whitefish Options With Prices | North Star Ranch",
+    description: "Compare Montana wedding venues near Glacier National Park in West Glacier, Coram, East Glacier and Whitefish by distance to the park, guest count, lodging, and price.",
+    hero: "/images/glacier-spring.jpg",
+    heroAlt: "Mountain peak and wildflowers in Glacier National Park, Montana",
+    readTime: "7 minute read",
+    updated: "September 13, 2026",
+    quickAnswer: "The reception has to happen outside the park. Glacier bans catered food and tables at its ceremony sites and caps every wedding at two hours. The closest venues sit in West Glacier and Coram, within about 15 minutes of the west entrance, with more choices in Whitefish.",
+    sections: [
+      {
+        id: "why-outside",
+        heading: "Why a Glacier National Park Wedding Needs a Venue Outside the Park",
+        paragraphs: [
+          "The park's rules decide this for you. The National Park Service limits every wedding ceremony to two hours, including setup and photos. Arches, tables, and catered food are not allowed, other visitors can stand nearby, and the park provides no indoor option if a storm rolls in.",
+          "So couples who want Glacier in the story usually split the wedding day. They hold a short ceremony or elopement at a permitted wedding location inside the park, then drive to a venue for dinner, toasts, and a place to sleep. Others skip the permit and marry at a private, rustic venue with mountain views.",
+          "Read the full permit rules in the guide to [getting married in Glacier National Park](/guides/glacier-national-park-micro-wedding). This page covers the venues."
+        ]
+      },
+      {
+        id: "compare",
+        heading: "Wedding Venues in West Glacier, Coram and Whitefish Compared",
+        paragraphs: [
+          "Distances and numbers come from each venue's own site in September 2026. Where a venue does not publish a figure, the table says ask."
+        ],
+        table: {
+          headers: ["Venue", "Town", "To the park", "Guests", "Sleeps onsite"],
+          rows: [
+            ["Paddle Ridge", "West Glacier", "Less than a mile", "Up to 160", "Cabins and lodge rooms"],
+            ["Great Northern Resort", "West Glacier", "Just outside the park", "Tent fits about 200", "14-room lodge plus chalets"],
+            ["Green Valley Ranch", "Coram", "15 minutes to the park entrance", "Up to 300", "Up to 27"],
+            ["Glacier Homestead", "Coram", "A short drive", "200", "Up to 68"],
+            ["Summit Mountain Lodge", "East Glacier Park", "Southeastern edge of the park", "Ask", "Nine cabins"],
+            ["Ashley Lake Estates", "Kila", "Within an hour", "Ask", "26"],
+            ["Grouse Mountain Lodge", "Whitefish", "Ask", "Plan for 30 or less; 9 banquet rooms", "144 hotel rooms"],
+            ["North Star Ranch", "Whitefish", "Less than 45 minutes to the entrance", "Ask", "5-bedroom chalet, 4 cabins, 8 lodge rooms"]
+          ]
+        }
+      },
+      {
+        id: "west-glacier",
+        heading: "West Glacier and Coram: Closest to Glacier Park",
+        paragraphs: [
+          "These four are the quickest drive from Apgar, Lake McDonald, and the west side of Going-to-the-Sun Road. That helps with an intimate wedding in the park when you want guests at dinner within the hour."
+        ],
+        resources: [
+          { name: "Paddle Ridge, West Glacier", note: "A Glacier Park Collection property less than a mile from the park, with cabins and lodge rooms onsite. It hosts up to 160 guests, and a riverside option with Glacier Raft Company is capped at 45.", url: "https://www.glacierparkcollection.com/lodging/paddle-ridge/weddings/" },
+          { name: "Great Northern Resort, West Glacier", note: "Runs Glacier Park Weddings just outside the park. Its 40 by 75 foot reception tent fits groups of about 200, and guests can stay in a 14-room lodge and chalets.", url: "https://glacierparkweddings.com/lodging-amenities/" },
+          { name: "Green Valley Ranch, Coram", note: "A 480-acre ranch 15 minutes from the west entrance. A four-night exclusive rental includes a lodge and cabin that sleep 27. A full-service planner and event insurance are required.", price: "$36,800 June and October; $40,000 July to September (2026)", url: "https://www.greenvalleyranchmontana.com/faq" },
+          { name: "Glacier Homestead, Coram", note: "Space for 200 guests and lodging for up to 68 across a lodge, cabins, a bunkhouse, and hostel rooms. Available May through September.", price: "$12,500 two-night package plus an 8% fee", url: "https://glacierhomestead.com/weddings-and-events/" }
+        ]
+      },
+      {
+        id: "farther",
+        heading: "East Glacier, Kalispell and Flathead Valley Options",
+        paragraphs: [
+          "[Summit Mountain Lodge](https://summitmtnlodge.com/montana-wedding/glacier-national-park-wedding/) sits on Marias Pass at the southeastern edge of the park, with nine cabins on 32 acres. It suits couples planning a ceremony near Two Medicine or the east side, though Two Medicine sites are closed for construction into May 2027.",
+          "[Ashley Lake Estates](https://www.truenorthmanagementmt.com/wedding-venue) is a private 50-acre estate on Ashley Lake near Kila, within an hour of the park, with sleeping space for 26.",
+          "Whitefish, in the Flathead Valley, adds the most choice. [Grouse Mountain Lodge](https://www.glacierparkcollection.com/lodging/grouse-mountain-lodge/weddings/) has a plan for groups of 30 or less and 144 rooms. This [side-by-side venue guide](/guides/whitefish-wedding-venues) compares ten options in and around town."
+        ]
+      },
+      {
+        id: "seasons",
+        heading: "When Glacier Wedding Locations Are Open",
+        paragraphs: [
+          "Season changes which parts of the park you can use. The park writes permits for dates with expected vehicle access, and a permit does not get you past a closed road. Big Bend, on Going-to-the-Sun Road, is open to cars from early July to mid October.",
+          "Several sites near Apgar stay reachable all year, including Apgar Picnic Area Shoreline and Lake McDonald Lodge Beach. Couples who want a winter ski or snowshoe-in ceremony can ask for one on the application. June through September is the busy stretch, with little parking near most locations.",
+          "Venue seasons matter too. Glacier Homestead books weddings May through September, while an indoor room, like the Great Room at North Star Ranch or the banquet rooms at Grouse Mountain Lodge, keeps a fall or winter date on track."
+        ]
+      },
+      {
+        id: "pair",
+        heading: "Pairing a Park Wedding Ceremony or Elopement With a Venue Dinner",
+        paragraphs: [
+          "Pick the venue first, then choose a wedding location that fits your guest count. A group of 25 cannot use Big Bend, which allows 10. Lake McDonald Lodge Beach and Fish Creek Picnic Area Shoreline allow 30, the Many Glacier Hotel sites allow 15 to 20, and Apgar Amphitheater allows 250.",
+          "Build the day around the two-hour window. Guests need time to pay the entrance fee, find parking that cannot be reserved, and drive to dinner. If rain is likely, have the venue ready to host the vows too, since the park offers no indoor backup."
+        ],
+        table: {
+          headers: ["Guest count", "Park locations that fit", "Good venue base"],
+          rows: [
+            ["2 to 10", "Big Bend, Kintla Lake, most shoreline sites", "A cabin or small lodge near Whitefish or West Glacier"],
+            ["11 to 30", "Lake McDonald Lodge Beach, Fish Creek shoreline, 1913 Ranger Station", "A ranch or lodge that sleeps the close family"],
+            ["31 to 100", "Avalanche, Many Glacier, or Rising Sun amphitheaters", "A venue with a tent or indoor room for dinner"],
+            ["Over 100", "Fish Creek (200) or Apgar (250) amphitheaters", "A large venue in Coram, West Glacier, or Whitefish"]
+          ]
+        }
+      },
+      {
+        id: "north-star",
+        heading: "North Star Ranch as a Montana Wedding Base Near Glacier",
+        paragraphs: [
+          "North Star Ranch is a private, secluded 40-acre property less than 45 minutes from the Glacier entrance and 8 miles from downtown Whitefish. It borders national forest on two sides, and its wedding lawn looks toward the Glacier mountains.",
+          "Close family can stay in the five-bedroom chalet, four cabins, and eight lodge rooms, then gather in the Great Room for dinner. Because it is private land, you can hold the whole wedding there with no park permit and save Glacier for a day trip with your guests.",
+          "Eloping with only a few people? Read [how to elope in Montana](/guides/montana-elopement). Planning a destination wedding for a bigger group? [Check dates at North Star Ranch](/#contact)."
+        ],
+        image: { src: "/images/north-star-ranch-deck-view.jpg", alt: "View over pine forest from a deck at North Star Ranch near Whitefish", caption: "Looking out from the deck at North Star Ranch, 8 miles from downtown Whitefish." }
+      }
+    ],
+    faqs: [
+      { question: "Can you have a wedding reception inside Glacier National Park?", answer: "Not at a permitted ceremony site. The park does not allow catered food service, tables, or arches there, so couples hold the reception at a venue outside the park." },
+      { question: "What is the closest wedding venue to Glacier National Park?", answer: "Paddle Ridge in West Glacier lists itself as less than a mile from the park, and Great Northern Resort sits just outside the west entrance. Green Valley Ranch in Coram is 15 minutes away." },
+      { question: "How much does a wedding venue near Glacier cost?", answer: "Few venues publish prices. Glacier Homestead lists $12,500 for two nights plus an 8% fee, and Green Valley Ranch lists $36,800 to $40,000 for a four-night buyout in 2026. Most others quote by inquiry." },
+      { question: "Do wedding guests pay the Glacier entrance fee?", answer: "Yes. The park says the wedding party and guests pay entrance fees, and the permit does not reserve parking." },
+      { question: "Can we elope in Glacier National Park instead?", answer: "Yes, with the same Special Use Permit every ceremony needs. Big Bend and Kintla Lake allow 10 people, which fits a Glacier National Park elopement with a photographer and officiant." }
+    ],
+    related: ["glacier-national-park-micro-wedding", "montana-wedding-venues-with-lodging", "montana-elopement"],
+    social: "/social/wedding-venues-near-glacier-national-park.jpg"
+  },
+  {
+    slug: "montana-elopement",
+    eyebrow: "Elopement Guide",
+    title: "Montana Elopement Guide: How to Elope in Montana Near Glacier",
+    seoTitle: "Montana Elopement Guide: How to Elope in Glacier National Park, License Steps and Package Prices | North Star Ranch",
+    description: "How to elope in Montana: current license rules, Glacier National Park permits, places with no permit, all-inclusive elopement package and elopement photographer prices, and a private base.",
+    hero: "/images/montana-scenic-wedding.jpg",
+    heroAlt: "Couple standing in a mountain meadow in Montana after an elopement ceremony",
+    readTime: "8 minute read",
+    updated: "September 13, 2026",
+    quickAnswer: "Get a $53 marriage license in person from a county Clerk of District Court, choose where to say your vows, and return the signed license afterward. Montana has no waiting period, and the license is good in any county for 180 days. In Flathead County, you both need to show up together.",
+    sections: [
+      {
+        id: "license",
+        heading: "Montana Elopement Laws: Getting Your Marriage License",
+        paragraphs: [
+          "For an elopement in Montana's northwest corner, the license office is the Flathead County Clerk of District Court. You start the application online, then both of you appear in person to sign it and pay. The license is ready the same visit.",
+          "Some elopement guides still list a rubella blood test. Montana repealed those sections of its marriage law, so there is nothing to take or waive."
+        ],
+        table: {
+          headers: ["Step", "What the county and state law say"],
+          rows: [
+            ["Apply", "Submit the application online, then appear together in person to sign"],
+            ["Bring", "Proof of age, such as a driver's license or birth certificate"],
+            ["Pay", "$53 by cash, check, money order, or card (card adds $2.31)"],
+            ["Wait", "No waiting period; the license takes effect when issued"],
+            ["Use", "Valid in any Montana county for 180 days"],
+            ["Afterward", "Return the signed license to the clerk; certified copies are $7 each"]
+          ]
+        },
+        bullets: [
+          "Flathead County marriage questions: (406) 758-5659.",
+          "Office hours for applications: every business day, 8:00 am to 4:30 pm."
+        ]
+      },
+      {
+        id: "officiant",
+        heading: "Do You Need an Officiant or Witnesses to Elope in Montana?",
+        paragraphs: [
+          "Montana law lists who can solemnize a marriage. That includes judges, justices of the peace, mayors, authorized notaries public, tribal judges, and any form of ceremony recognized by a religious group. The same law says that when no one person led the ceremony, one of the couple fills out the certificate.",
+          "The state also has a separate route with no ceremony at all, called a declaration of marriage. It needs two witnesses and a visit to the clerk to sign it, and the filing fee is $53.",
+          "Online advice on this gets loose. People in a [Reddit thread on a Glacier elopement](https://www.reddit.com/r/Montana/comments/1aks67q/august_elopement/) gave conflicting answers on witnesses. Call the county clerk before your trip and ask how they want the certificate completed for your plan."
+        ]
+      },
+      {
+        id: "where",
+        heading: "Montana Elopement Locations and Permit Rules",
+        paragraphs: [
+          "Picking a place to elope comes down to who owns the land. Glacier is the strictest, Forest Service land is the loosest for a small group, and private land only needs the owner's yes."
+        ],
+        table: {
+          headers: ["Place", "Permit rule", "Good to know"],
+          rows: [
+            ["Glacier National Park", "Special Use Permit for every ceremony, any size; $125 application fee", "Two-hour limit; guest caps by site; no drones"],
+            ["National forest land", "Forest Service permit needed for noncommercial groups of 75 or more", "Most elopements fall far below that number"],
+            ["Montana state parks", "State Parks lists wedding parties among events needing a Special Use Permit", "Groups over 30 also need a group use permit"],
+            ["Private land or a venue", "Owner or venue permission", "Lodging, shelter, and dinner can be on the same property"]
+          ]
+        }
+      },
+      {
+        id: "glacier",
+        heading: "How to Elope in Glacier National Park",
+        paragraphs: [
+          "Apply up to a year ahead, and at least four weeks before the date. The park counts your elopement photographer and officiant toward each site's limit. Big Bend and Kintla Lake allow 10 people, and Lake Josephine, reached by a one-mile hike, allows 15.",
+          "Bring handheld flowers and a small carpet if you want one. Leave the arch, petals, drone, and champagne spray behind. A highly upvoted comment in one [Glacier wedding thread](https://www.reddit.com/r/GlacierNationalPark/comments/1ulq9ww/get_married_at_glacier/) says it well: make sure you have a permit and do not go off trail for photos.",
+          "The full list of sites and rules is in the guide to [getting married in Glacier National Park](/guides/glacier-national-park-micro-wedding)."
+        ]
+      },
+      {
+        id: "seasons",
+        heading: "Winter and Shoulder-Season Elopements",
+        paragraphs: [
+          "Summer is not the only option. Several park sites stay reachable year-round, including Lake McDonald Lodge Beach, Apgar Picnic Area Shoreline, and the 1913 Ranger Station. If you want a ski or snowshoe-in ceremony, the park asks you to note it on the application.",
+          "Plan around the roads. Big Bend on Going-to-the-Sun Road is reachable by car only from early July to mid October, and a permit does not get you past a closure. June through September brings the biggest crowds, so a spring or fall elopement day can feel quieter, though the weather is harder to predict.",
+          "Winter elopement packages exist elsewhere in the state too. Lone Mountain Ranch in Big Sky lists a winter version with a private indoor ceremony, a snowshoe tour, and a sleigh ride to dinner."
+        ]
+      },
+      {
+        id: "cost",
+        heading: "What Montana Elopement Packages and Elopement Photographers Cost",
+        paragraphs: [
+          "Real couples report a wide range. One pair married at Bowman Lake with a dozen people for $722 by staying at a hostel and cooking their own food. Another couple's Glacier elopement, with a photographer, officiant, permit, and flowers, came to $6,561 before the honeymoon.",
+          "In one couple's itemized Glacier elopement, the photographer was the largest cost at $3,100. Here is what a few elopement photographers and planners publish on their own sites."
+        ],
+        resources: [
+          { name: "Lovelight Montana", note: "Photographer serving Glacier, Kalispell, Whitefish, and Bigfork. Classic packages start with two hours of coverage.", price: "From $2,800; packages with planning from $9,800", url: "https://www.lovelightmontana.com/couples-photography/elopement-packages" },
+          { name: "Carrie Ann Photography", note: "Glacier National Park and Whitefish elopement and wedding photography.", price: "Elopements and micro weddings from $3,900", url: "https://www.carrieann-photography.net/" },
+          { name: "Elope Montana", note: "Glacier and Flathead Valley planning with photography. Its Alpine Lake collection adds an officiant, flowers, and cake at the same starting price.", price: "Collections from $5,000", url: "https://www.elopemontana.com/pricing" },
+          { name: "Lone Mountain Ranch, Big Sky", note: "A ranch package with an officiant, flowers, cake, and meals. It is in Big Sky in southwest Montana, not near Glacier, and rooms are extra.", price: "$5,000 for 3 people; $10,000 for 4 to 10", url: "https://lonemountainranch.com/big-sky-big-love-elopement-package/" },
+          { name: "The Ranch at Rock Creek, Philipsburg", note: "An all-inclusive resort elopement with cake, flowers, a day-of lunch, and a celebration dinner. It is in southwest Montana, and nightly rates are extra.", price: "$15,000 for 4 to 8 people", url: "https://theranchatrockcreek.com/weddings/elopements/" }
+        ]
+      },
+      {
+        id: "base",
+        heading: "Give Your Elopement Day a Home Base Near Whitefish",
+        paragraphs: [
+          "An elopement near Glacier often means a long wedding day. One couple on Reddit got ready at a rental and then drove an hour and a half to their ceremony spot. Having your room, your meal, and a warm place to wait out rain in one location takes pressure off the whole trip.",
+          "North Star Ranch works well for this. It is private land 8 miles from downtown Whitefish and less than 45 minutes from the Glacier entrance, bordering forest land on two sides. You can hold the ceremony on the lawn with no park permit, stay in a cabin or the five-bedroom chalet, and bring a few family members who get their own rooms in the lodge.",
+          "[Ask North Star Ranch about elopement dates](/#contact), or compare other [venues near the park](/guides/wedding-venues-near-glacier-national-park)."
+        ],
+        image: { src: "/images/north-star-ranch-cabin.jpg", alt: "Private cabin with a wraparound deck in the pines at North Star Ranch", caption: "A private cabin at North Star Ranch, a short drive from Whitefish and Glacier." }
+      }
+    ],
+    faqs: [
+      { question: "Can you marry yourself in Montana?", answer: "Montana law has the couple fill out the marriage certificate themselves when no one person led the ceremony. The state also has a declaration of marriage with no ceremony, which needs two witnesses and a clerk visit. Confirm your plan with the county clerk." },
+      { question: "Is there a waiting period to get married in Montana?", answer: "No. A Montana marriage license takes effect when it is issued and expires after 180 days." },
+      { question: "Do you need a blood test to get married in Montana?", answer: "No. Montana repealed its old blood test sections, even though some elopement guides still mention a rubella test." },
+      { question: "Do you need a permit to elope in Glacier National Park?", answer: "Yes. Every elopement and vow exchange in the park needs a Special Use Permit, and the application fee is $125." },
+      { question: "Are there all-inclusive elopement packages in Montana?", answer: "Yes. Elope Montana lists Glacier-area collections from $5,000 with photography, and its Alpine Lake collection adds an officiant, flowers, and cake. Lone Mountain Ranch and The Ranch at Rock Creek sell ranch packages, with rooms billed separately." },
+      { question: "Do you need a permit to elope in a national forest in Montana?", answer: "Usually not for a small group. The Forest Service requires a permit for noncommercial group use when 75 or more people take part." }
+    ],
+    related: ["glacier-national-park-micro-wedding", "wedding-venues-near-glacier-national-park", "montana-micro-wedding-cost"],
+    social: "/social/montana-elopement.jpg"
   }
 ];
 
