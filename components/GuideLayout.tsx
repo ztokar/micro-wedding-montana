@@ -88,8 +88,39 @@ export default function GuideLayout({ guide }: { guide: Guide }) {
                 </div>
                 {section.bullets && (
                   <ul className="mt-7 space-y-3 border-l-2 border-sage-600 pl-6 text-base leading-7 text-earth-800 md:text-lg">
-                    {section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
+                    {section.bullets.map((bullet) => <li key={bullet}>{renderRichText(bullet, bullet.slice(0, 24))}</li>)}
                   </ul>
+                )}
+                {section.steps && (
+                  <ol className="mt-7 space-y-4 text-base leading-7 text-earth-800 md:text-lg">
+                    {section.steps.map((step, stepIndex) => (
+                      <li key={step} className="grid grid-cols-[2.25rem_minmax(0,1fr)] gap-3">
+                        <span className="flex h-9 w-9 items-center justify-center rounded-full bg-sage-800 text-sm font-semibold text-white">{stepIndex + 1}</span>
+                        <span className="pt-1">{renderRichText(step, step.slice(0, 24))}</span>
+                      </li>
+                    ))}
+                  </ol>
+                )}
+                {section.figure && (
+                  <figure className="mt-8">
+                    <picture>
+                      {section.figure.mobileSrc && <source media="(max-width: 640px)" srcSet={section.figure.mobileSrc} />}
+                      <img src={section.figure.src} alt={section.figure.alt} width={section.figure.width} height={section.figure.height} loading="lazy" decoding="async" className="h-auto w-full max-w-full border border-earth-200 bg-white" />
+                    </picture>
+                    {section.figure.caption && <figcaption className="mt-3 text-sm leading-6 text-earth-700">{renderRichText(section.figure.caption, "figcap")}</figcaption>}
+                  </figure>
+                )}
+                {section.quotes && (
+                  <div className="mt-8 space-y-6">
+                    {section.quotes.map((quote) => (
+                      <blockquote key={quote.text} className="border-y border-earth-300 py-6">
+                        <p className="font-display text-xl leading-8 text-earth-900">&ldquo;{quote.text}&rdquo;</p>
+                        <footer className="mt-3 text-sm leading-6 text-earth-700">
+                          <a href={quote.url} rel="nofollow noopener" target="_blank" className="font-semibold text-sage-800 underline decoration-sage-400 underline-offset-2">{quote.name}</a>, {quote.credential}. Outside expert, not affiliated with North Star Ranch.
+                        </footer>
+                      </blockquote>
+                    ))}
+                  </div>
                 )}
                 {section.table && (
                   <div className="mt-8 max-w-full overflow-x-auto border-y border-earth-300">
@@ -122,6 +153,22 @@ export default function GuideLayout({ guide }: { guide: Guide }) {
                     ))}
                   </div>
                 )}
+                {section.more && (
+                  <details className="group mt-8 border-y border-earth-300 py-4">
+                    <summary className="cursor-pointer list-none py-2 text-sm font-semibold uppercase tracking-[0.16em] text-sage-800 marker:hidden">
+                      <span className="mr-2 inline-block transition-transform group-open:rotate-90">&rsaquo;</span>{section.more.label}
+                    </summary>
+                    <div className="mt-4 space-y-4 text-base leading-7 text-earth-800">
+                      {section.more.paragraphs.map((paragraph) => <LinkedParagraph key={paragraph} text={paragraph} />)}
+                    </div>
+                  </details>
+                )}
+                {section.download && (
+                  <div className="mt-8 flex flex-col gap-3 border border-earth-300 bg-white p-6 sm:flex-row sm:items-center sm:justify-between">
+                    {section.download.note && <p className="text-sm leading-6 text-earth-700">{section.download.note}</p>}
+                    <a href={section.download.href} className="inline-flex min-h-11 w-fit items-center border border-sage-800 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-sage-800 transition-colors hover:bg-sage-800 hover:text-white">{section.download.label}</a>
+                  </div>
+                )}
                 {section.image && (
                   <figure className="mt-8">
                     <img src={section.image.src} alt={section.image.alt} width={1200} height={800} loading="lazy" decoding="async" className="aspect-[3/2] h-auto w-full max-w-full object-cover" style={{ objectPosition: "center 30%" }} />
@@ -143,6 +190,19 @@ export default function GuideLayout({ guide }: { guide: Guide }) {
                 ))}
               </div>
             </section>
+
+            {guide.sources && (
+              <section id="sources" className="scroll-mt-8 border-t border-earth-300 py-10">
+                <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-sage-700">Sources</p>
+                <ol className="list-decimal space-y-2 pl-5 text-sm leading-6 text-earth-700">
+                  {guide.sources.map((source) => (
+                    <li key={source.url}>
+                      <a href={source.url} rel="nofollow noopener" target="_blank" className="underline decoration-earth-300 underline-offset-2 hover:text-sage-800">{source.label}</a>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            )}
           </div>
         </div>
 

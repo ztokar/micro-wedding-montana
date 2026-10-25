@@ -6,13 +6,25 @@ export type GuideResource = {
   url?: string;
 };
 
+export type GuideQuote = {
+  text: string;
+  name: string;
+  credential: string;
+  url: string;
+};
+
 export type GuideSection = {
   id: string;
   heading: string;
   paragraphs?: string[];
   bullets?: string[];
+  steps?: string[];
   table?: { headers: string[]; rows: string[][] };
   resources?: GuideResource[];
+  quotes?: GuideQuote[];
+  figure?: { src: string; mobileSrc?: string; alt: string; caption?: string; width: number; height: number };
+  more?: { label: string; paragraphs: string[] };
+  download?: { label: string; href: string; note?: string };
   image?: { src: string; alt: string; caption?: string };
 };
 
@@ -32,6 +44,7 @@ export type Guide = {
   related: string[];
   category?: "planning" | "local";
   social?: string;
+  sources?: { label: string; url: string }[];
 };
 
 export const guides: Guide[] = [
@@ -52,7 +65,7 @@ export const guides: Guide[] = [
         heading: "What an All-Inclusive Montana Wedding Venue May Include",
         paragraphs: [
           "Some Montana wedding packages cover the venue, ceremony, reception, and a short list of wedding-day services. Others include lodging, meals, planning, flowers, photography, and several days of activities. Both may use the same all-inclusive label.",
-          "Ask for one written list that separates included items, optional upgrades, and outside vendors. That list matters more than the package name."
+          "Ask for one written list that separates included items, optional upgrades, and outside vendors. That list matters more than the package name. Bring these [questions to ask a wedding venue](/guides/questions-to-ask-a-wedding-venue) to every call."
         ],
         table: {
           headers: ["Area", "What to confirm", "Why it matters"],
@@ -161,7 +174,7 @@ export const guides: Guide[] = [
         id: "size",
         heading: "How to Elope in Glacier National Park vs. Planning a Bigger Wedding",
         paragraphs: [
-          "Small groups get the most choice. Most shoreline and picnic sites cap at 10 to 30 people, which suits a Glacier National Park elopement with a photographer and an officiant.",
+          "Small groups get the most choice. Most shoreline and picnic sites cap at 10 to 30 people, which suits a Glacier National Park elopement with a photographer and an officiant. If you are torn on group size, see [elopement vs micro wedding](/guides/elopement-vs-micro-wedding).",
           "A larger wedding has far fewer options. Only the amphitheaters take more than 30 people, and the largest are Apgar at 250 and Fish Creek at 200. Neither is available after 6 pm in June through August or after 5 pm in September, so a summer sunset ceremony there will not work.",
           "Construction also closes sites. The Two Medicine locations are closed into May 2027, and Running Eagle Falls closes after September 7, 2026. Check the park's list before you settle on a date."
         ]
@@ -246,7 +259,7 @@ export const guides: Guide[] = [
         heading: "Compare Small Wedding Venues in Montana by What Guests Will Feel",
         paragraphs: [
           "Photos get a venue onto the list. What guests feel on the day decides whether it was the right call: the drive in, where they wait between the vows and dinner, and whether there is a warm room when the wind picks up.",
-          "Ask every venue the same five things. Where do guests sleep? What exactly is the rain plan? Who else is on the property that day? What does the price leave out? How do people get there from the airport?",
+          "Ask every venue the same five things. Where do guests sleep? What exactly is the rain plan? Who else is on the property that day? What does the price leave out? How do people get there from the airport? The full list is in [questions to ask a wedding venue](/guides/questions-to-ask-a-wedding-venue).",
           "Listen for specifics. \"We move dinner into the heated pavilion\" is a plan. A shrug and \"the weather is usually fine\" is not."
         ]
       },
@@ -279,7 +292,7 @@ export const guides: Guide[] = [
         heading: "The Best Places for a Small Wedding in Montana",
         paragraphs: [
           "Settle the region before the venue, because it decides the airport and the drive. Northwest Montana around Whitefish, Kalispell, and Flathead Lake puts Glacier National Park and an airport close together. Southwest Montana around Bozeman and Paradise Valley draws couples who want Yellowstone. Ranch country elsewhere in the state trades convenience for space.",
-          "In the northwest, start with the [side-by-side list of Whitefish venues](/guides/whitefish-wedding-venues) or the options for [wedding venues near Glacier National Park](/guides/wedding-venues-near-glacier-national-park). If having everyone under one roof matters most, a private ranch with lodging like [North Star Ranch](/#contact) keeps the wedding and the stay in one place."
+          "In the northwest, start with the [side-by-side list of Whitefish venues](/guides/whitefish-wedding-venues), the [Kalispell wedding venues](/guides/kalispell-wedding-venues), the [Flathead Lake wedding venues](/guides/flathead-lake-wedding-venues) or the options for [wedding venues near Glacier National Park](/guides/wedding-venues-near-glacier-national-park). If having everyone under one roof matters most, a private ranch with lodging like [North Star Ranch](/#contact) keeps the wedding and the stay in one place."
         ],
         table: {
           headers: ["Montana region", "Draws couples for", "Good to confirm"],
@@ -296,7 +309,7 @@ export const guides: Guide[] = [
         heading: "Small Montana Wedding Venues on a Budget",
         paragraphs: [
           "Cutting the guest list is the biggest budget lever you have. Every person you do not invite is one less meal, chair, and place setting.",
-          "Watch the starting price, though. A venue that includes lodging, or lets you pick your own caterer, can end up cheaper than a lower rental with a required menu. The [Montana micro wedding cost guide](/guides/montana-micro-wedding-cost) has real local numbers."
+          "Watch the starting price, though. A venue that includes lodging, or lets you pick your own caterer, can end up cheaper than a lower rental with a required menu. See [what Montana wedding venues cost](/guides/montana-wedding-venue-cost) for published prices, and the [Montana micro wedding cost guide](/guides/montana-micro-wedding-cost) for the full budget."
         ]
       },
       {
@@ -816,7 +829,7 @@ export const guides: Guide[] = [
         id: "planning-trip",
         heading: "Fit One Dress Appointment Into the Planning Trip",
         paragraphs: [
-          "North Star Ranch is eight miles from downtown Whitefish and about 25 minutes from Glacier Park International Airport. A ranch visit and one Kalispell salon appointment can fit on the same day.",
+          "North Star Ranch is eight miles from downtown Whitefish and about 25 minutes from Glacier Park International Airport. A ranch visit and one Kalispell salon appointment can fit on the same day. Touring venues while you are in town? See the [Kalispell wedding venues](/guides/kalispell-wedding-venues) and the [Whitefish wedding venues](/guides/whitefish-wedding-venues).",
           "Confirm the ranch visit first, then place the salon around it. Leave time for the drive, a meal, and notes before another vendor call. The [Whitefish wedding vendor guide](/guides/whitefish-montana-wedding-vendors) covers those calls, while the [wedding weekend itinerary](/guides/montana-micro-wedding-itinerary) handles guest plans. [Ask North Star Ranch about available dates](/#contact) before booking flights."
         ]
       }
@@ -1053,7 +1066,7 @@ export const guides: Guide[] = [
         heading: "Where North Star Ranch Fits the Budget",
         paragraphs: [
           "North Star Ranch does not publish prices, so ask for a current quote for your dates. What it does offer is the venue and onsite lodging in one place, which keeps the group together and cuts guest hotel and driving costs.",
-          "Compare the full picture, not the starting rental. Read the [all-inclusive package guide](/guides/all-inclusive-micro-wedding-packages-montana) for what to confirm in writing, the [small wedding venue guide](/guides/small-wedding-venues-in-montana) for venue types, and ask [North Star Ranch](/#contact) about availability."
+          "Compare the full picture, not the starting rental. See [what Montana wedding venues cost](/guides/montana-wedding-venue-cost) for published rental prices, the [all-inclusive package guide](/guides/all-inclusive-micro-wedding-packages-montana) for what to confirm in writing, the [small wedding venue guide](/guides/small-wedding-venues-in-montana) for venue types, and ask [North Star Ranch](/#contact) about availability."
         ]
       }
     ],
@@ -1263,7 +1276,7 @@ export const guides: Guide[] = [
         heading: "Ten Montana Wedding Venues In and Around Whitefish",
         paragraphs: [
           "The table uses each venue's own website, checked in September 2026. Few wedding venues with prices post them online, so blank spots say \"ask.\"",
-          "Read the two middle columns together. A ranch that seats 250 people but sleeps 24 still sends most of your guests to hotels in town or in Kalispell at the end of the night."
+          "Read the two middle columns together. A ranch that seats 250 people but sleeps 24 still sends most of your guests to hotels in town or in Kalispell at the end of the night. The [Kalispell wedding venues](/guides/kalispell-wedding-venues) are compared the same way, and these [questions to ask a wedding venue](/guides/questions-to-ask-a-wedding-venue) cover the rest of the call."
         ],
         table: {
           headers: ["Venue", "Guests the venue lists", "Sleeps on the property", "Weather backup"],
@@ -1383,7 +1396,7 @@ export const guides: Guide[] = [
         id: "northwest",
         heading: "Northwest Montana Venues With Lodging Near Glacier and Kalispell",
         paragraphs: [
-          "If your guests fly into Glacier Park International Airport near Kalispell, these are the properties to call first. Each one publishes a real lodging number."
+          "If your guests fly into Glacier Park International Airport near Kalispell, these are the properties to call first. Each one publishes a real lodging number. For more lake options, see the [Flathead Lake wedding venues](/guides/flathead-lake-wedding-venues) by town."
         ],
         resources: [
           { name: "Green Valley Ranch, Coram", note: "A 480-acre ranch 15 minutes from the west entrance of Glacier National Park. Its two guest buildings sleep 27 on a four-night exclusive stay. A full-service planner and event insurance are required.", price: "$36,800 June and October; $40,000 July to September", url: "https://www.greenvalleyranchmontana.com/faq" },
@@ -1481,7 +1494,7 @@ export const guides: Guide[] = [
         paragraphs: [
           "[Summit Mountain Lodge](https://summitmtnlodge.com/montana-wedding/glacier-national-park-wedding/) sits on Marias Pass at the southeastern edge of the park, with nine cabins on 32 acres. It suits couples planning a ceremony near Two Medicine or the east side, though Two Medicine sites are closed for construction into May 2027.",
           "[Ashley Lake Estates](https://www.truenorthmanagementmt.com/wedding-venue) is a private 50-acre estate on Ashley Lake near Kila, within an hour of the park, with sleeping space for 26.",
-          "Whitefish, in the Flathead Valley, adds the most choice. [Grouse Mountain Lodge](https://www.glacierparkcollection.com/lodging/grouse-mountain-lodge/weddings/) has a plan for groups of 30 or less and 144 rooms. This [side-by-side venue guide](/guides/whitefish-wedding-venues) compares ten options in and around town."
+          "Whitefish, in the Flathead Valley, adds the most choice. [Grouse Mountain Lodge](https://www.glacierparkcollection.com/lodging/grouse-mountain-lodge/weddings/) has a plan for groups of 30 or less and 144 rooms. This [side-by-side venue guide](/guides/whitefish-wedding-venues) compares ten options in and around town, and the [Kalispell wedding venues](/guides/kalispell-wedding-venues) add more choice 15 miles south."
         ]
       },
       {
@@ -1630,7 +1643,7 @@ export const guides: Guide[] = [
         paragraphs: [
           "An elopement near Glacier often means a long wedding day. One couple on Reddit got ready at a rental and then drove an hour and a half to their ceremony spot. Having your room, your meal, and a warm place to wait out rain in one location takes pressure off the whole trip.",
           "North Star Ranch works well for this. It is private land 8 miles from downtown Whitefish and less than 45 minutes from the Glacier entrance, bordering forest land on two sides. You can hold the ceremony on the lawn with no park permit, stay in a cabin or the five-bedroom chalet, and bring a few family members who get their own rooms in the lodge.",
-          "[Ask North Star Ranch about elopement dates](/#contact), or compare other [venues near the park](/guides/wedding-venues-near-glacier-national-park)."
+          "Still deciding how small to go? Compare [elopement vs micro wedding](/guides/elopement-vs-micro-wedding) side by side. [Ask North Star Ranch about elopement dates](/#contact), or compare other [venues near the park](/guides/wedding-venues-near-glacier-national-park)."
         ],
         image: { src: "/images/north-star-ranch-cabin.jpg", alt: "Private cabin with a wraparound deck in the pines at North Star Ranch", caption: "A private cabin at North Star Ranch, a short drive from Whitefish and Glacier." }
       }
@@ -1645,6 +1658,832 @@ export const guides: Guide[] = [
     ],
     related: ["glacier-national-park-micro-wedding", "wedding-venues-near-glacier-national-park", "montana-micro-wedding-cost"],
     social: "/social/montana-elopement.jpg"
+  },
+  {
+    slug: "elopement-vs-micro-wedding",
+    eyebrow: "Decision Guide",
+    title: "Elopement vs Micro Wedding: Which One Fits Your Montana Wedding?",
+    seoTitle: "Elopement vs Micro Wedding | Cost, Guests and Montana Rules Compared | North Star Ranch",
+    description: "Elopement vs micro wedding in Montana: guest counts, real costs, the $53 license, Glacier permit limits, and five questions to help you choose.",
+    hero: "/images/north-star-ranch-rings.jpg",
+    heroAlt: "Two wedding rings resting on a clover flower at North Star Ranch in Montana",
+    readTime: "7 minute read",
+    updated: "October 25, 2026",
+    quickAnswer: "An elopement is built around the two of you, with no guests or only a few. A micro wedding keeps a short guest list, usually 50 or fewer, and adds dinner and toasts. In Montana both need the same $53 license, and a Glacier National Park ceremony needs a permit either way.",
+    sections: [
+      {
+        id: "at-a-glance",
+        heading: "Elopement vs Micro Wedding at a Glance",
+        paragraphs: [
+          "What's the difference? The guest list. Cost, wedding planning time and the place you choose all follow from it."
+        ],
+        table: {
+          headers: ["Compare", "Elopement", "Micro wedding"],
+          rows: [
+            ["Guests", "None, or a few. Definitions run from 0 to about 10", "Usually 50 or fewer"],
+            ["The day", "Exchange vows, take photos, maybe a hike or a dinner for two", "Ceremony, dinner, toasts and cake cutting, often a full weekend"],
+            ["Real costs", "$6,561 for one Glacier couple with a photographer and officiant", "$17,100 average for weddings with 1 to 50 guests (The Knot)"],
+            ["Planning", "Elopement planning: license, place and photographer", "Adds invites, RSVPs, food, rentals and rooms"],
+            ["Montana license", "$53 from a county clerk", "The same $53 license"],
+            ["Glacier ceremony", "Permit for any size; some sites allow only 10 people", "Same permit; only the amphitheaters take more than 30"],
+            ["Where", "Trail, lakeshore, overlook or private land", "A wedding venue, lodge or ranch with dinner space and rooms"]
+          ]
+        }
+      },
+      {
+        id: "guests",
+        heading: "How Many Guests Make It an Elopement or a Micro Wedding?",
+        paragraphs: [
+          "There is no legal line, and the experts do not agree. Most cap a micro wedding, an intimate wedding with a real guest list, at 50 guests. Past that, most call it a traditional wedding. The elopement line runs from zero guests to about 10.",
+          "Our reading: if it is just you, or you plus a few people, you are eloping. If you are planning dinner for everyone, it is a micro wedding."
+        ],
+        quotes: [
+          { text: "We define a micro-wedding as having 50 guests or fewer.", name: "Lauren Miller", credential: "owner of Tiny Wedding Co., quoted by The Knot", url: "https://theknot.com/content/what-is-a-microwedding" },
+          { text: "Generally an elopement is anything that is under about 10 guests.", name: "Susan Stripling", credential: "New York City wedding photographer", url: "https://susanstripling.com/blog/elopement-vs-wedding/" },
+          { text: "The reality is, an elopement is different than a wedding because the intention is different. Ultimately, an elopement day is designed to focus on the couple and what they want.", name: "Maddie Mae", credential: "elopement photographer and planning consultant, Adventure Instead", url: "https://adventureinstead.com/eloping-vs-wedding/" }
+        ]
+      },
+      {
+        id: "cost",
+        heading: "What an Elopement and a Micro Wedding Cost",
+        paragraphs: [
+          "An elopement usually costs less, because there is no guest meal and no reception space. A micro wedding still costs about half of an average wedding.",
+          "Real Glacier couples on Reddit spent $722 for a dozen people by staying at a hostel and cooking their own food, and $6,561 for an elopement with just a photographer and an officiant."
+        ],
+        figure: { src: "/images/guides/elopement-vs-micro-wedding-cost.png", mobileSrc: "/images/guides/elopement-vs-micro-wedding-cost-mobile.png", alt: "Bar chart comparing real Glacier elopement costs with The Knot's average costs for small and all weddings", caption: "Sources: Reddit couples in [r/GlacierNationalPark](https://www.reddit.com/r/GlacierNationalPark/comments/1gjkd19/wedding_advice/) and [r/Eloping](https://www.reddit.com/r/Eloping/comments/1ft1nnp/we_did_it_glacier_national_park/); [The Knot 2026 Real Weddings Study](https://www.theknot.com/content/average-wedding-cost).", width: 1800, height: 770 },
+        more: {
+          label: "Read more: where these numbers come from",
+          paragraphs: [
+            "The Knot surveyed 10,474 US couples married in 2025, recruited from The Knot and WeddingWire members. Its study puts the median wedding at $24,000, and a quarter of couples spent about $12,000 or less. The $17,100 figure for 1 to 50 guests appears on The Knot's cost article.",
+            "Zola's 2026 report, from more than 11,500 couples, puts the average wedding at $36,000 with 145 guests.",
+            "We could not find any study of what elopements cost. Every elopement average we saw online came from a business that sells elopements, so this page uses real couples' totals instead."
+          ]
+        }
+      },
+      {
+        id: "montana-rules",
+        heading: "Montana Rules Are the Same for Both",
+        paragraphs: [
+          "The marriage license is the same for weddings and elopements, and so is the need for a park permit. What changes by place is the guest limit."
+        ],
+        bullets: [
+          "License: $53 from a county Clerk of District Court. In Flathead County you both appear in person to sign. It is good in any Montana county for 180 days, with no waiting period.",
+          "Glacier National Park: every ceremony needs a Special Use Permit, with a $125 application fee. The guest limit counts everyone, including the couple, officiant and photographer.",
+          "Park site limits: Big Bend allows 10 people and Lake Josephine 15.",
+          "Montana state parks: weddings need a Special Use Permit, and groups over 30 also need a group use permit.",
+          "National forest land: a group permit is needed only for 75 or more people.",
+          "Private land: you need the owner's permission, not a park permit."
+        ],
+        more: {
+          label: "Read more: the full steps",
+          paragraphs: [
+            "The license steps, officiant rules and the no-ceremony declaration of marriage are in [how to elope in Montana](/guides/montana-elopement). Every park site, its guest limit and its rules are in [getting married in Glacier National Park](/guides/glacier-national-park-micro-wedding)."
+          ]
+        }
+      },
+      {
+        id: "choose",
+        heading: "Wedding vs Elopement: Five Questions to Choose",
+        paragraphs: [
+          "Answer these together, in this order. Couples who choose to elope often know by question three."
+        ],
+        steps: [
+          "Who must be there? None or a few names points to eloping. A dinner table of names points to a micro wedding.",
+          "What is your budget cap? Food and space for guests is where a micro wedding grows.",
+          "What do you want to remember? A sunrise hike and vows, or a long dinner with toasts?",
+          "How much planning do you want? An elopement needs a license, a place and a photographer. A micro wedding adds invites, food and rooms.",
+          "Who will be hurt? If a parent will be crushed, plan a way to include them, like a video call or a party later."
+        ],
+        figure: { src: "/images/guides/elopement-vs-micro-wedding-choose.png", mobileSrc: "/images/guides/elopement-vs-micro-wedding-choose-mobile.png", alt: "Infographic comparing an elopement and a micro wedding in Montana by guests, cost, planning and rules", width: 1800, height: 993 }
+      },
+      {
+        id: "family",
+        heading: "Family Feelings and the Middle Option",
+        paragraphs: [
+          "Family is the part couples weigh hardest, and recent threads show both sides. One person who married 15 years ago wrote on [r/microwedding](https://www.reddit.com/r/microwedding/comments/1x4yzol/comment/pgii3jm/) that a big wedding just to avoid hurting feelings did not work for them. Another in the same thread said seeing big weddings now makes them 'jealous and weepy.'",
+          "Many couples split the difference. One couple on [r/Weddingsunder10k](https://www.reddit.com/r/Weddingsunder10k/comments/1q2faxr/comment/nxcnj8e/) married small, then hosted a restaurant reception for 55 family and friends a month later that cost $7,000."
+        ],
+        quotes: [
+          { text: "Again, you can also do a mix and have an intimate ceremony with just your partner or a few select people and then throw a larger reception that you can invite more people to!", name: "Susan Stripling", credential: "New York City wedding photographer", url: "https://susanstripling.com/blog/elopement-vs-wedding/" }
+        ],
+        image: { src: "/images/north-star-ranch-chalet-living-room.jpg", alt: "Open chalet living room with a stone fireplace, sofas and a dining table at North Star Ranch", caption: "The five-bedroom chalet at North Star Ranch has room for family to gather." }
+      },
+      {
+        id: "fit",
+        heading: "Where North Star Ranch Fits, and Where It Does Not",
+        paragraphs: [
+          "North Star Ranch near Whitefish suits both. Its lawn looks toward the Glacier National Park mountains, and a ceremony on private land needs no park permit or two-hour limit.",
+          "For an elopement, a private cabin can be your base for the trip. For a micro wedding, guests stay on the property in the five-bedroom chalet, four cabins and the eight-room lodge, then gather in the Great Room.",
+          "The ranch is 8 miles from downtown Whitefish and 25 minutes from Glacier Park International Airport. Couples hire their own officiant, photographer and caterer. [Check dates at North Star Ranch](/#contact)."
+        ],
+        image: { src: "/images/north-star-ranch-cabin-porch.jpg", alt: "Covered porch of a private cabin among the pines at North Star Ranch", caption: "A cabin porch at North Star Ranch, a quiet base for an elopement or a small wedding weekend." }
+      }
+    ],
+    faqs: [
+      { question: "Is an elopement a legal marriage?", answer: "Yes, when you have a valid license. In Montana that means a $53 license from a county clerk, and the signed license goes back to the clerk after the ceremony." },
+      { question: "How many guests can you have at an elopement?", answer: "There is no rule. Experts put the line anywhere from zero guests to about 10. Past that, most people call it a micro wedding." },
+      { question: "How many guests is a micro wedding?", answer: "Usually 50 or fewer. Zola says the average micro wedding has about 30 guests." },
+      { question: "Is a micro wedding cheaper than an elopement?", answer: "No. An elopement is usually cheaper because there is no guest meal or reception space. A micro wedding is usually far cheaper than a full wedding: The Knot reports $17,100 on average for 1 to 50 guests, against $34,200 for all weddings." },
+      { question: "Can you elope with family?", answer: "Yes. Many couples bring parents or a few friends and still call it an elopement. In Glacier National Park, every person counts toward the site's guest limit." }
+    ],
+    related: ["montana-elopement", "montana-micro-wedding-cost", "glacier-national-park-micro-wedding"],
+    sources: [
+      { label: "The Knot: What is a micro wedding (Lauren Miller quote, definitions)", url: "https://theknot.com/content/what-is-a-microwedding" },
+      { label: "The Knot: Average wedding cost, 2026 Real Weddings Study", url: "https://www.theknot.com/content/average-wedding-cost" },
+      { label: "The Knot Real Weddings Study 2026 data read-out (PDF)", url: "https://images.theknot.com/rules/2026/the-knot-real-weddings-study-data-read-out-2026.pdf" },
+      { label: "Zola: Micro weddings", url: "https://www.zola.com/expert-advice/micro-weddings" },
+      { label: "Zola: First Look Report 2026", url: "https://www.zola.com/expert-advice/the-first-look-report" },
+      { label: "Susan Stripling: Elopement vs wedding", url: "https://susanstripling.com/blog/elopement-vs-wedding/" },
+      { label: "Adventure Instead: Eloping vs wedding", url: "https://adventureinstead.com/eloping-vs-wedding/" },
+      { label: "National Park Service: Glacier weddings", url: "https://www.nps.gov/glac/planyourvisit/weddings.htm" }
+    ]
+  },
+  {
+    slug: "questions-to-ask-a-wedding-venue",
+    eyebrow: "Venue Selection Guide",
+    title: "Questions to Ask a Wedding Venue Before You Book in Montana",
+    seoTitle: "Questions to Ask a Wedding Venue | Printable List With Montana Extras | North Star Ranch",
+    description: "Questions to ask a wedding venue: the full price and fees, vendors and alcohol, weather, rules, the contract, plus Montana smoke, roads and bears. Printable.",
+    hero: "/images/north-star-ranch-winter-lodge.jpg",
+    heroAlt: "North Star Ranch lodge in the snowy pines near Whitefish, Montana",
+    readTime: "10 minute read",
+    updated: "October 25, 2026",
+    social: "/social/questions-to-ask-a-wedding-venue.jpg",
+    quickAnswer: "Ask three things first: is your date open, what is the full price with every fee, and how many guests fit for both the ceremony and a seated dinner. Then cover vendors, the weather plan, house rules, the contract and where guests sleep. In Montana, add smoke, winter roads, fire rules and bears.",
+    sections: [
+      {
+        id: "first",
+        heading: "The First Three Questions to Ask on the Call",
+        paragraphs: [
+          "Ask these early in your wedding planning, before you book a venue tour. If any answer is no, you just saved a trip."
+        ],
+        steps: [
+          "Is our date open, and is anything else booked on the property that day?",
+          "What is the full price for our date, with every fee, tax and service charge?",
+          "How many guests fit for the ceremony and reception, with everyone seated for dinner?"
+        ]
+      },
+      {
+        id: "money",
+        heading: "Questions About Price, Fees and the Payment Schedule",
+        paragraphs: [
+          "The rental fee is rarely the final number. One couple on [r/Weddingsunder10k](https://www.reddit.com/r/Weddingsunder10k/comments/1lwsp42/10k12k_what_hidden_fees_are_you_all_seeing_pop_up/) found a 22% service fee in the contract that was not in the venue's first materials."
+        ],
+        bullets: [
+          "What does the rental include: hours, setup, cleanup, tables and chairs?",
+          "Is there a service charge, gratuity or tax on top, and what percent?",
+          "How much is the deposit, and when is it refundable?",
+          "What is the payment schedule, and is there a payment plan?",
+          "Is there a food and beverage minimum?",
+          "Is there a cake cutting fee, corkage fee, cleaning fee or overtime fee?",
+          "Are food and drink prices locked when we sign, or can they rise later?"
+        ],
+        quotes: [
+          { text: "Sometimes the venue rental fee may get you in the door, but there are additional fees on top of that that you need to be aware of", name: "Keri Ketterer Walter", credential: "wedding planner and owner of Always Yours Events, quoted by The Boston Globe", url: "https://www.bostonglobe.com/2020/01/17/magazine/10-questions-ask-wedding-venue-before-you-commit" }
+        ]
+      },
+      {
+        id: "vendors",
+        heading: "Vendors, Catering and the Bar",
+        paragraphs: [
+          "Find out who you must hire, who you may bring, and who pours the drinks.",
+          "Montana makes the alcohol question matter. The state Department of Revenue says a venue without an alcohol license may not sell or serve alcohol or include it in the rental. It may let guests bring their own at a private party that is not open to the public. If your caterer has a catering endorsement, alcohol bought somewhere else is not allowed in the event area."
+        ],
+        bullets: [
+          "Is there a house caterer or a preferred vendor list, and is it required?",
+          "Can we bring outside vendors, like our own caterer, photography team or wedding planner? Is there a kitchen?",
+          "Is catering full service, and can the caterer accommodate dietary restrictions?",
+          "Does the venue or the caterer hold a Montana liquor license or catering endorsement for the bar?",
+          "Can guests bring their own alcohol?",
+          "When can vendors arrive to set up, and when must they leave?"
+        ],
+        more: {
+          label: "Read more: Montana's alcohol rules",
+          paragraphs: [
+            "The [Event Venues fact sheet](https://revenue.mt.gov/card/alcoholic-beverages/facts/event-venues) (updated June 2023) lists what an unlicensed venue may and may not do, and says cash bars are allowed only at a licensed premises or through a caterer with a catering endorsement. The [Catering Endorsement fact sheet](https://revenue.mt.gov/files/ABCD/Alcoholic-Beverage-Control-Publications/Fact-Sheets/Catering-Endorsement.pdf) says the event must be within 100 miles of the caterer's licensed premises.",
+            "The state can fine anyone up to $500 for serving alcohol or allowing it to be consumed without a license. The fact sheets note that rules can change, so ask the venue and your caterer to confirm in writing."
+          ]
+        }
+      },
+      {
+        id: "weather",
+        heading: "The Inclement Weather Plan",
+        paragraphs: [
+          "Ask to see the backup space set for your real guest count. A plan that lives only in an email is not a plan."
+        ],
+        bullets: [
+          "Where does the ceremony move if it rains, snows or blows?",
+          "Who makes the call, and how many hours before?",
+          "Is the backup space heated, and can we see a floor plan of it set for our guest list?",
+          "Is a tent allowed, who pays for it, and how long does setup take?"
+        ],
+        image: { src: "/images/north-star-ranch-great-room.jpg", alt: "The Great Room at North Star Ranch set with long dinner tables under wagon-wheel chandeliers", caption: "The Great Room at North Star Ranch, indoor space on the property." }
+      },
+      {
+        id: "montana",
+        heading: "Montana Questions Most Venue Lists Skip",
+        paragraphs: [
+          "National lists are written for ballrooms and barns near big cities. A Montana venue needs a few more answers."
+        ],
+        table: {
+          headers: ["Ask the venue", "Why it matters in Montana"],
+          rows: [
+            ["What is your wildfire smoke plan?", "Montana's health department says smoke is one of the biggest air challenges, especially during the summer and early fall."],
+            ["Are fire pits, candles and sparklers allowed?", "Flathead County has banned campfires on private land under past fire restrictions. Rules change with fire danger, so check for your date."],
+            ["How do you keep food and trash away from bears?", "Montana Fish, Wildlife and Parks says securing food and trash greatly reduces the chance of a bear conflict."],
+            ["Are the roads plowed and safe in winter?", "Montana's 511 line gives statewide road conditions. From outside Montana, call 800-226-7623."],
+            ["Is the ceremony in Glacier National Park or on private land?", "A park ceremony needs a permit with a $125 application fee and has a two-hour limit."],
+            ["How far is the airport, and do guests need a car?", "Glacier Park International Airport serves the Whitefish and Kalispell area."]
+          ]
+        },
+        more: {
+          label: "Read more: smoke, fire and bear rules",
+          paragraphs: [
+            "Montana's health department lists a 2026 clean air center at the Whitefish Library as part of a Flathead County smoke program. See [Smoke from Fires](https://dphhs.mt.gov/airquality/SmokefromFires).",
+            "Flathead County's August 2024 Stage I restrictions applied to all private land and banned campfires, with an exception for backyard grills on cleared ground with running water. Fireworks are illegal on all state and federal land in Montana, according to Montana Fish, Wildlife and Parks.",
+            "On Flathead National Forest land, a Forest Service order requires bear-resistant storage of all food and garbage from March 1 to December 31, through 2028. That matters if your group plans a picnic or hike there."
+          ]
+        }
+      },
+      {
+        id: "rules",
+        heading: "House Rules: End Time, Noise, Decor and Flame",
+        paragraphs: [
+          "House rules shape the night more than the decor does. Ask for them in writing."
+        ],
+        bullets: [
+          "What time must the music stop, and when must everyone leave?",
+          "What are the noise restrictions, and can we have a live band or only a DJ?",
+          "Are real flame candles allowed, or only candles in glass?",
+          "What decor is not allowed, such as confetti, petals, nails or tape?",
+          "Where is cocktail hour, and is there a dance floor?",
+          "Is there a bridal suite or getting-ready room for the wedding party?"
+        ],
+        quotes: [
+          { text: "It is crucial for clients to know this before signing with a venue so their event doesn't end abruptly and they are aware of any noise constraints and venue curfews", name: "Sydney Forman Eadie", credential: "Director of Events at Bar Lab Hospitality, quoted by The Knot", url: "https://theknot.com/content/wedding-venue-site-tour-questions-to-ask" }
+        ]
+      },
+      {
+        id: "contract",
+        heading: "Contract, Cancellation and Insurance",
+        paragraphs: [
+          "Read the whole contract before you pay a deposit. Ask what happens if either side cancels."
+        ],
+        bullets: [
+          "What is the cancellation and refund policy, for us and for the venue?",
+          "Can we move the date, and what does that cost?",
+          "What happens if smoke, fire or a road closure stops the event?",
+          "Do we or our vendors need liability insurance?",
+          "Who is our venue coordinator on the wedding day, and how many venue staff work the event?"
+        ],
+        quotes: [
+          { text: "That may seem like an obvious suggestion, but the number of people who don't actually read their wedding contracts and ultimately don't know what they're signing is staggering.", name: "Leah Weinberg", credential: "attorney and partner at Oduberg Law, quoted by The Knot", url: "https://www.theknot.com/content/how-to-read-wedding-venue-contract" }
+        ]
+      },
+      {
+        id: "guests",
+        heading: "Guests: Lodging, Parking and Access",
+        paragraphs: [
+          "For a destination wedding, guest logistics decide how the weekend feels."
+        ],
+        bullets: [
+          "How many guests can sleep on the property, and is there a minimum stay?",
+          "What is the parking situation, and can a shuttle get in?",
+          "Is the site wheelchair and handicap accessible for older guests?",
+          "How far is it to the nearest hotels and the airport?"
+        ],
+        image: { src: "/images/north-star-ranch-lodge-side.jpg", alt: "Two-story lodge with covered balconies among the pines at North Star Ranch", caption: "The eight-room lodge at North Star Ranch, where guests can stay on the property." }
+      },
+      {
+        id: "reputation",
+        heading: "How to Check a Venue's Reviews and Reputation",
+        paragraphs: [
+          "A good tour is not proof. Check the venue's record the same way you would check any big purchase."
+        ],
+        steps: [
+          "Read recent reviews on more than one site, including the bad ones.",
+          "Ask for two couples who married there in the past year, and call them.",
+          "Look up the business name on the Montana Secretary of State's [business search](https://biz.sosmt.gov/search).",
+          "Search prior complaints with the Montana Department of Justice [Office of Consumer Protection](https://dojmt.gov/office-of-consumer-protection/consumer-complaints/).",
+          "Visit at the same time of day and season as your wedding."
+        ],
+        more: {
+          label: "Read more: what a BBB grade means",
+          paragraphs: [
+            "The Better Business Bureau says customer reviews do not affect its letter rating, and that it is not a government agency. Read the reviews themselves rather than the grade."
+          ]
+        }
+      },
+      {
+        id: "printable",
+        heading: "Printable Venue Question List",
+        paragraphs: [
+          "Every question on this page fits on two printed pages. Bring a copy to each tour and write the answers beside them."
+        ],
+        download: { label: "Download the PDF", href: "/downloads/montana-wedding-venue-questions.pdf", note: "Questions to Ask a Wedding Venue in Montana, two pages, free." },
+        figure: { src: "/images/guides/questions-to-ask-a-wedding-venue-montana.png", mobileSrc: "/images/guides/questions-to-ask-a-wedding-venue-montana-mobile.png", alt: "Infographic of six Montana questions to ask a wedding venue: smoke, fire, bears, winter roads, park permits and airport distance", width: 1800, height: 848 }
+      },
+      {
+        id: "fit",
+        heading: "How North Star Ranch Answers the Big Ones",
+        paragraphs: [
+          "Here is how North Star Ranch near Whitefish answers the questions couples ask most. Ask for anything else on your first call."
+        ],
+        table: {
+          headers: ["Question", "North Star Ranch"],
+          rows: [
+            ["Where do guests sleep?", "On the property: a five-bedroom chalet, four cabins and an eight-room lodge"],
+            ["Is it private?", "40 acres that border national forest on two sides"],
+            ["What is the indoor space?", "The Great Room; ask how it sets up for your guest count"],
+            ["How far is the airport?", "25 minutes to Glacier Park International Airport, 8 miles to downtown Whitefish"],
+            ["Can we choose our own vendors?", "Yes. Couples choose and hire their own vendors"],
+            ["What does it cost?", "Quoted for your dates on inquiry; the whole ranch can be rented"]
+          ]
+        },
+        image: { src: "/images/north-star-ranch-cabin-dining.jpg", alt: "Bright cabin dining area with forest views through tall windows at North Star Ranch", caption: "Inside one of the four cabins at North Star Ranch." }
+      }
+    ],
+    faqs: [
+      { question: "What should we bring to a wedding venue tour?", answer: "Your guest count, two or three date options, your budget cap and a printed question list. Take photos of the backup space, restrooms and parking." },
+      { question: "When should we ask about the contract?", answer: "Before you pay any deposit. Ask for a sample contract on the tour so you can read the cancellation, refund and fee terms at home." },
+      { question: "Can a Montana wedding venue let us bring our own alcohol?", answer: "The Montana Department of Revenue says an unlicensed venue may allow guests to bring their own alcohol at a private party not open to the public. If you hire a caterer with a catering endorsement, outside alcohol is not allowed in the event area." },
+      { question: "Are fire pits allowed at Montana weddings?", answer: "It depends on the venue and the county's fire rules that week. Flathead County has banned campfires on private land under past restrictions, so ask the venue for its plan and check the county status before your date." },
+      { question: "Do we need wedding liability insurance?", answer: "Some venues require it from the couple or from each vendor. Ask on the first call so you can buy it before the deadline." }
+    ],
+    related: ["montana-wedding-venue-cost", "small-wedding-venues-in-montana", "whitefish-wedding-venues"],
+    sources: [
+      { label: "Montana Department of Revenue: Event Venues fact sheet", url: "https://revenue.mt.gov/card/alcoholic-beverages/facts/event-venues" },
+      { label: "Montana Department of Revenue: Catering Endorsement fact sheet (PDF)", url: "https://revenue.mt.gov/files/ABCD/Alcoholic-Beverage-Control-Publications/Fact-Sheets/Catering-Endorsement.pdf" },
+      { label: "Montana DPHHS: Outdoor air quality", url: "https://dphhs.mt.gov/airquality/OutdoorAirQuality" },
+      { label: "Flathead County: Stage I fire restrictions, August 2024", url: "https://flatheadcounty.gov/department-directory/commissioners-office/public_information_office/article/8109" },
+      { label: "Montana Fish, Wildlife and Parks: Living in bear country", url: "https://fwp.mt.gov/conservation/wildlife-management/bear/be-bear-aware/living-bear-country" },
+      { label: "USDA Forest Service: Food and wildlife attractant storage order", url: "https://www.fs.usda.gov/r01/alerts/r1-2023-02-ncde-food-and-wildlife-attractant-storage-order" },
+      { label: "Montana Department of Transportation: 511MT", url: "https://www.511mt.net/" },
+      { label: "Montana Secretary of State: Business search", url: "https://biz.sosmt.gov/search" },
+      { label: "Montana Department of Justice: Consumer complaints", url: "https://dojmt.gov/office-of-consumer-protection/consumer-complaints/" },
+      { label: "BBB: Frequently asked questions", url: "https://www.bbb.org/faq" },
+      { label: "The Knot: Wedding venue site tour questions", url: "https://theknot.com/content/wedding-venue-site-tour-questions-to-ask" },
+      { label: "The Knot: How to read a wedding venue contract", url: "https://www.theknot.com/content/how-to-read-wedding-venue-contract" }
+    ]
+  },
+  {
+    slug: "montana-wedding-venue-cost",
+    eyebrow: "Venue Cost Guide",
+    title: "What Montana Wedding Venues Cost: Published Prices From 26 Venues",
+    seoTitle: "Montana Wedding Venue Cost | Real Prices From 26 Venues Compared | North Star Ranch",
+    description: "Montana wedding venue cost from 26 venues' own price pages: $695 elopements to $40,000 ranch buyouts, plus fees, weekday savings and hidden prices.",
+    hero: "/images/north-star-ranch-dinner-table.jpg",
+    heroAlt: "Long dinner table set with plates, napkins and orange lilies at North Star Ranch",
+    readTime: "7 minute read",
+    updated: "October 25, 2026",
+    quickAnswer: "In northwest Montana, published weekend prices for the venue alone start between $3,595 and $8,895. When beds for your guests come with it, buyouts run $6,995 to $40,000. Weekdays and winter cost less, and 35 of the 61 venue sites we checked print no price at all.",
+    sections: [
+      {
+        id: "prices",
+        heading: "What Montana Wedding Venues Charge",
+        paragraphs: [
+          "We read the websites of 61 wedding venues in Montana in October 2026. These are the weekend prices that northwest Montana venues print on their own sites, grouped by what the price buys.",
+          "Venue-only rentals sit in a lower band. The jump comes when lodging is included, because you are renting beds for part of your group too."
+        ],
+        figure: { src: "/images/guides/montana-wedding-venue-cost-chart.png", mobileSrc: "/images/guides/montana-wedding-venue-cost-chart-mobile.png", alt: "Bar chart of published weekend wedding venue prices at 14 northwest Montana venues, grouped by venue only and venue with lodging", caption: "Lowest published weekend or multi-night price on each venue's own site, read October 2026. Directory prices were not used.", width: 1800, height: 1425 },
+        more: {
+          label: "Read more: how we counted",
+          paragraphs: [
+            "We used only prices printed on each venue's own website and checked each one against the live page. Directory prices were left out because they often disagreed with the venue's own page.",
+            "Of the 61 venue sites we checked, 26 publish a wedding price and 35 do not. We looked for price pages on purpose, so this is a sample, not a count of every venue in Montana."
+          ]
+        }
+      },
+      {
+        id: "guests",
+        heading: "How Guest Count Changes the Price",
+        paragraphs: [
+          "Many venues price by the size of your guest list. Eagle Mountain Ranch charges $3,595 for up to 75 guests and $4,695 for 76 to 150. Triple B Ranch charges $8,895 for up to 200 guests and $11,895 for 200 to 300.",
+          "Small groups often get their own tier. The Copper K Barn in Whitehall offers $2,000 for elopements and micro weddings of no more than 50 guests on Tuesdays and Wednesdays. See [elopement vs micro wedding](/guides/elopement-vs-micro-wedding) for how the two compare."
+        ]
+      },
+      {
+        id: "included",
+        heading: "What the Price Covers: Venue Only, Lodging or All-Inclusive",
+        paragraphs: [
+          "Two prices can look alike and buy very different things, especially for a ranch wedding. Check what the number includes before you compare it."
+        ],
+        table: {
+          headers: ["Pricing type", "What you get", "Published examples"],
+          rows: [
+            ["Venue only", "The venue rental for a day or a weekend; catering, full service or drop-off, and rentals are extra", "Eagle Mountain Ranch, Kalispell: $3,595 for a 3-day weekend, up to 75 guests. Jewel Basin Weddings: $4,500 with tables, chairs and heaters"],
+            ["Venue plus lodging", "The whole property plus beds for part of the group", "Glacier Homestead, Coram: $12,500 for two nights, lodging for up to 68. Clydesdale Outpost, Whitefish: $20,000 for two nights, lodging for 24"],
+            ["All-inclusive", "Venue, lodging and more in one wedding package", "Mountainside Weddings, Whitefish: from $20,000 on its homepage and from $25,000 for 50 guests in its FAQ"],
+            ["Elopement or micro", "A short window for a small group", "Eagle Mountain Ranch: $695, up to eight guests. Clydesdale Outpost: $1,500 for four hours, up to 20 people"]
+          ]
+        }
+      },
+      {
+        id: "fees",
+        heading: "Fees on Top of the Rental",
+        paragraphs: [
+          "The rental is rarely the whole bill. These extras are printed on Montana venues' own price pages."
+        ],
+        bullets: [
+          "Cleanup: $400 at Diamond B Weddings; $950 for barn cleanup and trash at The Copper K Barn.",
+          "A percentage fee: Glacier Homestead adds 8% to its package total.",
+          "Security deposit: $1,500 at Gallatin River Hideaway, with half applied to cleanup.",
+          "Tables, chairs and setup: not included at Diamond B Weddings.",
+          "Tent: a $3,000 tent fee at Firelight Farm in Bozeman.",
+          "Catering minimum: $5,000 at Rockin' TJ Ranch, plus a 20% service fee on food.",
+          "Rehearsal dinner space: Highland Hill Farms charges $3,500 to add its chapel for a rehearsal dinner or welcome party.",
+          "Other wedding vendors: at a venue-only rental, your caterer, wedding photographer, DJ and wedding planner are separate costs."
+        ],
+        more: {
+          label: "Read more: questions that catch hidden fees",
+          paragraphs: [
+            "Ask every venue for one written total with every fee, tax and service charge. The full list is in [questions to ask a wedding venue](/guides/questions-to-ask-a-wedding-venue). For the whole wedding cost, not just the venue, see the [Montana micro wedding cost guide](/guides/montana-micro-wedding-cost); The Knot puts the average cost of a US wedding at $34,200."
+          ]
+        }
+      },
+      {
+        id: "season",
+        heading: "Weekdays and the Off-Season Cost Less",
+        paragraphs: [
+          "Moving off a summer Saturday is the easiest saving. Here is the same venue on a peak weekend and on a quieter day."
+        ],
+        table: {
+          headers: ["Venue", "Peak or weekend", "Weekday or off-season"],
+          rows: [
+            ["Diamond B Weddings", "$6,450, 3-day weekend", "$5,250, 3-day weekday"],
+            ["Eagle Mountain Ranch", "$3,595, 3-day weekend", "$2,995, 3-day weekday"],
+            ["Triple B Ranch, Columbia Falls", "$8,895, summer, up to 200 guests", "$6,495, winter, up to 100 guests"],
+            ["Flathead Lake Venue, Dayton", "$6,995, 2-night weekend", "$4,995, 2-night weekday"],
+            ["Firelight Farm, Bozeman", "$14,500, Friday or Saturday, June to September", "$12,000, Friday or Saturday, October to May"],
+            ["Green Valley Ranch, Coram", "$40,000, July to September", "$36,800, June and October"]
+          ]
+        }
+      },
+      {
+        id: "hidden",
+        heading: "Why Many Venues Hide the Price, and How to Get One",
+        paragraphs: [
+          "Of the 61 venue sites we checked, 35 print no wedding price. That includes Flathead Lake Lodge, The Lodge at Whitefish Lake, Star Meadows Ranch, Grouse Mountain Lodge and Copper Rose Ranch near Livingston.",
+          "If you are planning a wedding in Montana, send your date, guest count and the nights you need. Ask for one written total with every fee."
+        ],
+        figure: { src: "/images/guides/montana-wedding-venue-cost-types.png", mobileSrc: "/images/guides/montana-wedding-venue-cost-types-mobile.png", alt: "Infographic of four ways Montana wedding venues price a wedding, with published price ranges and the share of venues that hide prices", width: 1800, height: 846 }
+      },
+      {
+        id: "ten-thousand",
+        heading: "Is $10,000 a Lot for a Montana Wedding Venue?",
+        paragraphs: [
+          "For the venue alone, it is high end. Every venue-only weekend price we found in northwest Montana starts under $9,000.",
+          "For a weekend with lodging, $10,000 is low. All but one buyout we found start at $12,500 or more; the exception is Flathead Lake Venue at $6,995 for two nights with lodging."
+        ]
+      },
+      {
+        id: "lodging",
+        heading: "Lodging Changes the Real Total",
+        paragraphs: [
+          "For a destination wedding, a buyout looks expensive until you count the beds. Highland Hill Farms lists $19,500 for a three-night weekend with lodging for up to 30 guests. By our math, that is $650 per guest for three nights, venue included.",
+          "A venue-only rental sends guests to hotels each night, and that cost lands on them. Compare the full trip, not the rental line."
+        ],
+        image: { src: "/images/north-star-ranch-chalet-kitchen.jpg", alt: "Chalet kitchen and dining table with a stone fireplace at North Star Ranch", caption: "The five-bedroom chalet at North Star Ranch, one of the places guests stay on the property." }
+      },
+      {
+        id: "fit",
+        heading: "Where North Star Ranch Fits",
+        paragraphs: [
+          "North Star Ranch does not publish a price. It quotes for your dates, and the whole ranch can be rented.",
+          "The quote buys a private 40-acre setting near Whitefish with indoor and outdoor space for the ceremony and reception, plus lodging on the property: a five-bedroom chalet, four cabins and an eight-room lodge. Couples hire their own caterer, photographer and other vendors. [Ask North Star Ranch for a quote](/#contact)."
+        ],
+        image: { src: "/images/north-star-ranch-cabin-deck-grill.jpg", alt: "Cabin deck with a grill and outdoor dining table among the pines at North Star Ranch", caption: "A cabin deck at North Star Ranch. Guests stay on the property instead of driving to hotels." }
+      }
+    ],
+    faqs: [
+      { question: "How much does a wedding venue cost in Montana?", answer: "In northwest Montana, published weekend prices for the venue alone start between $3,595 and $8,895. Venues that include lodging for guests list buyouts from $6,995 to $40,000." },
+      { question: "Are weekday weddings cheaper in Montana?", answer: "Usually. Diamond B Weddings lists $6,450 for a weekend and $5,250 for a 3-day weekday rental, and Flathead Lake Venue lists $6,995 for a 2-night weekend and $4,995 for a 2-night weekday stay." },
+      { question: "Do Montana wedding venues include tables and chairs?", answer: "Some do and some do not. Jewel Basin Weddings includes tables and chairs in its $4,500 rental, while Diamond B Weddings says tables and chairs are not included." },
+      { question: "What does Copper Rose Ranch cost for a wedding?", answer: "Copper Rose Ranch in Paradise Valley near Livingston does not print a wedding price on its own website. Contact the ranch for a quote for your date." },
+      { question: "Why don't more venues post their prices?", answer: "We cannot say why for each venue. Many quote by date, season and guest count instead, so send those three details to get a real number." }
+    ],
+    related: ["montana-micro-wedding-cost", "questions-to-ask-a-wedding-venue", "montana-wedding-venues-with-lodging"],
+    sources: [
+      { label: "Diamond B Weddings: Rates", url: "https://www.diamondbweddings.com/rates" },
+      { label: "Legacy Ranch: Wedding pricing", url: "https://www.legacyranchmt.com/wedding-pricing" },
+      { label: "Eagle Mountain Ranch: Book online", url: "https://www.eaglemtnranchevents.com/book-online" },
+      { label: "Jewel Basin Weddings", url: "https://www.jewelbasinweddings.com" },
+      { label: "Highland Hill Farms: Micro wedding venue", url: "https://www.highlandhillfarms.com/glacier-park-whitefish-micro-wedding-venue-events-retreats-lodge-destination" },
+      { label: "Triple B Ranch: Packages and pricing", url: "https://triplebbbranchvenue.com/packages-pricing" },
+      { label: "The Farmhouse at Flathead Lake: Weddings", url: "https://www.thefarmhouseatflatheadlake.com/weddings" },
+      { label: "Flathead Lake Venue: Weddings", url: "https://www.flatheadlakevenue.com/weddings" },
+      { label: "Atanaha Event Center: Pricing", url: "https://atanahaeventcenter.com/pricing/" },
+      { label: "The Cabins at Blacktail: Weddings", url: "https://thecabinsatblacktail.com/weddings" },
+      { label: "Mountainside Weddings: FAQ", url: "https://mountainsideweddings.com/frequently-asked-questions/" },
+      { label: "Clydesdale Outpost: Weddings and events", url: "https://www.clydesdaleoutpost.com/weddings-and-events" },
+      { label: "Green Valley Ranch: FAQ", url: "https://www.greenvalleyranchmontana.com/faq" },
+      { label: "Glacier Homestead: Weddings and events", url: "https://glacierhomestead.com/weddings-and-events/" },
+      { label: "The Copper K Barn: Booking info", url: "https://www.thecopperkbarn.com/bookinginfo" },
+      { label: "Firelight Farm: Weddings", url: "https://firelightfarmmt.com/weddings" },
+      { label: "Gallatin River Hideaway: Creekside pavilions", url: "https://www.gallatinriverhideaway.com/creekside-pavilions" },
+      { label: "Rockin' TJ Ranch: FAQs", url: "https://rockingtjranch.com/faqs" },
+      { label: "Copper Rose Ranch: Weddings", url: "https://copperroseranch.com/weddings/" }
+    ]
+  },
+  {
+    slug: "kalispell-wedding-venues",
+    eyebrow: "Venue Comparison",
+    title: "Kalispell Wedding Venues: 11 Options Compared by Price, Guests and Lodging",
+    seoTitle: "Kalispell Wedding Venues | 11 Compared by Price, Guests and Lodging | North Star Ranch",
+    description: "Kalispell wedding venues compared: published prices, guest limits, indoor space and onsite lodging for 11 venues near Kalispell, Montana, plus drive times.",
+    hero: "/images/north-star-ranch-cabin-exterior.jpg",
+    heroAlt: "Modern cabin with a wraparound wood deck in the pines at North Star Ranch near Whitefish",
+    readTime: "6 minute read",
+    updated: "October 25, 2026",
+    quickAnswer: "Kalispell wedding venues include Eagle Mountain Ranch's red barn, Jewel Basin Weddings' forest pavilion, Legacy Ranch, the Conrad Mansion grounds and hotel event rooms. Six of the 11 we checked publish a price; the smallest is a $695 elopement for up to eight guests at Eagle Mountain Ranch. Only five list rooms where guests can stay, such as Highland Hill Farms, which lodges up to 30.",
+
+    sections: [
+      {
+        id: "compare",
+        heading: "Kalispell Wedding Venues at a Glance",
+        paragraphs: [
+          "These venues in Kalispell host weddings and events of every size. Every fact below comes from the venue's own website, read in October 2026, so confirm prices for your date."
+        ],
+        table: {
+          headers: ["Venue", "Type", "Guests", "Lodging", "Published price"],
+          rows: [
+            ["Eagle Mountain Ranch, Kalispell", "Historic red barn", "Up to 150", "None stated", "$3,595, 3-day weekend, up to 75 guests"],
+            ["Jewel Basin Weddings, Kalispell", "Forest pavilion with Swan Mountain views", "Up to 115", "Two get-ready cabins", "$4,500, 3-day access"],
+            ["Diamond B Weddings, Flathead Valley", "Barns on the Flathead River", "Up to 300", "Dry camping, $30 a day", "$6,450, 3-day weekend"],
+            ["Legacy Ranch, Kalispell", "Ranch-style event venue", "Up to 175 indoors", "None stated", "$5,800 to $17,400, peak weekends, 2027"],
+            ["Triple B Ranch, Columbia Falls", "Horse ranch with indoor arena", "Over 350", "Apartment, day before and day of", "$8,895, summer, up to 200 guests"],
+            ["Highland Hill Farms, Flathead Valley", "Micro wedding farm and chapel", "Up to 60", "Up to 30 guests", "$15,500 to $33,500 buyouts, 2027"],
+            ["Snowline Acres, Kalispell", "Historic venue, a 1939 lumber company building", "Not stated", "Two vacation homes", "Not published"],
+            ["Conrad Mansion Museum, Kalispell", "1895 mansion grounds", "Not stated", "None", "Call 406-755-2166"],
+            ["Glacier International Lodge, Kalispell", "Hotel event room", "Up to 72, classroom style", "Hotel rooms", "Not published"],
+            ["Ashley Lake Estates, Kila", "Private 50-acre lake estate", "Not stated", "Sleeps 26", "Not published"],
+            ["Meadow Lake Resort, Columbia Falls", "Golf and ski resort", "Room seats 30", "24 hotel rooms, 170 condos", "Not published"]
+          ]
+        },
+        figure: { src: "/images/guides/kalispell-wedding-venues-prices.png", mobileSrc: "/images/guides/kalispell-wedding-venues-prices-mobile.png", alt: "Bar chart of published weekend wedding prices at six venues near Kalispell, Montana", caption: "One published weekend price per venue from its own site, read October 2026. Several list lower weekday and winter rates.", width: 1800, height: 816 }
+      },
+      {
+        id: "small",
+        heading: "Small Wedding and Elopement Options Near Kalispell",
+        paragraphs: [
+          "For a small Kalispell, MT wedding, a few venues price for small groups. These are the lowest published options."
+        ],
+        bullets: [
+          "Eagle Mountain Ranch: a $695 private elopement, three hours, the couple plus up to eight guests.",
+          "Eagle Mountain Ranch: a $1,595 single weekday event, 8 am to 10 pm.",
+          "Diamond B Weddings: a $2,750 single weekday, Monday through Wednesday.",
+          "Legacy Ranch: a $5,800 four-hour package on peak weekends.",
+          "Highland Hill Farms: built for micro weddings, with up to 60 guests and only 15 events a year."
+        ]
+      },
+      {
+        id: "lodging",
+        heading: "Kalispell Venues With Lodging",
+        paragraphs: [
+          "Many Kalispell venues have no rooms for guests, so the group drives to hotels each night. These five list rooms or homes on the property. Triple B Ranch adds an apartment for the day before and the wedding day, and Diamond B allows dry camping."
+        ],
+        bullets: [
+          "Highland Hill Farms: a farmhouse and two historic cabins for up to 30 guests, in two-, three- and seven-night buyouts for a full wedding weekend.",
+          "Ashley Lake Estates, Kila: two homes with sleeping space for 26 people.",
+          "Snowline Acres: two vacation homes on the property.",
+          "Meadow Lake Resort, Columbia Falls: 24 hotel rooms and 170 condo units.",
+          "Glacier International Lodge: a hotel with an event room."
+        ],
+        image: { src: "/images/north-star-ranch-map.jpg", alt: "Illustrated map of the 40-acre North Star Ranch property with the lodge, chalet and cabins marked", caption: "The North Star Ranch property map: the chalet, four cabins and the lodge sit on 40 private acres near Whitefish." }
+      },
+      {
+        id: "indoor",
+        heading: "Indoor Space for the Ceremony and Reception",
+        paragraphs: [
+          "Even an outdoor wedding needs an indoor plan for the ceremony and reception. These Kalispell venues list indoor space, including winter options."
+        ],
+        bullets: [
+          "Legacy Ranch moves the ceremony indoors at no added fee, with room for 175 guests inside.",
+          "Triple B Ranch has a 12,000-square-foot heated indoor arena and a winter price of $6,495 for up to 100 guests.",
+          "Diamond B Weddings calls itself a year-round heated venue.",
+          "Jewel Basin Weddings has a covered pavilion with a built-in bar and three outdoor heaters."
+        ]
+      },
+      {
+        id: "distances",
+        heading: "Kalispell to Glacier, Whitefish and the Airport",
+        paragraphs: [
+          "Kalispell is a short drive from everything a destination group needs. Couples planning a Glacier park wedding hold any catered wedding reception outside the park, because catered food is not allowed at park ceremony sites."
+        ],
+        table: {
+          headers: ["Route", "Distance", "Source"],
+          rows: [
+            ["Kalispell to Glacier Park International Airport", "About 8 miles north", "U.S. Customs and Border Protection"],
+            ["Kalispell to Whitefish", "About 15 miles via US-93", "Driving distance"],
+            ["Airport to Glacier National Park West Entrance", "About 30 miles", "National Park Service"]
+          ]
+        },
+        figure: { src: "/images/guides/kalispell-wedding-venues-glance.png", mobileSrc: "/images/guides/kalispell-wedding-venues-glance-mobile.png", alt: "Infographic of Kalispell wedding facts: airport 8 miles, Whitefish 15 miles, Glacier 30 miles from the airport, and how many venues publish prices and lodging", width: 1800, height: 732 }
+      },
+      {
+        id: "choose",
+        heading: "How to Choose a Kalispell Venue",
+        paragraphs: [
+          "Compare the same four things at every venue. Use these [questions to ask a wedding venue](/guides/questions-to-ask-a-wedding-venue) on each call."
+        ],
+        steps: [
+          "Match the indoor capacity to your guest count, not just the lawn.",
+          "Decide whether guests must sleep on site. If yes, start with the lodging list above.",
+          "Price a weekday. Eagle Mountain Ranch and Diamond B both list lower weekday rates.",
+          "Read what the price covers and who handles catering. Jewel Basin includes tables and chairs; Diamond B does not."
+        ],
+        more: {
+          label: "Read more: what Montana venues charge statewide",
+          paragraphs: [
+            "Kalispell's published prices sit in the same range as other venues in Montana's northwest. See [what Montana wedding venues cost](/guides/montana-wedding-venue-cost) for 26 venues compared, the [Whitefish wedding venues](/guides/whitefish-wedding-venues) for options 15 miles north, and the [Flathead Lake wedding venues](/guides/flathead-lake-wedding-venues) for the lake towns."
+          ]
+        }
+      },
+      {
+        id: "north-star",
+        heading: "A Private Option Near Whitefish: North Star Ranch",
+        paragraphs: [
+          "If your group wants to stay together, North Star Ranch near Whitefish puts the wedding and the beds on one private 40-acre property. Guests stay in a five-bedroom chalet, four cabins and an eight-room lodge.",
+          "The ranch is 8 miles from downtown Whitefish, 7.5 miles from Whitefish Lake State Park, 25 minutes from Glacier Park International Airport and less than 45 minutes from Glacier National Park. Its lawn has mountain views toward Glacier. [Check dates at North Star Ranch](/#contact)."
+        ]
+      }
+    ],
+    faqs: [
+      { question: "How much does a wedding venue in Kalispell cost?", answer: "Six of the 11 Kalispell-area venues we checked publish a price. Weekend rentals start at $3,595 at Eagle Mountain Ranch and $4,500 at Jewel Basin Weddings, and buyouts with lodging run up to $33,500 for seven nights at Highland Hill Farms." },
+      { question: "Which Kalispell wedding venues have lodging?", answer: "Highland Hill Farms lodges up to 30 guests, Ashley Lake Estates sleeps 26, Snowline Acres has two vacation homes, Meadow Lake Resort has hotel rooms and condos, and Glacier International Lodge is a hotel with an event room." },
+      { question: "Can you have a winter wedding in Kalispell?", answer: "Yes. Triple B Ranch has a heated indoor arena with a winter price, Diamond B Weddings is heated year-round, and Legacy Ranch moves ceremonies indoors at no added fee." },
+      { question: "How far is Kalispell from Glacier National Park?", answer: "Glacier Park International Airport is about 8 miles north of Kalispell, and the airport is about 30 miles from Glacier's West Entrance, according to the National Park Service." },
+      { question: "What is a small wedding venue near Kalispell?", answer: "Eagle Mountain Ranch lists a $695 elopement for up to eight guests, and Highland Hill Farms is built for micro weddings of up to 60 guests." }
+    ],
+    related: ["whitefish-wedding-venues", "montana-wedding-venue-cost", "flathead-lake-wedding-venues"],
+    sources: [
+      { label: "Eagle Mountain Ranch: Book online", url: "https://www.eaglemtnranchevents.com/book-online" },
+      { label: "Jewel Basin Weddings", url: "https://www.jewelbasinweddings.com" },
+      { label: "Diamond B Weddings: The venue", url: "https://www.diamondbweddings.com/the-venue" },
+      { label: "Legacy Ranch: Wedding pricing", url: "https://www.legacyranchmt.com/wedding-pricing" },
+      { label: "Triple B Ranch: Packages and pricing", url: "https://triplebbbranchvenue.com/packages-pricing" },
+      { label: "Highland Hill Farms: Micro wedding venue", url: "https://www.highlandhillfarms.com/glacier-park-whitefish-micro-wedding-venue-events-retreats-lodge-destination" },
+      { label: "Snowline Acres: Venue", url: "https://www.snowlineacres.com/venue" },
+      { label: "Conrad Mansion Museum: Book", url: "https://conradmansion.com/book/" },
+      { label: "Glacier International Lodge: Plan an event", url: "https://glacierinternationallodge.com/plan-an-event/" },
+      { label: "Ashley Lake Estates: Wedding venue", url: "https://www.truenorthmanagementmt.com/wedding-venue" },
+      { label: "Meadow Lake Resort: Group bookings", url: "https://meadowlake.com/group-bookings/" },
+      { label: "U.S. Customs and Border Protection: Kalispell airport", url: "https://www.cbp.gov/contact/ports/kalispell-airport-mt-montana-3324" },
+      { label: "National Park Service: Glacier directions", url: "https://www.nps.gov/glac/planyourvisit/directions.htm" }
+    ]
+  },
+  {
+    slug: "flathead-lake-wedding-venues",
+    eyebrow: "Venue Comparison",
+    title: "Flathead Lake Wedding Venues: 10 Options by Town, From Bigfork to Polson",
+    seoTitle: "Flathead Lake Wedding Venues | 10 by Town With Prices and Lodging | North Star Ranch",
+    description: "Flathead Lake wedding venues in Bigfork, Lakeside, Somers, Dayton and Polson: which sit on the shore, published prices, guest limits and onsite lodging.",
+    hero: "/images/montana-lake-aerial.jpg",
+    heroAlt: "Aerial view of a forested lake shore with mountains beyond in Montana",
+    readTime: "7 minute read",
+    updated: "October 25, 2026",
+    quickAnswer: "Flathead Lake Lodge in Bigfork, KwaTaqNuk Resort in Polson and Flathead Lake Venue in Dayton are the only three of the 10 venues we checked that say they sit right on the water. The rest are in Lakeside, Somers, Bigfork and Polson, with lake views or none. Four publish a price, from $3,500 for a weekday to $14,800 for a weekend with lodging.",
+    sections: [
+      {
+        id: "by-town",
+        heading: "Flathead Lake Wedding Venues by Town",
+        paragraphs: [
+          "Every fact below comes from the venue's own website, read in October 2026. 'On the water' means the venue says so itself."
+        ],
+        table: {
+          headers: ["Venue", "Town", "On the water?", "Guests", "Lodging", "Published price"],
+          rows: [
+            ["Flathead Lake Lodge", "Bigfork", "Yes, on the shore", "Not stated", "Lodges, cabins and suites", "Not published"],
+            ["Mountain Lake Lodge", "Bigfork", "Sits above the lake", "Not stated", "30 suites", "Not published"],
+            ["Atanaha Event Center", "6 miles southeast of Bigfork", "No lake claim", "Not stated", "None stated", "$3,744 to $6,488 a day; $7,488 to $9,888 a weekend"],
+            ["The Overlook at Flathead Lake", "Lakeside", "Overlooks the lake", "Up to 200", "Sleeps 28", "Not published"],
+            ["The Cabins at Blacktail", "Lakeside", "No lake claim", "Up to 100", "Six cabins, 24 guests", "From $14,800 a weekend; Tuesdays from $3,800"],
+            ["The Harbor at Lakeside", "Lakeside", "No lake claim", "Far West boat: 140", "None stated", "Not published"],
+            ["The Farmhouse at Flathead Lake", "Somers", "Lake views", "Tent: 300", "Farmhouse not available with rental", "$3,500 weekday; $6,000 weekend"],
+            ["Flathead Lake Venue", "Dayton", "Yes, lake frontage and dock", "300 outside, 150 inside", "Two houses, sleep 6 and 8", "$4,995 weekday; $6,995 weekend, 2 nights"],
+            ["The Barn at Finley Point", "Polson", "Lake view", "Up to 175", "None stated", "Not published"],
+            ["KwaTaqNuk Resort", "Polson", "Yes, on the shore", "Up to 200", "Hotel, reduced guest rates", "Not published"]
+          ]
+        }
+      },
+      {
+        id: "on-the-water",
+        heading: "Which Venues Are Right on the Water",
+        paragraphs: [
+          "For a lakeside wedding on the water itself, only three venues say they qualify. Flathead Lake Lodge in Bigfork is on the shore. KwaTaqNuk Resort in Polson has a dance floor platform right on the shore. Flathead Lake Venue in Dayton has lake frontage and an hour on its private dock for photos.",
+          "Four others describe lake views. The Overlook, a 15-acre estate overlooking the lake, has a clear-top reception pavilion, Mountain Lake Lodge looks out to the Rocky Mountains, The Farmhouse has lake views, and The Barn at Finley Point is a 5,000-square-foot barn on a farm with a lake view. Three make no lake claim, including Atanaha, on 12 wooded acres at the base of the Swan Mountains."
+        ],
+        figure: { src: "/images/guides/flathead-lake-wedding-venues-water.png", mobileSrc: "/images/guides/flathead-lake-wedding-venues-water-mobile.png", alt: "Infographic sorting 10 Flathead Lake wedding venues into on the shore, lake views and no lake claim", width: 1800, height: 898 }
+      },
+      {
+        id: "prices",
+        heading: "What Flathead Lake Venues Charge",
+        paragraphs: [
+          "Four of the 10 venues publish a price. Each one has a lower-priced weekday or single-day option."
+        ],
+        figure: { src: "/images/guides/flathead-lake-wedding-venues-prices.png", mobileSrc: "/images/guides/flathead-lake-wedding-venues-prices-mobile.png", alt: "Bar chart of weekday and weekend prices at four Flathead Lake wedding venues", caption: "Lowest published price on each venue's own site, read October 2026. Flathead Lake Venue's homepage says the property is for sale.", width: 1800, height: 958 },
+        more: {
+          label: "Read more: what each price covers",
+          paragraphs: [
+            "The Farmhouse at Flathead Lake: $3,500 for one day, Monday to Thursday only, or $6,000 for a Friday-to-Sunday weekend. It says it offers special pricing to its first guests.",
+            "Flathead Lake Venue: two-night packages with lodging, $6,995 on a peak-season weekend and $4,995 midweek. November to April costs the same as weekdays.",
+            "Atanaha Event Center: $3,744 to $6,488 for 15 hours, or $7,488 to $9,888 for a weekend takeover. The Cabins at Blacktail: from $14,800 for a weekend of three or more nights in all six cabins, or from $3,800 on Tuesdays."
+          ]
+        }
+      },
+      {
+        id: "lodging",
+        heading: "Flathead Lake Venues With Lodging",
+        paragraphs: [
+          "If your guests are flying in, lodging on the property keeps the group together."
+        ],
+        bullets: [
+          "Flathead Lake Lodge: three-day, three-night ranch buyouts in historic lodges, cabins and suites.",
+          "The Overlook at Flathead Lake: up to 28 guests across five private places to stay.",
+          "The Cabins at Blacktail: six cabins for up to 24 guests on a retreat weekend.",
+          "Flathead Lake Venue: a farmhouse that sleeps 6, a lakehouse that sleeps 8, and 25 RV sites.",
+          "Mountain Lake Lodge: 30 suites above the lake.",
+          "KwaTaqNuk Resort: reduced room rates for wedding guests, plus a free suite for the couple on the wedding night."
+        ]
+      },
+      {
+        id: "flathead-lake-lodge",
+        heading: "What a Flathead Lake Lodge Wedding Costs",
+        paragraphs: [
+          "Flathead Lake Lodge does not print a wedding price. Weddings there are three-day, three-night ranch buyouts in May and June or September and October, so ask the lodge for a quote.",
+          "Its rates page lists a cabin, homestead and suite rate of $7,266 for adults. That is the lodge's guest-ranch vacation rate, not a wedding price."
+        ]
+      },
+      {
+        id: "rules",
+        heading: "Catering and Alcohol Rules to Check",
+        paragraphs: [
+          "Lake resorts often control the food and drink at the wedding reception. KwaTaqNuk Resort, which has a ballroom for large receptions, says all food and beverages must be bought through the resort, except the wedding cake. Atanaha Event Center says outside alcohol is not allowed anywhere on the property.",
+          "Ask every venue the same questions before you sign. Our list of [questions to ask a wedding venue](/guides/questions-to-ask-a-wedding-venue) covers catering, alcohol and Montana's alcohol rules."
+        ]
+      },
+      {
+        id: "getting-there",
+        heading: "Getting to Flathead Lake From the Airport",
+        paragraphs: [
+          "Most guests fly into Glacier Park International Airport near Kalispell. Bigfork, near the north end of the lake, is much closer than Polson at the south end."
+        ],
+        table: {
+          headers: ["Route", "Distance or time", "Source"],
+          rows: [
+            ["Airport to Bigfork", "About 35 minutes", "Bigfork visitor site"],
+            ["Airport to Polson", "About 60 miles", "Polson Chamber of Commerce"],
+            ["Kalispell to Polson", "About 50 miles", "City of Polson"]
+          ]
+        }
+      },
+      {
+        id: "seasons",
+        heading: "When Flathead Lake Venues Book Weddings",
+        paragraphs: [
+          "Lake season is short for an outdoor wedding, and each event venue prices around it."
+        ],
+        bullets: [
+          "Flathead Lake Lodge, a historic venue with log lodges, holds weddings in May and June, and September and October.",
+          "Flathead Lake Venue calls May to October peak season and charges weekday rates from November to April.",
+          "The Overlook at Flathead Lake is booking 2027 wedding weekends."
+        ]
+      },
+      {
+        id: "north-star",
+        heading: "A Private Base 40 Miles From the Lake: North Star Ranch",
+        paragraphs: [
+          "You do not need a lake venue to give guests a lake day. North Star Ranch near Whitefish, at the north end of the Flathead Valley, is 40.7 miles from Flathead Lake, so the wedding can happen on private land and the group can spend a day on the water.",
+          "Guests stay on the ranch in a five-bedroom chalet, four cabins and an eight-room lodge. It is 8 miles from downtown Whitefish and 25 minutes from Glacier Park International Airport. [Check dates at North Star Ranch](/#contact)."
+        ],
+        image: { src: "/images/north-star-ranch-cabin-living.jpg", alt: "Bright cabin living room and kitchenette with forest views at North Star Ranch", caption: "Inside a cabin at North Star Ranch near Whitefish." }
+      }
+    ],
+    faqs: [
+      { question: "Which Flathead Lake wedding venues are on the water?", answer: "Three venues say so on their own sites: Flathead Lake Lodge in Bigfork, KwaTaqNuk Resort in Polson and Flathead Lake Venue in Dayton. The others describe lake views or make no lake claim." },
+      { question: "How much does a Flathead Lake wedding venue cost?", answer: "Four of the 10 venues we checked publish prices. They start at $3,500 on a weekday at The Farmhouse at Flathead Lake and reach $14,800 and up for a lodging weekend at The Cabins at Blacktail." },
+      { question: "How much is a wedding at Flathead Lake Lodge?", answer: "Flathead Lake Lodge does not publish a wedding price. Weddings are three-day, three-night ranch buyouts in May and June or September and October, quoted on request." },
+      { question: "Which Flathead Lake venues have lodging?", answer: "Flathead Lake Lodge, The Overlook at Flathead Lake, The Cabins at Blacktail, Flathead Lake Venue and Mountain Lake Lodge all list rooms or homes on the property." },
+      { question: "Can we bring our own caterer to a Flathead Lake venue?", answer: "It depends on the venue. KwaTaqNuk Resort requires all food and drinks through the resort except the cake, so ask each venue before you book." }
+    ],
+    related: ["kalispell-wedding-venues", "montana-wedding-venues-with-lodging", "montana-wedding-venue-cost"],
+    sources: [
+      { label: "Flathead Lake Lodge: Weddings", url: "https://www.flatheadlakelodge.com/weddings/" },
+      { label: "Flathead Lake Lodge: Rates", url: "https://www.flatheadlakelodge.com/rates/" },
+      { label: "Mountain Lake Lodge", url: "https://mountainlakelodge.com" },
+      { label: "Atanaha Event Center: Pricing", url: "https://atanahaeventcenter.com/pricing/" },
+      { label: "The Overlook at Flathead Lake: Wedding experiences", url: "https://theoverlookatflatheadlake.com/wedding-experiences" },
+      { label: "The Cabins at Blacktail: Weddings", url: "https://thecabinsatblacktail.com/weddings" },
+      { label: "The Harbor at Lakeside: Events", url: "https://www.flatheadharbor.com/event" },
+      { label: "The Farmhouse at Flathead Lake: Weddings", url: "https://www.thefarmhouseatflatheadlake.com/weddings" },
+      { label: "Flathead Lake Venue: Weddings", url: "https://www.flatheadlakevenue.com/weddings" },
+      { label: "The Barn at Finley Point", url: "https://barnatfinleypoint.com/barn-at-finley-point-venue/" },
+      { label: "KwaTaqNuk Resort: Weddings", url: "https://kwataqnuk.com/weddings-at-kwataqnuk/" },
+      { label: "Bigfork: Getting here", url: "https://bigfork.org/planning-a-visit/getting-here/" },
+      { label: "Polson Chamber of Commerce: Getting here", url: "https://www.polsonchamber.com/getting-here/" },
+      { label: "City of Polson: Community profile", url: "https://www.cityofpolson.com/community/page/community-profile" },
+      { label: "North Star Ranch: Stay", url: "https://www.northstarranch.co/stay" }
+    ]
   }
 ];
 
