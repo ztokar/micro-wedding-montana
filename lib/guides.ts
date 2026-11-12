@@ -2533,7 +2533,7 @@ export const guides: Guide[] = [
         id: "flathead",
         heading: "Flathead County: The License Office for Whitefish and Glacier Weddings",
         paragraphs: [
-          "For a wedding in Whitefish, Kalispell, Bigfork or the west side of Glacier National Park, most couples use the Flathead County Clerk of District Court. The county's page was read on September 13, 2026. Call before your trip to confirm nothing has changed."
+          "For a wedding in Whitefish, Kalispell, Bigfork or the west side of Glacier National Park, most couples use the Flathead County Clerk of District Court. The details below are from the county's page, read on November 12, 2026."
         ],
         table: {
           headers: ["Detail", "What Flathead County says"],
