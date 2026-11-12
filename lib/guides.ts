@@ -2641,11 +2641,11 @@ export const guides: Guide[] = [
         id: "types",
         heading: "Photography Only, Planned Package or Ranch Elopement?",
         table: {
-          headers: ["Type", "Price range above", "Best when"],
+          headers: ["Type", "Starting prices in the table above", "Best when"],
           rows: [
-            ["Photography only", "$2,800 to $5,000", "You have a spot picked and will book the officiant and flowers yourself"],
-            ["Planned package", "$5,000 to $9,800 and up", "You want one team to handle the officiant, flowers, cake and timeline"],
-            ["All-inclusive ranch", "$5,000 to $20,000 plus rooms", "You want the ceremony, meals and activities on one property"]
+            ["Photography only", "$2,800 (Lovelight), $3,900 (Carrie Ann), $5,000 (Elope Montana, Wildflower)", "You have a spot picked and will book the officiant and flowers yourself"],
+            ["Photography with officiant, flowers and cake", "$5,000 (Elope Montana, Alpine Lake), $9,800 (Lovelight, Alpine Essentials)", "You want one team to handle the officiant, flowers, cake and timeline"],
+            ["All-inclusive ranch", "$5,000 to $20,000, plus rooms", "You want the ceremony, meals and activities on one property"]
           ]
         },
         paragraphs: [
@@ -2656,7 +2656,8 @@ export const guides: Guide[] = [
         id: "real-costs",
         heading: "What Couples Say They Spent",
         paragraphs: [
-          "Real totals vary more than package prices. One couple married at Bowman Lake with a dozen people for $722 by staying at a hostel and cooking their own food. Another couple's Glacier elopement, with a photographer, officiant, permit and flowers, came to $6,561 before the honeymoon.",
+          "Real totals vary more than package prices. In one [Reddit thread on Glacier weddings](https://www.reddit.com/r/GlacierNationalPark/comments/1gjkd19/wedding_advice/), a couple says they married at Bowman Lake with a dozen people for $722 by staying at a hostel and cooking their own food.",
+          "Another couple [shared their Glacier elopement costs](https://www.reddit.com/r/Eloping/comments/1ft1nnp/we_did_it_glacier_national_park/): $6,561 with a photographer, officiant, permit and flowers, before the honeymoon.",
           "The step-by-step plan is in the [Montana elopement guide](/guides/montana-elopement)."
         ]
       },
