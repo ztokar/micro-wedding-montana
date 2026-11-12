@@ -785,62 +785,99 @@ export const guides: Guide[] = [
   {
     slug: "wedding-dress-shops-whitefish-mt",
     eyebrow: "Whitefish Bridal Guide",
-    title: "Wedding Dress Shops Near Whitefish, MT",
-    seoTitle: "Wedding Dress Shops Near Whitefish, MT: Two Verified Bridal Boutiques | North Star Ranch",
-    description: "Two verified bridal boutiques near Whitefish, what each offers, and how to plan a Kalispell dress appointment during a Montana wedding trip.",
+    title: "Wedding Dress Shops Near Whitefish, MT: 3 Bridal Boutiques",
+    seoTitle: "Wedding Dress Shops Near Whitefish, MT | 3 Bridal Boutiques in Kalispell and Bigfork | North Star Ranch",
+    description: "Whitefish has no bridal gown shop of its own. The three closest bridal boutiques are in Kalispell and Bigfork: addresses, designers, appointment rules and phone numbers, checked November 2026.",
     hero: "/images/whitefish-wedding-dress-shops.jpg",
     heroAlt: "Wedding dress displayed in a quiet Montana bridal atelier",
-    readTime: "5 minute read",
-    updated: "August 3, 2026",
+    readTime: "3 minute read",
+    updated: "November 12, 2026",
     category: "local",
-    quickAnswer: "The nearest full-service dress shops we could confirm are in Kalispell, not Whitefish. Mimi's Bridal and Hannah Jane Couture both use appointments. Call before traveling and ask which gowns and sample sizes will be available for your visit.",
+    quickAnswer: "Whitefish has no bridal gown shop of its own. The three closest bridal boutiques are Mimi's Bridal and Hannah Jane Couture in Kalispell and J Scott Couture Bridal in Bigfork. All three take appointments.",
     sections: [
       {
         id: "options",
-        heading: "Two Bridal Shops Near Whitefish",
+        heading: "Bridal Shops Near Whitefish at a Glance",
+        table: {
+          headers: ["Bridal shop", "Designers and gowns", "Appointments"],
+          rows: [
+            ["Mimi's Bridal, Kalispell", "Randy Fenoli, Stella York, Morilee, All Who Wander, La Perle by Calla Blanche, Enchanting by Mon Cheri, Sophia Tolli. Also mother of the bride, prom and men's suits", "Book online"],
+            ["Hannah Jane Couture, Kalispell", "Madi Lane, Serene, Evie Young, plus custom gowns", "Appointment only. Two options, $75 and $200"],
+            ["J Scott Couture Bridal, Bigfork", "Bridal gowns and tuxedos", "Call first. Its website was last updated in 2019"]
+          ]
+        },
         paragraphs: [
-          "We checked current local listings on August 3, 2026 and couldn't confirm a full-service bridal shop in Whitefish itself. The two nearby shops below are in Kalispell, so allow for that drive when planning the day.",
-          "Mimi's Bridal is at 217 South Main Street. Its current designer list includes Morilee, Stella York, All Who Wander, La Perle, and several Mon Cheri lines. The store also carries mother-of-the-bride attire and men's suits.",
-          "Hannah Jane Couture offers private one-on-one appointments, designer gowns, and custom work. If you want changes to a gown, find out what the shop handles and whether another alteration specialist will be involved."
+          "All three were checked on November 12, 2026. Addresses and phone numbers are in the list below."
         ],
         resources: [
-          { name: "Mimi's Bridal", note: "Designer wedding dresses at 217 South Main Street in Kalispell, plus mother-of-the-bride attire and men's suits.", phone: "(406) 257-4684", url: "https://www.mimisbridalmontana.com/" },
-          { name: "Hannah Jane Couture", note: "A Kalispell boutique offering designer gowns, custom options, and private one-on-one bridal appointments.", phone: "(406) 250-2697", url: "https://www.hannahjanecouture.com/" }
+          { name: "Mimi's Bridal", note: "Designer wedding dresses at 217 South Main Street in Kalispell, plus mother-of-the-bride attire, prom and men's suits.", phone: "(406) 257-4684", url: "https://www.mimisbridalmontana.com/" },
+          { name: "Hannah Jane Couture", note: "An appointment-only Kalispell boutique at 260 Lake Blaine Rd with designer gowns and custom gowns.", phone: "(406) 250-2697", url: "https://www.hannahjanecouture.com/" },
+          { name: "J Scott Couture Bridal", note: "A bridal boutique at 7915 State Highway 35 in Bigfork with bridal gowns and tuxedos. Call before you drive.", phone: "(406) 837-7902", url: "https://www.jscottcouture.com/" }
+        ]
+      },
+      {
+        id: "in-whitefish",
+        heading: "Is There a Wedding Dress Shop in Whitefish?",
+        paragraphs: [
+          "No. We found no bridal gown shop with a Whitefish address. [Rocky Mountain Bride](https://www.rockymountainbride.com/blog/top-bridal-shops-in-montana-where-to-find-your-dream-wedding-dress/), a regional wedding magazine, says the same: \"There's no bridal shop in Whitefish itself.\"",
+          "One Whitefish name shows up in dress searches: Covet Beauty Bridal. It is a hair and makeup team, not a bridal salon."
+        ]
+      },
+      {
+        id: "montana",
+        heading: "Other Bridal Shops in Montana",
+        paragraphs: [
+          "Flying into another Montana city first? These bridal shops also work by appointment."
+        ],
+        table: {
+          headers: ["Bridal shop", "City and address", "Appointments"],
+          rows: [
+            ["Velvet Bride", "Missoula, 420 N. Higgins Ave., Suite C", "Appointment only"],
+            ["Plume Bridal", "Bozeman, 40 W Main St", "Appointments only"],
+            ["The White Dress", "Bozeman, 221 E Oak St, Unit 1A", "Appointment only"]
+          ]
+        }
+      },
+      {
+        id: "custom",
+        heading: "Custom Wedding Dresses Near Whitefish",
+        paragraphs: [
+          "Hannah Jane Couture in Kalispell is the Flathead Valley shop that lists custom gowns. It is an appointment-only boutique, and its site shows designer lines beside its custom work."
         ]
       },
       {
         id: "appointment",
-        heading: "Check the Samples and the Calendar Before You Go",
-        paragraphs: [
-          "A shop can carry a designer without having every dress or size on the floor. Send two or three silhouettes you like and ask the stylist which samples can be tried during your appointment.",
-          "Give the shop your wedding month and Montana travel dates. Ask when the dress would arrive, how many fittings it may need, and when it must be picked up. If the timing doesn't work, ask what can be bought off the rack.",
-          "Get the deposit, cancellation, shipping, pickup, and alteration terms in writing. When another specialist will alter the gown, call that person before paying the dress deposit."
-        ]
-      },
-      {
-        id: "venue-fit",
-        heading: "Bring the Ranch Into the Fitting Room",
-        paragraphs: [
-          "Keep a few ranch photos on your phone. A skirt that feels easy on a salon platform can drag on grass or catch on gravel. A long train also has to move between lodging, the ceremony, and dinner.",
-          "Bring shoes close to the heel height you'll wear. Take a short video when the stylist shows how the bustle works, and share it with the person helping on the wedding day. Time an overskirt or second-look change before placing it between photos and dinner."
+        heading: "Before You Book a Bridal Appointment",
+        bullets: [
+          "Send two or three silhouettes you like. Ask which samples and sample sizes you can try.",
+          "Give your wedding month. Ask when the dress would arrive and how many fittings it needs.",
+          "Ask who does alterations, and what can be bought off the rack if time is short.",
+          "Get the deposit, cancellation and pickup terms in writing."
         ]
       },
       {
         id: "planning-trip",
         heading: "Fit One Dress Appointment Into the Planning Trip",
         paragraphs: [
-          "North Star Ranch is eight miles from downtown Whitefish and about 25 minutes from Glacier Park International Airport. A ranch visit and one Kalispell salon appointment can fit on the same day. Touring venues while you are in town? See the [Kalispell wedding venues](/guides/kalispell-wedding-venues) and the [Whitefish wedding venues](/guides/whitefish-wedding-venues).",
-          "Confirm the ranch visit first, then place the salon around it. Leave time for the drive, a meal, and notes before another vendor call. The [Whitefish wedding vendor guide](/guides/whitefish-montana-wedding-vendors) covers those calls, while the [wedding weekend itinerary](/guides/montana-micro-wedding-itinerary) handles guest plans. [Ask North Star Ranch about available dates](/#contact) before booking flights."
+          "North Star Ranch is eight miles from downtown Whitefish and about 25 minutes from Glacier Park International Airport. A ranch visit and one Kalispell bridal appointment can fit in the same day.",
+          "Confirm the ranch visit first, then place the salon around it. Bring a few ranch photos: a long train has to cross grass and gravel between the ceremony and dinner.",
+          "Touring venues too? See the [Whitefish wedding venues](/guides/whitefish-wedding-venues) and the [Whitefish wedding vendor guide](/guides/whitefish-montana-wedding-vendors). [Ask North Star Ranch about available dates](/#contact) before booking flights."
         ]
       }
     ],
     faqs: [
-      { question: "Are there wedding dress shops in Whitefish, Montana?", answer: "We couldn't confirm a full-service bridal boutique in Whitefish during our August 2026 review. The nearby shops we could verify are Mimi's Bridal and Hannah Jane Couture in Kalispell." },
-      { question: "Do I need an appointment at a Kalispell bridal shop?", answer: "Yes. Booking ahead also gives the stylist time to check the sample sizes, silhouettes, and designers you want to see." },
-      { question: "How early should I shop for a wedding dress?", answer: "Ask the boutique to work backward from your wedding month and travel dates. Order and alteration times depend on the gown. If time is short, ask about off-the-rack choices before the appointment." },
-      { question: "Can I combine dress shopping with a North Star Ranch visit?", answer: "Yes. Confirm the ranch visit first and book one salon appointment. Leaving real driving time between Kalispell and Whitefish makes the day much easier to use." }
+      { question: "Are there wedding dress shops in Whitefish, Montana?", answer: "No bridal gown shop has a Whitefish address as of November 2026. The closest are Mimi's Bridal and Hannah Jane Couture in Kalispell and J Scott Couture Bridal in Bigfork." },
+      { question: "Do I need an appointment at a Kalispell bridal shop?", answer: "Hannah Jane Couture is appointment only, with $75 and $200 appointment options. Mimi's Bridal takes bookings online." },
+      { question: "Where can I get a custom wedding dress near Whitefish?", answer: "Hannah Jane Couture in Kalispell lists custom gowns. Book an appointment and ask how long a custom gown takes." },
+      { question: "Can I combine dress shopping with a North Star Ranch visit?", answer: "Yes. Confirm the ranch visit first and book one salon appointment. Leave real driving time between Kalispell and Whitefish." }
     ],
-    related: ["whitefish-montana-wedding-vendors", "montana-micro-wedding-itinerary", "whitefish-montana-micro-wedding"]
+    related: ["whitefish-montana-wedding-vendors", "montana-micro-wedding-itinerary", "whitefish-montana-micro-wedding"],
+    sources: [
+      { label: "Mimi's Bridal", url: "https://www.mimisbridalmontana.com/" },
+      { label: "Hannah Jane Couture: contact and appointments", url: "https://www.hannahjanecouture.com/contact" },
+      { label: "Rocky Mountain Bride: Montana bridal shops", url: "https://www.rockymountainbride.com/blog/top-bridal-shops-in-montana-where-to-find-your-dream-wedding-dress/" },
+      { label: "Wed Society Montana: wedding dress shops", url: "https://montana.wedsociety.com/wedding-vendors/wedding-dress-shops/" }
+    ]
   },
   {
     slug: "whitefish-mt-wedding-catering",
