@@ -1561,7 +1561,7 @@ export const guides: Guide[] = [
         heading: "Montana Elopement Laws: Getting Your Marriage License",
         paragraphs: [
           "For an elopement in Montana's northwest corner, the license office is the Flathead County Clerk of District Court. You start the application online, then both of you appear in person to sign it and pay. The license is ready the same visit.",
-          "Some elopement guides still list a rubella blood test. Montana repealed those sections of its marriage law, so there is nothing to take or waive."
+          "Some elopement guides still list a rubella blood test. Montana repealed those sections of its marriage law, so there is nothing to take or waive. Every rule is in the [Montana marriage license guide](/guides/montana-marriage-license)."
         ],
         table: {
           headers: ["Step", "What the county and state law say"],
@@ -1627,14 +1627,14 @@ export const guides: Guide[] = [
         heading: "What Montana Elopement Packages and Elopement Photographers Cost",
         paragraphs: [
           "Real couples report a wide range. One pair married at Bowman Lake with a dozen people for $722 by staying at a hostel and cooking their own food. Another couple's Glacier elopement, with a photographer, officiant, permit, and flowers, came to $6,561 before the honeymoon.",
-          "In one couple's itemized Glacier elopement, the photographer was the largest cost at $3,100. Here is what a few elopement photographers and planners publish on their own sites."
+          "In one couple's itemized Glacier elopement, the photographer was the largest cost at $3,100. Here is what a few elopement photographers and planners publish on their own sites. The side-by-side table is in [Montana elopement packages](/guides/montana-elopement-packages)."
         ],
         resources: [
           { name: "Lovelight Montana", note: "Photographer serving Glacier, Kalispell, Whitefish, and Bigfork. Classic packages start with two hours of coverage.", price: "From $2,800; packages with planning from $9,800", url: "https://www.lovelightmontana.com/couples-photography/elopement-packages" },
           { name: "Carrie Ann Photography", note: "Glacier National Park and Whitefish elopement and wedding photography.", price: "Elopements and micro weddings from $3,900", url: "https://www.carrieann-photography.net/" },
           { name: "Elope Montana", note: "Glacier and Flathead Valley planning with photography. Its Alpine Lake collection adds an officiant, flowers, and cake at the same starting price.", price: "Collections from $5,000", url: "https://www.elopemontana.com/pricing" },
           { name: "Lone Mountain Ranch, Big Sky", note: "A ranch package with an officiant, flowers, cake, and meals. It is in Big Sky in southwest Montana, not near Glacier, and rooms are extra.", price: "$5,000 for 3 people; $10,000 for 4 to 10", url: "https://lonemountainranch.com/big-sky-big-love-elopement-package/" },
-          { name: "The Ranch at Rock Creek, Philipsburg", note: "An all-inclusive resort elopement with cake, flowers, a day-of lunch, and a celebration dinner. It is in southwest Montana, and nightly rates are extra.", price: "$15,000 for 4 to 8 people", url: "https://theranchatrockcreek.com/weddings/elopements/" }
+          { name: "The Ranch at Rock Creek, Philipsburg", note: "An all-inclusive resort elopement with cake, flowers, a day-of lunch, and a celebration dinner. It is in southwest Montana, and nightly rates are extra.", price: "$15,000 for 2 to 8 guests", url: "https://theranchatrockcreek.com/weddings/elopements/" }
         ]
       },
       {
@@ -2483,6 +2483,208 @@ export const guides: Guide[] = [
       { label: "Polson Chamber of Commerce: Getting here", url: "https://www.polsonchamber.com/getting-here/" },
       { label: "City of Polson: Community profile", url: "https://www.cityofpolson.com/community/page/community-profile" },
       { label: "North Star Ranch: Stay", url: "https://www.northstarranch.co/stay" }
+    ]
+  },
+  {
+    slug: "montana-marriage-license",
+    eyebrow: "Legal Basics",
+    title: "Montana Marriage License: Cost, What to Bring and How to Get One",
+    seoTitle: "Montana Marriage License | $53, No Waiting Period, Valid 180 Days | North Star Ranch",
+    description: "How to get a Montana marriage license: $53 at a county Clerk of District Court, no waiting period, no blood test, valid in any county for 180 days. Steps, what to bring, and the Flathead County office for Whitefish and Glacier weddings.",
+    hero: "/images/north-star-ranch-cabin-porch.jpg",
+    heroAlt: "Covered porch of a private cabin among the pines at North Star Ranch",
+    readTime: "4 minute read",
+    updated: "November 12, 2026",
+    quickAnswer: "A Montana marriage license costs $53 and comes from a county Clerk of District Court. There is no waiting period and no blood test, and the license works in any Montana county for 180 days.",
+    sections: [
+      {
+        id: "at-a-glance",
+        heading: "Montana Marriage License at a Glance",
+        table: {
+          headers: ["Question", "Answer", "Source"],
+          rows: [
+            ["How much is it?", "$53", "Montana Code 40-1-202"],
+            ["Where do you get it?", "From a clerk of the district court, in any county", "Montana Code 40-1-201"],
+            ["Is there a waiting period?", "No. The license is effective when issued", "Montana Code 40-1-212"],
+            ["How long is it good for?", "180 days", "Montana Code 40-1-212"],
+            ["Where can you use it?", "A ceremony in any county of the state", "Montana Code 40-1-201"],
+            ["How old must you be?", "18, or 16 with a judge's approval", "Montana Code 40-1-202"],
+            ["What ID do you need?", "A birth certificate or other proof of age", "Montana Code 40-1-203"],
+            ["Is there a blood test?", "No. The old blood test sections are repealed", "Montana Code, Title 40, chapter 1, part 2"]
+          ]
+        }
+      },
+      {
+        id: "steps",
+        heading: "How to Get a Marriage License in Montana",
+        steps: [
+          "Fill out the marriage application. Both of you sign it.",
+          "Go to the Clerk of District Court. State law needs at least one of you there in person. Some counties, Flathead included, ask for both.",
+          "Show proof of age and pay the $53 fee.",
+          "Leave with the license and the certificate form. You can use it the same day.",
+          "Hold your ceremony anywhere in Montana within 180 days.",
+          "Send the completed certificate back to the clerk after the ceremony."
+        ],
+        paragraphs: [
+          "One more rule: the clerk will not issue a license if either of you is under the influence of alcohol or drugs at the counter."
+        ]
+      },
+      {
+        id: "flathead",
+        heading: "Flathead County: The License Office for Whitefish and Glacier Weddings",
+        paragraphs: [
+          "For a wedding in Whitefish, Kalispell, Bigfork or the west side of Glacier National Park, most couples use the Flathead County Clerk of District Court. The county's page was read on September 13, 2026. Call before your trip to confirm nothing has changed."
+        ],
+        table: {
+          headers: ["Detail", "What Flathead County says"],
+          rows: [
+            ["Start", "Submit the application online first"],
+            ["In person", "Couples appear together to sign the application"],
+            ["Hours", "Every business day, 8:00 am to 4:30 pm"],
+            ["Fee", "$53 by cash, check, money order or card (a card adds $2.31)"],
+            ["Bring", "Proof of age, such as a driver's license or birth certificate"],
+            ["Divorce papers", "Not required. The sworn application covers it"],
+            ["Certified copies", "$7 each, after the signed license is returned"],
+            ["Phone", "(406) 758-5659"]
+          ]
+        }
+      },
+      {
+        id: "officiant",
+        heading: "Who Can Marry You in Montana",
+        paragraphs: [
+          "Montana law lets a judge, a justice of the peace, a mayor, an authorized notary public, a tribal judge or a religious officiant solemnize a marriage. The law does not list a witness rule for a ceremony.",
+          "There is also a route with no ceremony, called a declaration of marriage. You both sign it in front of the clerk with at least two witnesses. The filing fee is $53.",
+          "Planning to run away together? The [Montana elopement guide](/guides/montana-elopement) covers Glacier permits and where you can say your vows."
+        ]
+      },
+      {
+        id: "glacier",
+        heading: "Does a Montana License Work in Glacier National Park?",
+        paragraphs: [
+          "Yes. A Montana license covers a ceremony in any county, and the park sits in Montana. The park needs its own Special Use Permit for every ceremony, with a $125 application fee. The license and the permit are two separate things.",
+          "See the full rules in the guide to [getting married in Glacier National Park](/guides/glacier-national-park-micro-wedding)."
+        ]
+      },
+      {
+        id: "base",
+        heading: "License Day Is Easier With a Base Near Whitefish",
+        paragraphs: [
+          "The license takes one office visit on a business day. Plan it for the day you land, not the wedding morning.",
+          "North Star Ranch is a private 40-acre venue 8 miles from downtown Whitefish, with a chalet, cabins and a lodge on site. Your ceremony, dinner and beds are in one place, so the license stop is the only errand. [Ask North Star Ranch about dates](/#contact)."
+        ],
+        image: { src: "/images/north-star-ranch-cabin.jpg", alt: "Private cabin with a wraparound deck in the pines at North Star Ranch", caption: "A private cabin at North Star Ranch, 8 miles from downtown Whitefish." }
+      }
+    ],
+    faqs: [
+      { question: "How much is a marriage license in Montana?", answer: "$53. Montana Code 40-1-202 sets the fee. Flathead County adds $2.31 if you pay by card." },
+      { question: "Is there a waiting period for a Montana marriage license?", answer: "No. Montana Code 40-1-212 says a license is effective upon issuance and expires after 180 days." },
+      { question: "Do you need a blood test to get married in Montana?", answer: "No. The old blood test sections of the marriage law are repealed, though some wedding sites still mention a rubella test." },
+      { question: "Do both people have to be there to get a Montana marriage license?", answer: "State law requires both to sign the application and at least one to appear before the clerk. Flathead County asks couples to appear together, so check with your county." },
+      { question: "Can you use a Montana marriage license in a different county?", answer: "Yes. Montana Code 40-1-201 says a license authorizes a ceremony in any county of the state." },
+      { question: "Do you need witnesses to get married in Montana?", answer: "The law on ceremonies does not list a witness rule. A declaration of marriage, the no-ceremony route, needs at least two witnesses." }
+    ],
+    related: ["montana-elopement", "elopement-vs-micro-wedding", "montana-micro-wedding-planning-timeline"],
+    sources: [
+      { label: "Montana Code Annotated 40-1-201: license required", url: "https://mca.legmt.gov/bills/mca/title_0400/chapter_0010/part_0020/section_0010/0400-0010-0020-0010.html" },
+      { label: "Montana Code Annotated 40-1-202: license issuance and $53 fee", url: "https://mca.legmt.gov/bills/mca/title_0400/chapter_0010/part_0020/section_0020/0400-0010-0020-0020.html" },
+      { label: "Montana Code Annotated 40-1-212: effective on issuance, expires after 180 days", url: "https://mca.legmt.gov/bills/mca/title_0400/chapter_0010/part_0020/section_0120/0400-0010-0020-0120.html" },
+      { label: "Montana Code Annotated 40-1-301: who may solemnize a marriage", url: "https://mca.legmt.gov/bills/mca/title_0400/chapter_0010/part_0030/section_0010/0400-0010-0030-0010.html" },
+      { label: "Montana Code Annotated 40-1-311: declaration of marriage", url: "https://mca.legmt.gov/bills/mca/title_0400/chapter_0010/part_0030/section_0110/0400-0010-0030-0110.html" },
+      { label: "Flathead County Clerk of District Court: marriage applications", url: "https://flatheadcounty.gov/department-directory/clerk_of_court/marriage_application_start" }
+    ]
+  },
+  {
+    slug: "montana-elopement-packages",
+    eyebrow: "Package Prices",
+    title: "Montana Elopement Packages: What They Cost and What They Include",
+    seoTitle: "Montana Elopement Packages | 2026 Prices From $2,800 to $20,000, Compared | North Star Ranch",
+    description: "Montana elopement packages compared by published price: photography from $2,800, planned Glacier-area packages from $5,000, and all-inclusive ranch elopements from $5,000 to $20,000 before lodging. What each one includes and leaves out.",
+    hero: "/images/north-star-ranch-cabin.jpg",
+    heroAlt: "Private cabin with a wraparound deck in the pines at North Star Ranch",
+    readTime: "5 minute read",
+    updated: "November 12, 2026",
+    quickAnswer: "Published Montana elopement packages start at $2,800 for photography alone. Planned packages near Glacier start at $5,000, and all-inclusive ranch elopements run $5,000 to $20,000 before rooms.",
+    sections: [
+      {
+        id: "compare",
+        heading: "Montana Elopement Packages Compared",
+        paragraphs: [
+          "These are the prices five Montana providers print on their own sites. Each row says what is in the price and what is not."
+        ],
+        table: {
+          headers: ["Provider", "Where", "Published price", "In the price", "Not in the price"],
+          rows: [
+            ["Elope Montana", "Glacier and the Flathead Valley", "Collections from $5,000", "3 to 8 hours of photography. The Alpine Lake collection adds an officiant, bouquet, boutonniere and cake", "The Glacier permit. Up to 25 people, couple included"],
+            ["Lovelight Montana", "Glacier, Kalispell, Whitefish, Bigfork", "From $2,800; planned packages from $9,800", "Classic: photography from 2 hours. Alpine Essentials: photography, florals, cake, and an officiant or hair and makeup", "Lodging and travel"],
+            ["Carrie Ann Photography", "Glacier and Whitefish", "From $3,900", "Elopement and micro wedding photography", "Planning, officiant, flowers"],
+            ["Lone Mountain Ranch", "Big Sky", "$5,000 for 3 people; $10,000 for 4 to 10", "Ceremony site, officiant, bouquet, boutonniere, cake, two massages and ranch activities", "Rooms. All guests book the ranch's lodging package"],
+            ["The Ranch at Rock Creek", "Philipsburg", "$15,000 for 2 to 8 guests; $20,000 for 9 to 20", "Custom cake, bouquet, boutonniere, day-of lunch, celebration dinner, setup and breakdown", "Nightly rates and the room fee"]
+          ]
+        },
+        bullets: [
+          "Elope Montana, Lone Mountain Ranch and The Ranch at Rock Creek were read on November 12, 2026.",
+          "Lovelight Montana and Carrie Ann Photography were read on September 13, 2026."
+        ]
+      },
+      {
+        id: "left-out",
+        heading: "What Most Elopement Packages Leave Out",
+        bullets: [
+          "Lodging. Both ranch packages bill rooms on top of the elopement fee.",
+          "The Glacier National Park permit. Every ceremony in the park needs one, and the application fee is $125.",
+          "The marriage license. It is $53 at a county clerk. See the [Montana marriage license guide](/guides/montana-marriage-license).",
+          "Travel, meals for guests, and hair and makeup, unless the package names them."
+        ]
+      },
+      {
+        id: "types",
+        heading: "Photography Only, Planned Package or Ranch Elopement?",
+        table: {
+          headers: ["Type", "Price range above", "Best when"],
+          rows: [
+            ["Photography only", "$2,800 to $5,000", "You have a spot picked and will book the officiant and flowers yourself"],
+            ["Planned package", "$5,000 to $9,800 and up", "You want one team to handle the officiant, flowers, cake and timeline"],
+            ["All-inclusive ranch", "$5,000 to $20,000 plus rooms", "You want the ceremony, meals and activities on one property"]
+          ]
+        },
+        paragraphs: [
+          "Location matters too. Lone Mountain Ranch and The Ranch at Rock Creek are in southwest Montana, hours from Glacier. The first three providers work in the Glacier and Whitefish area."
+        ]
+      },
+      {
+        id: "real-costs",
+        heading: "What Couples Say They Spent",
+        paragraphs: [
+          "Real totals vary more than package prices. One couple married at Bowman Lake with a dozen people for $722 by staying at a hostel and cooking their own food. Another couple's Glacier elopement, with a photographer, officiant, permit and flowers, came to $6,561 before the honeymoon.",
+          "The step-by-step plan is in the [Montana elopement guide](/guides/montana-elopement)."
+        ]
+      },
+      {
+        id: "base",
+        heading: "A Private Place to Elope Near Whitefish",
+        paragraphs: [
+          "A package covers the ceremony. You still need a bed, a meal and a dry place if it rains.",
+          "North Star Ranch is private land 8 miles from downtown Whitefish and less than 45 minutes from the Glacier entrance. You can say your vows on the lawn with no park permit, stay in a cabin or the five-bedroom chalet, and give family their own rooms in the lodge.",
+          "North Star Ranch does not publish package prices. [Ask about elopement dates](/#contact), or see how an [elopement compares with a micro wedding](/guides/elopement-vs-micro-wedding)."
+        ],
+        image: { src: "/images/north-star-ranch-deck-view.jpg", alt: "View over pine forest from a deck at North Star Ranch near Whitefish", caption: "The view from a deck at North Star Ranch near Whitefish." }
+      }
+    ],
+    faqs: [
+      { question: "How much do Montana elopement packages cost?", answer: "Published prices start at $2,800 for photography with Lovelight Montana. Planned Glacier-area packages start at $5,000 with Elope Montana. Ranch elopements run $5,000 to $20,000 before rooms." },
+      { question: "Are there all-inclusive elopement packages in Montana?", answer: "Yes. Lone Mountain Ranch in Big Sky and The Ranch at Rock Creek in Philipsburg sell ranch elopements with an officiant or dinner, flowers and cake. Both bill rooms separately." },
+      { question: "How many guests can come to a Montana elopement package?", answer: "It depends on the provider. Elope Montana allows up to 25 people including the couple. Lone Mountain Ranch caps its package at 10. The Ranch at Rock Creek prices 2 to 8 and 9 to 20 guests." },
+      { question: "Do Montana elopement packages include the Glacier permit?", answer: "Not always. Elope Montana says the park permit is the couple's responsibility. The application fee is $125." },
+      { question: "Are there winter elopement packages in Montana?", answer: "Yes. Lone Mountain Ranch lists a winter elopement with a private indoor ceremony, a snowshoe tour, and a sleigh ride to dinner, at the same price as summer." }
+    ],
+    related: ["montana-elopement", "elopement-vs-micro-wedding", "all-inclusive-micro-wedding-packages-montana"],
+    sources: [
+      { label: "Elope Montana: pricing", url: "https://www.elopemontana.com/pricing" },
+      { label: "Lovelight Montana: elopement packages", url: "https://www.lovelightmontana.com/couples-photography/elopement-packages" },
+      { label: "Carrie Ann Photography", url: "https://www.carrieann-photography.net/" },
+      { label: "Lone Mountain Ranch: Big Sky Big Love elopement package", url: "https://lonemountainranch.com/big-sky-big-love-elopement-package/" },
+      { label: "The Ranch at Rock Creek: elopements", url: "https://theranchatrockcreek.com/weddings/elopements/" }
     ]
   }
 ];
